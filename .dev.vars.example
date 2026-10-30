@@ -1,0 +1,3 @@
+# Optional: without a key, the application supports IBM through the provider demo.
+# Copy to .dev.vars and set your own key. Never commit the .dev.vars file.
+ALPHA_VANTAGE_API_KEY=

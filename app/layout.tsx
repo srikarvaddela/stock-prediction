@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./forecast.css";
 
 export const metadata: Metadata = {
   title: "Stock Prediction — Research & Forecasts",
-  description: "Research real stocks and evaluate machine-learning forecasts against historical outcomes.",
+  description:
+    "Research real stocks and evaluate machine-learning forecasts against historical outcomes.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

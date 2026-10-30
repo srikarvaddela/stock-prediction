@@ -1,11 +1,59 @@
-export type PricePoint = { date: string; close: number; adjusted: number; volume: number };
+export type PricePoint = {
+  date: string;
+  close: number;
+  adjusted: number;
+  volume: number;
+};
 export type Overview = {
-  symbol: string; name: string; description: string; exchange: string; currency: string; sector: string;
-  latestQuarter: string | null; marketCap: number | null; pe: number | null; eps: number | null;
-  revenue: number | null; profitMargin: number | null; dividendYield: number | null;
-  beta: number | null; high52: number | null; low52: number | null;
+  symbol: string;
+  name: string;
+  description: string;
+  exchange: string;
+  currency: string;
+  sector: string;
+  latestQuarter: string | null;
+  marketCap: number | null;
+  pe: number | null;
+  eps: number | null;
+  revenue: number | null;
+  profitMargin: number | null;
+  dividendYield: number | null;
+  beta: number | null;
+  high52: number | null;
+  low52: number | null;
 };
 export type StockData = {
-  symbol: string; prices: PricePoint[]; overview: Overview | null;
-  source: string; demo: boolean; fetchedAt: string; warning: string | null;
+  symbol: string;
+  prices: PricePoint[];
+  overview: Overview | null;
+  source: string;
+  demo: boolean;
+  fetchedAt: string;
+  warning: string | null;
+  forecast?: Forecast | null;
+};
+export type Forecast = {
+  model: string;
+  asOf: string;
+  targetWeekEnding: string;
+  stale: boolean;
+  trainingWeeks: number;
+  backtestWeeks: number;
+  basePrice: number;
+  expectedReturn: number;
+  estimate: number;
+  low: number;
+  high: number;
+  mae: number;
+  baselineMae: number;
+  directionAccuracy: number;
+  factors: string[];
+  backtest: {
+    origin: string;
+    date: string;
+    predictedReturn: number;
+    actualReturn: number;
+    residual: number;
+    trainingThrough: string;
+  }[];
 };

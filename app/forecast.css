@@ -266,3 +266,63 @@ tbody td {
   border-radius: 6px;
   font-size: 10px !important;
 }
+.settings-panel {
+  max-width: 800px;
+  padding: 30px;
+}
+.section-copy {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #75866a;
+  margin: 18px 0;
+}
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px;
+  background: #f0f5e9;
+  border: 1px solid #dfe8d4;
+  border-radius: 8px;
+  margin: 20px 0;
+  color: #587445;
+}
+.connection-status strong {
+  font-size: 13px;
+  font-weight: 550;
+}
+.connection-status p {
+  font-size: 10px;
+  margin-top: 5px;
+  color: #7c8e6a;
+}
+.field-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 11px;
+  color: #6d805e;
+  margin: 20px 0;
+}
+.field-label input,
+.field-label select {
+  border: 1px solid #dce4d5;
+  padding: 12px;
+  background: #fafcf7;
+  border-radius: 6px;
+  color: #385329;
+  max-width: 500px;
+  min-width: 0;
+}
+.form-hint {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #839675;
+  margin: 15px 0;
+}
+.settings-panel .notice {
+  margin-top: 20px;
+}
+.settings-panel > .text-button {
+  margin-top: 25px;
+}

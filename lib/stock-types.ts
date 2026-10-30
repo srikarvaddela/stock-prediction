@@ -33,6 +33,17 @@ export type StockData = {
   forecast?: Forecast | null;
 };
 export type Forecast = {
+  modelId: string;
+  modelVersion: string;
+  horizon: number;
+  baseAdjusted: number;
+  rmse: number;
+  intervalCoverage: number;
+  validationThrough: string;
+  calibrationThrough: string;
+  holdoutFrom: string;
+  candidates: { id: string; name: string; validationMae: number }[];
+  drivers: { name: string; impact: number }[];
   model: string;
   asOf: string;
   targetWeekEnding: string;

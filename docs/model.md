@@ -1,31 +1,27 @@
-# Forecast methodology
+# Forecast methodology — v2.0.0
 
-This first model is an experimental ridge regression, not an LLM generating price targets. It is trained on the selected stock each time new market data is loaded, with results cached alongside the data.
+The engine trains bounded numeric models on historical weekly prices. It does not ask a language model to invent a target price.
 
-## Inputs and target
+## Models and horizons
 
-- At most 260 completed weekly observations; at least 120 are required.
-- Five features: one-, four-, and twelve-week log returns, log distance from a twelve-week price average, and twelve-week log-return volatility.
-- Target: the following week's adjusted log return.
-- All observations in the current calendar week are excluded. History with a gap exceeding ten days is not modeled.
-- Historical adjusted prices account for splits/dividends. The chart separately displays raw closing prices.
+Direct 1-week and 4-week adjusted log-return models compete: no change, historical mean, ridge regression (penalties 10 and 100), 16-stage gradient-boosted regression stumps, and an equal ridge/boosting ensemble. Five features use only past prices: 1-, 4-, and 12-week returns, distance from a 12-week moving average, and 12-week volatility.
 
-## Training and evaluation
+At least 180 completed weekly observations are required; at most 320 are used. The current week is excluded. Gaps longer than ten days fail validation. Standardization is fit only on each training window. Ridge intercepts are not penalized. Boosting uses fixed parameters and training-only quartile thresholds.
 
-Features are standardized using training data only. A fixed ridge penalty of 10 is applied to the slopes; the intercept is the training target mean. No parameter selection uses the evaluation window.
+## Selection, calibration, and testing
 
-The latest 52 eligible origins are evaluated with an expanding training window. At each origin, training labels end at that origin and the prediction is scored against the following weekly observation. The model is then refit on all available labeled history for the latest forecast.
+An earlier 26-origin validation period selects the lowest-return-MAE candidate. Selection may choose the no-change baseline. The selected family stays fixed during later evaluation, while its parameters are retrained at each origin on matured targets.
 
-Metrics are mean absolute error in simple returns (displayed as percentage points) and historical direction accuracy. The benchmark predicts zero return. The interface explicitly reports when the model does not beat it. The backtest table contains individual predicted and observed returns, allowing the score to be inspected.
+A distinct 26-origin calibration period sets an empirical 80% error-band radius. A final 52-origin test evaluates the selected candidate and interval coverage. Boundaries are purged by the forecast horizon: no label used in one stage can mature after the next stage starts. Every fit only uses targets whose dates are at or before the forecast origin.
 
-## Forecast interpretation
+The current forecast is fit on all matured labels. Its band is recalibrated on the latest 26 completed test errors. Coverage displayed in the UI belongs to the independent historical test with the earlier fixed radius. Nominal coverage is not guaranteed, particularly with correlated/overlapping four-week outcomes.
 
-The displayed price-equivalent estimate is the last completed week's raw close multiplied by the exponential of the predicted adjusted log return. It is not a prediction of future splits or dividends. The target is labeled by its calendar week ending Friday; market holidays are not forecast. Stale estimates are marked historical.
+## Output and interpretation
 
-The displayed band uses the 80th percentile of absolute out-of-sample log-return errors. It is an empirical uncertainty illustration, not a calibrated 80% confidence/probability interval. Coverage is not independently validated.
+MAE and RMSE are measured in simple-return percentage points; the baseline predicts zero return. Direction accuracy is retrospective, not a probability for the next forecast. The UI includes validation rankings, individual test results, an export, and sensitivity to replacing each feature with its training average. Sensitivities are not causal attributions.
+
+Price equivalents apply predicted adjusted returns to the latest completed raw close. Adjusted returns reflect dividends and splits; this is not a forecast of corporate actions. Targets are labeled by calendar week ending Friday. Stale estimates are marked historical.
 
 ## Limits
 
-The historical data is the provider's current revised series, not a point-in-time archive. This is a chronological simulation, not an audited live performance record. One stock and a small evaluation window provide weak evidence of predictive value. Results exclude execution, fees, slippage, taxes, portfolio effects, fundamentals, news, and economic regime changes. No trading performance or profitability is claimed.
-
-Future work: prospective forecast storage, broader cross-stock evaluation, better baselines, and an independent untouched test period before any model selection.
+Provider history can be revised and is not a point-in-time archive. This is a chronological simulation, not an audited live performance record. Independent prospective forecast storage is needed for that. News and fundamentals are separate research context, not model inputs. Fees, slippage, taxes, execution, and portfolio effects are excluded. No profitability is claimed. Model performance on one stock does not establish performance across the market.

@@ -131,6 +131,7 @@ function Chart({ points }: { points: PricePoint[] }) {
 }
 
 export default function Home() {
+  const [horizon, setHorizon] = useState(1);
   const [view, setView] = useState<View>("research"),
     [symbol, setSymbol] = useState("IBM"),
     [query, setQuery] = useState("");
@@ -180,9 +181,12 @@ export default function Home() {
     setLoading(true);
     setError("");
     setData(null);
-    fetch(`/api/stocks?symbol=${encodeURIComponent(symbol)}`, {
-      signal: controller.signal,
-    })
+    fetch(
+      `/api/stocks?symbol=${encodeURIComponent(symbol)}&horizon=${horizon}`,
+      {
+        signal: controller.signal,
+      },
+    )
       .then(async (r) => {
         const result = (await r.json()) as StockData & { error?: string };
         if (!r.ok)
@@ -199,7 +203,7 @@ export default function Home() {
         if (!controller.signal.aborted) setLoading(false);
       });
     return () => controller.abort();
-  }, [symbol, retry]);
+  }, [symbol, retry, horizon]);
   const choose = (s: string) => {
     setSymbol(s);
     setView("research");
@@ -648,6 +652,16 @@ export default function Home() {
                     A prediction is only useful when you can see how it was
                     tested.
                   </p>
+                  <label className="horizon-picker">
+                    Forecast horizon
+                    <select
+                      value={horizon}
+                      onChange={(e) => setHorizon(Number(e.target.value))}
+                    >
+                      <option value={1}>1 week</option>
+                      <option value={4}>4 weeks</option>
+                    </select>
+                  </label>
                   <ForecastResult data={data} loading={loading} />
                   <button
                     className="model-link"

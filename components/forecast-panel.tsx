@@ -32,7 +32,7 @@ export function ForecastResult({
         <p>
           {loading
             ? "Loading price history before fitting and testing the model."
-            : "Load a stock with at least 120 completed weekly observations. Incomplete or interrupted history is not modeled."}
+            : "Load a stock with at least 180 completed weekly observations. Incomplete or interrupted history is not modeled."}
         </p>
       </div>
     );
@@ -54,6 +54,8 @@ export function ForecastResult({
         </span>
       </div>
       <p className="forecast-basis">
+        {f.model} · {f.horizon}-week horizon
+        <br />
         Price-equivalent estimate from {f.asOf}
         <br />
         Reference close {money(f.basePrice, currency)}
@@ -67,8 +69,8 @@ export function ForecastResult({
           <i />
         </div>
         <small>
-          Based on the 80th percentile of past absolute errors. Not an 80%
-          probability guarantee.
+          Calibrated from the latest 26 completed forecast errors. Nominal 80%
+          coverage is not a probability guarantee.
         </small>
       </div>
       <div className={`model-verdict ${improved ? "" : "caution"}`}>
@@ -87,8 +89,8 @@ export function ForecastResult({
         </div>
       </div>
       <p className="forecast-basis">
-        Average absolute weekly return error · {f.backtestWeeks} historical
-        forecasts
+        Average absolute {f.horizon}-week return error · {f.backtestWeeks}{" "}
+        unseen historical forecasts
       </p>
       {f.stale && (
         <p className="stale-warning">
@@ -112,10 +114,10 @@ export function ModelReport({ data }: { data: StockData | null }) {
         <FlaskConical size={20} />
       </div>
       <p>
-        Ridge regression learns a relationship between past weekly price
-        behavior and the next week’s adjusted return. It uses momentum, distance
-        from a moving average, and volatility. Company fundamentals are
-        displayed for research; they are not inputs to this first model.
+        Six candidates compete on an earlier validation period: two baselines,
+        two ridge models, gradient boosting, and an ensemble. The selected model
+        is then tested on a separate later period. Fundamentals and news are
+        research context, not forecasting inputs.
       </p>
       <div className="model-methods">
         <div>
@@ -130,21 +132,49 @@ export function ModelReport({ data }: { data: StockData | null }) {
           <span>02</span>
           <h3>Test the next week</h3>
           <p>
-            Walk forward one week at a time. Leave the current, unfinished week
-            out of model training.
+            Leave the current week out. For longer horizons, train only on
+            targets whose outcomes were already known at that forecast origin.
           </p>
         </div>
         <div>
           <span>03</span>
           <h3>Keep a simple rival</h3>
           <p>
-            Compare forecast error with predicting no change. A complex model
-            does not automatically win.
+            Choose the candidate with the lowest earlier validation error, even
+            when that is the no-change model. Keep the final test separate.
           </p>
         </div>
       </div>
       {f && (
         <>
+          <p className="model-selection">
+            <strong>Selected: {f.model}</strong>
+            <br />
+            Selection outcomes through {f.validationThrough} · uncertainty
+            calibration through {f.calibrationThrough} · unseen test starts{" "}
+            {f.holdoutFrom}
+          </p>
+          <div className="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Candidate</th>
+                  <th scope="col">Earlier validation error</th>
+                </tr>
+              </thead>
+              <tbody>
+                {f.candidates.map((c) => (
+                  <tr key={c.id}>
+                    <th scope="row">
+                      {c.name}
+                      {c.id === f.modelId ? " · selected" : ""}
+                    </th>
+                    <td>{pp(c.validationMae)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <div className="backtest-summary">
             <span>
               <strong>{f.trainingWeeks}</strong> training examples
@@ -156,10 +186,42 @@ export function ModelReport({ data }: { data: StockData | null }) {
               <strong>{(f.directionAccuracy * 100).toFixed(1)}%</strong>{" "}
               direction accuracy
             </span>
+            <span>
+              <strong>{(f.intervalCoverage * 100).toFixed(1)}%</strong> test
+              interval coverage
+            </span>
           </div>
           <p className="table-caption">
-            Latest 10 test weeks · adjusted returns · positive means an increase
+            Latest 10 test outcomes · {f.horizon}-week adjusted returns ·
+            positive means an increase
           </p>
+          <button
+            className="text-button"
+            onClick={() => {
+              const csv = [
+                "origin,target,predicted_return,actual_return,absolute_error",
+                ...f.backtest.map((r) =>
+                  [
+                    r.origin,
+                    r.date,
+                    r.predictedReturn,
+                    r.actualReturn,
+                    Math.abs(r.predictedReturn - r.actualReturn),
+                  ].join(","),
+                ),
+              ].join("\n");
+              const url = URL.createObjectURL(
+                new Blob([csv], { type: "text/csv" }),
+              );
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = `${data?.symbol}-${f.horizon}w-backtest.csv`;
+              a.click();
+              setTimeout(() => URL.revokeObjectURL(url), 1000);
+            }}
+          >
+            Export all test results <ArrowUpRight size={14} />
+          </button>
           <div className="table-scroll">
             <table>
               <thead>
@@ -187,15 +249,30 @@ export function ModelReport({ data }: { data: StockData | null }) {
               </tbody>
             </table>
           </div>
+          <div className="driver-list">
+            <h3>What moves this estimate?</h3>
+            <p>
+              Change in the predicted return when one input is reset to its
+              training average. These sensitivities are not causal explanations.
+            </p>
+            {f.drivers.map((d) => (
+              <div key={d.name}>
+                <span>{d.name}</span>
+                <strong>{pp(d.impact)}</strong>
+              </div>
+            ))}
+          </div>
         </>
       )}
       <details className="model-details">
         <summary>Assumptions and limitations</summary>
         <p>
-          The model uses up to 260 completed weeks, five standardized features,
-          and a fixed ridge penalty of 10. The final 52 available predictions
-          are evaluated chronologically. Direction accuracy is historical
-          performance, not a probability that the next forecast will be correct.
+          Models use up to 320 completed weeks and five price-derived features.
+          Validation, calibration, and final testing use distinct chronological
+          periods with gaps to avoid leaking overlapping targets. The final 52
+          predictions are evaluated chronologically. Direction accuracy is
+          historical performance, not a probability that the next forecast will
+          be correct.
         </p>
         <p>
           Adjusted returns include the effect of splits and dividends. The
@@ -205,10 +282,12 @@ export function ModelReport({ data }: { data: StockData | null }) {
           point-in-time archive.
         </p>
         <p>
-          The error band uses historical out-of-sample residuals. Market
-          conditions can change, and coverage has not been independently
-          validated. This is an experimental research model, not a trading
-          strategy or an instruction to buy or sell.
+          Interval coverage is measured on the final test using a band
+          calibrated before that test. The current forecast band is recalibrated
+          using the latest 26 matured test errors. Four-week outcomes overlap;
+          they are not independent. Market conditions can change. This is an
+          experimental research model, not a trading strategy or an instruction
+          to buy or sell.
         </p>
       </details>
     </section>

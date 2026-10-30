@@ -38,6 +38,12 @@ function query(
 }
 
 export async function GET(request: Request) {
+  const horizon = Number(new URL(request.url).searchParams.get("horizon") || 1);
+  if (![1, 4].includes(horizon))
+    return Response.json(
+      { error: "Choose a one- or four-week horizon." },
+      { status: 400 },
+    );
   const symbol = (new URL(request.url).searchParams.get("symbol") || "IBM")
     .trim()
     .toUpperCase();
@@ -58,7 +64,7 @@ export async function GET(request: Request) {
       },
       { status: 503 },
     );
-  const cacheKey = `${demo ? "demo" : "configured"}:${symbol}`;
+  const cacheKey = `${demo ? "demo" : "configured"}:${symbol}:${horizon}`;
   const cached = cache.get(cacheKey);
   if (cached && cached.expires > Date.now()) return Response.json(cached.data);
   if (!pending.has(cacheKey)) {
@@ -78,7 +84,7 @@ export async function GET(request: Request) {
       let model = null;
       let modelWarning = "";
       try {
-        model = forecast(prices);
+        model = forecast(prices, new Date(), horizon);
       } catch {
         modelWarning =
           "The forecast could not be computed safely from this history.";

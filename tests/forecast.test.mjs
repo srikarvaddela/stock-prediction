@@ -82,3 +82,23 @@ test("returns finite ordered estimates and independently correct error metrics",
   assert.ok(Math.abs(f.mae - expected) < 1e-12);
   assert.equal(f.stale, true);
 });
+
+test("long-horizon training and split boundaries only use matured targets", () => {
+  const f = forecast(history(260), now, 4);
+  assert.equal(f.horizon, 4);
+  assert.ok(f.validationThrough < f.calibrationThrough);
+  assert.ok(f.calibrationThrough <= f.holdoutFrom);
+  for (const row of f.backtest) assert.ok(row.trainingThrough <= row.origin);
+  assert.equal(f.candidates.length, 6);
+  assert.ok(f.intervalCoverage >= 0 && f.intervalCoverage <= 1);
+});
+test("model selection is unchanged when unseen outcomes change", () => {
+  const points = history(260),
+    first = forecast(points, now);
+  const start = points.findIndex((p) => p.date === first.holdoutFrom);
+  for (let i = start + 1; i < points.length; i++)
+    points[i].adjusted *= 1 + (i - start) * 0.01;
+  const second = forecast(points, now);
+  assert.deepEqual(first.candidates, second.candidates);
+  assert.equal(first.modelId, second.modelId);
+});

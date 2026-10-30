@@ -225,3 +225,44 @@ tbody td {
     font-size: 17px;
   }
 }
+.horizon-picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #6d815a;
+  margin-top: 20px;
+}
+.horizon-picker select {
+  padding: 6px 8px;
+  background: #ffffff90;
+  border: 1px solid #d5e0c9;
+  border-radius: 5px;
+  color: #466538;
+}
+.driver-list {
+  margin-top: 23px;
+}
+.driver-list p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #7d8d70;
+  margin: 10px 0;
+}
+.driver-list > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 10px;
+  border-top: 1px solid #edf0e7;
+  padding: 9px 0;
+}
+.driver-list strong {
+  font-weight: 500;
+}
+.model-selection {
+  padding: 13px;
+  background: #f0f5e8;
+  border-radius: 6px;
+  font-size: 10px !important;
+}

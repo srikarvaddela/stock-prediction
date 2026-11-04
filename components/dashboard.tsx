@@ -144,6 +144,7 @@ function Chart({ points }: { points: PricePoint[] }) {
 
 export default function Home() {
   const [horizon, setHorizon] = useState(1);
+  const [cloudLoaded, setCloudLoaded] = useState(false);
   const [view, setView] = useState<View>("research"),
     [symbol, setSymbol] = useState("IBM"),
     [query, setQuery] = useState("");
@@ -181,7 +182,10 @@ export default function Home() {
           error?: string;
         };
         if (!r.ok) throw new Error(body.error);
-        if (active) setWatchlist(body.watchlist ?? local);
+        if (active) {
+          setWatchlist(body.watchlist ?? local);
+          setCloudLoaded(true);
+        }
       } catch {
         if (active) {
           setWatchlist(local);
@@ -205,6 +209,7 @@ export default function Home() {
         JSON.stringify(watchlist),
       );
     } catch {}
+    if (!cloudLoaded) return;
     const timer = setTimeout(() => {
       fetch("/api/workspace", {
         method: "PUT",
@@ -221,7 +226,7 @@ export default function Home() {
         );
     }, 400);
     return () => clearTimeout(timer);
-  }, [watchlist, ready]);
+  }, [watchlist, ready, cloudLoaded]);
   useEffect(() => {
     const controller = new AbortController();
     setLoading(true);
@@ -325,7 +330,7 @@ export default function Home() {
         <div className="sidebar-footer">
           <span className="avatar">SP</span>
           <div>
-            Personal workspace<small>Research edition · v0.1</small>
+            Personal workspace<small>Research edition · v2</small>
           </div>
         </div>
       </aside>
@@ -367,11 +372,17 @@ export default function Home() {
             <div>
               <p className="eyebrow">A CLEARER VIEW OF THE MARKET</p>
               <h1>
-                {view === "watchlist"
-                  ? "Keep your ideas in view."
-                  : view === "model"
-                    ? "Give every forecast a test."
-                    : "Your research, in focus."}
+                {
+                  {
+                    research: "Stock research",
+                    watchlist: "Your watchlist",
+                    model: "Model evaluation",
+                    settings: "Data connection",
+                    compare: "Company comparison",
+                    tracking: "Forecast history",
+                    portfolio: "Portfolio analysis",
+                  }[view]
+                }
               </h1>
               <p className="subtitle">
                 Real companies. Real data. A thoughtful way to explore what
@@ -426,11 +437,9 @@ export default function Home() {
                 chart point may represent an in-progress week.
               </p>
               <p>
-                To research other tickers, configure{" "}
-                <code>ALPHA_VANTAGE_API_KEY</code> in the server environment.
-                Locally, use an ignored <code>.dev.vars</code> file. Provider
-                availability and plan limits apply. Your watchlist stays in this
-                browser.
+                Open Settings to save your market-data key and check the
+                connection. Your watchlist and holdings are saved in your
+                private workspace.
               </p>
               <a
                 className="text-button"
@@ -501,9 +510,6 @@ export default function Home() {
             <div className="stock-layout">
               <div className="stock-main">
                 {view === "model" && <ModelReport data={data} />}
-                {view === "research" && data && (
-                  <ResearchFeed key={data.symbol} symbol={data.symbol} />
-                )}
                 <section className="panel stock-panel">
                   <div className="panel-heading">
                     <div className="company-heading">
@@ -698,6 +704,9 @@ export default function Home() {
                       </a>
                     </section>
                   </>
+                )}
+                {view === "research" && data && (
+                  <ResearchFeed key={data.symbol} symbol={data.symbol} />
                 )}
               </div>
               <aside className="insight-column">

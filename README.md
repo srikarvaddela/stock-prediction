@@ -1,32 +1,36 @@
 # Stock Prediction
 
-Research real stocks and inspect experimental machine-learning forecasts with transparent historical evaluation.
+A private stock research workspace with one- and four-week forecasts. The public GitHub repository contains the application source. [Open the hosted app](https://stock-prediction-srikar.shoyo722.chatgpt.site).
 
-## What works
+## Start in the app
 
-- Real weekly price history with 3-month, 6-month, 1-year, and 5-year charts.
-- Company descriptions, market capitalization, P/E, revenue, margins, dividends, and earnings per share.
-- Stock search with explicit provider/configuration errors.
-- A watchlist stored in your browser.
-- Weekly ridge-regression forecasts, a historical-error band, and walk-forward backtests against a no-change baseline.
-- A model lab explaining the inputs and displaying individual forecast outcomes.
+IBM research and reported earnings work through the provider demo. To explore additional symbols, get an [Alpha Vantage API key](https://www.alphavantage.co/support/#api-key), open **Settings**, save the key, and select **Test connection**. The app encrypts personal keys on the server and caches market data. Each uncached provider request uses part of your configured daily budget. Your provider plan determines dataset access.
 
-IBM works without configuration using Alpha Vantage's real provider demo data. Other tickers need your own market-data API key. This is historical weekly data, not a live trading feed. The forecast does not use an LLM or require an OpenAI key.
+## Research and evaluate
 
-## Run locally
+- **Research** displays weekly closing prices, timestamped company fundamentals, and an experimental forecast. Load sourced news, reported EPS, or expected earnings dates on demand.
+- **Compare** shows two to four stocks side by side, including sales growth, profitability, valuation, and forecast errors. Each column shows its own reporting dates.
+- **Model lab** ranks six candidate models on earlier validation data. It reports the selected model’s performance on a later 52-origin test, shows interval coverage and sensitivities, and exports the complete backtest.
+- **Forecast log** records the selected ticker and horizon before the target day. Repeated saves preserve the original estimate. Select **Check outcomes** after a target week finishes. The result uses adjusted returns. Issuance and outcome checks run on demand.
+- **Portfolio** stores up to 30 USD stock lots with quantities and cost per share. Refresh valuations to see unrealized gains, sector exposure, and concentration. The return, volatility, and drawdown analysis uses hypothetical weekly rebalancing at today’s weights across shared observations. Unpriced lots are shown separately.
+- **Watchlist** syncs saved tickers to the signed-in workspace.
 
-Requires Node.js 22.13+.
+Forecast inputs, chronological splits, scoring, and limitations are documented in [the model methodology](docs/model.md). Model selection and validation run separately for each symbol and horizon. The no-change baseline is eligible to win. Publisher summaries and company data provide research context. They do not enter the numeric model.
+
+## Local development
+
+Requires Node.js 22.13+ and npm. From the repository root:
 
 ```sh
 npm ci
+npm run build
+node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_cool_warstar.sql
 npm run dev
 ```
 
-Open http://127.0.0.1:5173. To enable other tickers, copy `.dev.vars.example` to `.dev.vars`, set `ALPHA_VANTAGE_API_KEY`, and restart the server. Keep keys server-side; do not paste them into chat or commit them.
+Apply the migration once to a new local database. Open the local URL printed by the dev server. Local development uses the bundled Sites sign-in simulator. The predev script creates an ignored encryption key in .dev.vars. Retain it to keep previously saved local keys readable. For a hosted installation, configure APP_ENCRYPTION_KEY as a base64-encoded, 32-byte secret and provision the D1 binding declared in .openai/hosting.json. ALPHA_VANTAGE_API_KEY is an optional server-wide fallback.
 
-For a hosted deployment, configure the same environment variable through the hosting provider's secret settings. Cloudflare Workers and Sites hosting are supported by the included Vinext configuration. The GitHub source repository is public; the Sites preview is owner-private.
-
-## Verify
+## Verification
 
 ```sh
 npm run typecheck
@@ -34,35 +38,8 @@ npm test
 npm run build
 ```
 
-Tests cover provider input validation, missing fundamentals, training cutoff rules, future-data isolation, flat-price stability, and error-metric correctness. GitHub Actions runs these checks on pushes and pull requests.
+GitHub Actions runs these checks for changes to main and pull requests. Tests cover time-series leakage, matured target boundaries, stable model selection, provider validation, encrypted key isolation, holiday-week settlement, and partially priced portfolios.
 
-## Stack and structure
+## Development workflow
 
-- React + TypeScript, Vinext, Cloudflare Workers.
-- `app/page.tsx`: dashboard, search, chart, and browser watchlist.
-- `app/api/stocks/route.ts`: server-side provider integration, request spacing, and bounded six-hour caching.
-- `lib/market.mjs`: provider normalization and validation.
-- `lib/forecast.mjs`: numeric forecasting and chronological evaluation.
-- `components/forecast-panel.tsx`: forecast interpretation and backtest report.
-- `docs/model.md`: assumptions, formulas, and limitations.
-
-## Incremental delivery
-
-1. Foundation and reproducible setup — pushed independently.
-2. Real-data research dashboard and watchlist — verified and pushed independently.
-3. Experimental forecasts, backtesting, documentation, and CI — verified and pushed independently.
-
-Continue the same workflow for future changes: complete and verify one meaningful milestone, commit, then push before starting the next. Do not save up the whole project for one final push.
-
-## Next milestones
-
-- Side-by-side stock comparisons and richer company research.
-- Prospective forecast tracking stored before outcomes are known.
-- Broader model evaluation, stronger baselines, and calibrated uncertainty.
-- Optional sourced news summaries, with a separate language-model integration.
-
-## Data and limitations
-
-[Alpha Vantage documentation](https://www.alphavantage.co/documentation/) describes the weekly adjusted history and company overview endpoints. Provider plans, rate limits, and data-use terms apply. With the demo key, only IBM is supported. Market-data and fundamentals failures are surfaced rather than replaced with invented values.
-
-Forecasts are experimental estimates, not guaranteed returns or instructions to trade. A model may underperform the no-change baseline. Review [the model methodology](docs/model.md) before interpreting a result. Browser visual QA was not performed because access to the local preview was declined; build, type checks, unit tests, and server/API integration checks were used instead.
+Verify, commit, and push each finished milestone independently before starting the next. Source code does not contain user holdings, saved forecasts, or provider keys.

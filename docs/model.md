@@ -24,4 +24,4 @@ Price equivalents apply predicted adjusted returns to the latest completed raw c
 
 ## Limits
 
-Provider history can be revised and is not a point-in-time archive. This is a chronological simulation, not an audited live performance record. Independent prospective forecast storage is needed for that. News and fundamentals are separate research context, not model inputs. Fees, slippage, taxes, execution, and portfolio effects are excluded. No profitability is claimed. Model performance on one stock does not establish performance across the market.
+Provider history can be revised and is not a point-in-time archive. This is a chronological simulation, not an audited live performance record. The Forecast log separately stores server-issued estimates before their target day and scores them against matured provider observations on request. News and fundamentals are separate research context, not model inputs. Fees, slippage, taxes, execution, and portfolio effects are excluded. No profitability is claimed. Model performance on one stock does not establish performance across the market.

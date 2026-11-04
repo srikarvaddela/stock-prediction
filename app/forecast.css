@@ -326,3 +326,67 @@ tbody td {
 .settings-panel > .text-button {
   margin-top: 25px;
 }
+.holding-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.settings-panel .button-row,
+.company-panel .button-row {
+  flex-wrap: wrap;
+}
+.settings-panel .table-scroll,
+.company-panel .table-scroll {
+  margin-top: 18px;
+}
+.settings-panel h3 {
+  margin-top: 20px;
+}
+.feed-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+.feed-item small {
+  color: var(--muted);
+}
+.feed-item h3 {
+  margin: 7px 0;
+}
+.feed-item p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.stock-main > .company-panel {
+  margin-top: 18px;
+}
+@media (min-width: 641px) {
+  .sidebar {
+    overflow-y: auto;
+  }
+  .sidebar-note {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .sidebar nav {
+    overflow-x: auto;
+  }
+  .nav-item {
+    white-space: nowrap;
+    flex: 0 0 auto;
+    width: auto;
+  }
+  .holding-form {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .holding-form .field-label {
+    margin: 7px 0;
+  }
+  .settings-panel {
+    padding: 19px;
+  }
+  .table-scroll {
+    max-width: 100%;
+  }
+}

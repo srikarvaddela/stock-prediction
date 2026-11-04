@@ -572,14 +572,12 @@ export default function Home() {
                         >
                           Try again
                         </button>
-                        {symbol !== "IBM" && (
-                          <button
-                            className="secondary-button"
-                            onClick={() => choose("IBM")}
-                          >
-                            Explore IBM
-                          </button>
-                        )}
+                        <button
+                          className="secondary-button"
+                          onClick={() => setView("settings")}
+                        >
+                          Data connection settings
+                        </button>
                       </div>
                     </div>
                   ) : data && last ? (

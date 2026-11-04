@@ -69,6 +69,8 @@ export async function publicPrices(owner: string, symbol: string) {
     )
       result = { ...previous, snapshot: true };
     else if (saved) result = normalize(saved, true, saved.fetchedAt);
+    else if (e instanceof HttpError && (e.status === 429 || e.status === 502))
+      throw new HttpError(e.status, "The public feed is unavailable and there is no saved history for " + symbol + ". Choose a featured stock above or connect Alpha Vantage in Settings.");
     else if (e instanceof HttpError) throw e;
     else throw new HttpError(502, "The public price feed did not respond.");
   }

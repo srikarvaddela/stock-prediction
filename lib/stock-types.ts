@@ -16,6 +16,7 @@ export type Overview = {
   pe: number | null;
   eps: number | null;
   revenue: number | null;
+  revenueGrowth: number | null;
   profitMargin: number | null;
   dividendYield: number | null;
   beta: number | null;

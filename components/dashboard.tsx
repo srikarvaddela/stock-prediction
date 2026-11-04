@@ -20,8 +20,9 @@ import {
 import type { StockData, PricePoint } from "@/lib/stock-types";
 import { ForecastResult, ModelReport } from "@/components/forecast-panel";
 import { SettingsPanel } from "@/components/settings-panel";
+import { ComparePanel } from "@/components/compare-panel";
 
-type View = "research" | "watchlist" | "model" | "settings";
+type View = "research" | "watchlist" | "model" | "settings" | "compare";
 const names: Record<string, string> = {
   IBM: "International Business Machines",
   AAPL: "Apple",
@@ -262,6 +263,7 @@ export default function Home() {
     { id: "watchlist" as View, name: "Watchlist", icon: Bookmark },
     { id: "model" as View, name: "Model lab", icon: FlaskConical },
     { id: "settings" as View, name: "Settings", icon: CircleHelp },
+    { id: "compare" as View, name: "Compare", icon: LineChart },
   ];
   return (
     <div className="app-shell">
@@ -428,7 +430,9 @@ export default function Home() {
               </a>
             </section>
           )}
-          {view === "settings" ? (
+          {view === "compare" ? (
+            <ComparePanel watchlist={watchlist} />
+          ) : view === "settings" ? (
             <SettingsPanel onConnected={() => setRetry((r) => r + 1)} />
           ) : view === "watchlist" ? (
             <section className="panel watchlist-panel">

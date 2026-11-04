@@ -21,6 +21,7 @@ import type { StockData, PricePoint } from "@/lib/stock-types";
 import { ForecastResult, ModelReport } from "@/components/forecast-panel";
 import { SettingsPanel } from "@/components/settings-panel";
 import { ComparePanel } from "@/components/compare-panel";
+import { ResearchFeed } from "@/components/research-feed";
 
 type View = "research" | "watchlist" | "model" | "settings" | "compare";
 const names: Record<string, string> = {
@@ -485,6 +486,9 @@ export default function Home() {
             <div className="stock-layout">
               <div className="stock-main">
                 {view === "model" && <ModelReport data={data} />}
+                {view === "research" && data && (
+                  <ResearchFeed key={data.symbol} symbol={data.symbol} />
+                )}
                 <section className="panel stock-panel">
                   <div className="panel-heading">
                     <div className="company-heading">

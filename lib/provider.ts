@@ -87,7 +87,11 @@ export async function providerQuery(
         });
         if (!response.ok)
           throw new HttpError(502, "The market-data provider is unavailable.");
-        const payload = (await response.json()) as Record<string, unknown>;
+        const raw = await response.text();
+        const payload =
+          fn === "EARNINGS_CALENDAR" && !raw.trimStart().startsWith("{")
+            ? { csv: raw }
+            : (JSON.parse(raw) as Record<string, unknown>);
         if (payload.Information || payload.Note)
           throw new HttpError(
             429,

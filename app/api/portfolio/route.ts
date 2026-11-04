@@ -7,6 +7,7 @@ import {
   HttpError,
 } from "@/lib/server";
 import { validSymbol } from "@/lib/market.mjs";
+import { stockSymbol } from "@/lib/company-search.mjs";
 type Holding = {
   id: string;
   symbol: string;
@@ -22,7 +23,12 @@ export async function GET() {
       )
       .bind(owner)
       .all<Holding>();
-    return privateJson({ holdings: rows.results });
+    return privateJson({
+      holdings: rows.results.map((row) => ({
+        ...row,
+        symbol: stockSymbol(row.symbol) || row.symbol,
+      })),
+    });
   } catch (e) {
     return failure(e);
   }
@@ -42,9 +48,7 @@ export async function POST(request: Request) {
         throw new HttpError(404, "Holding was not found.");
       return privateJson({ saved: true });
     }
-    const symbol = String(body.symbol || "")
-        .trim()
-        .toUpperCase(),
+    const symbol = stockSymbol(body.symbol),
       quantity = body.quantity,
       cost = body.costBasis;
     if (

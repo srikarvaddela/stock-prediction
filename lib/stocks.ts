@@ -4,11 +4,13 @@ import { HttpError } from "@/lib/server";
 import { credentials, providerQuery } from "@/lib/provider";
 import type { StockData } from "@/lib/stock-types";
 import { publicPrices } from "@/lib/public-prices";
+import { stockSymbol } from "@/lib/company-search.mjs";
 export async function loadStock(
   owner: string,
-  symbol: string,
+  input: string,
   horizon = 1,
 ): Promise<StockData> {
+  const symbol = stockSymbol(input);
   if (!validSymbol(symbol))
     throw new HttpError(400, "Enter a valid stock ticker.");
   if (![1, 4].includes(horizon))

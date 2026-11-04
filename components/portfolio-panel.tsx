@@ -99,12 +99,12 @@ export function PortfolioPanel() {
       >
         <div className="holding-form">
           <label className="field-label">
-            Ticker
+            Company name or ticker
             <input
               required
-              maxLength={10}
+              maxLength={100}
               value={symbol}
-              onChange={(e) => setSymbol(e.target.value.toUpperCase())}
+              onChange={(e) => setSymbol(e.target.value)}
             />
           </label>
           <label className="field-label">

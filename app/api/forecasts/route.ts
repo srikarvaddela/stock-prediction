@@ -1,3 +1,4 @@
+import { stockSymbol } from "@/lib/company-search.mjs";
 import {
   database,
   identity,
@@ -114,9 +115,7 @@ export async function POST(request: Request) {
     }
     if (body.action !== "record")
       throw new HttpError(400, "Choose record or refresh.");
-    const symbol = String(body.symbol || "")
-        .trim()
-        .toUpperCase(),
+    const symbol = stockSymbol(body.symbol),
       horizon = Number(body.horizon || 1);
     const data = await loadStock(owner, symbol, horizon),
       f = data.forecast,

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import type { StockData } from "@/lib/stock-types";
+import { comparisonSymbols } from "@/lib/company-search.mjs";
 export const percent = (value: number | null | undefined) =>
   value == null ? "—" : (100 * value).toFixed(2) + "%";
 const number = (value: number | null | undefined) =>
@@ -45,15 +46,7 @@ export function ComparePanel({ watchlist }: { watchlist: string[] }) {
     [errors, setErrors] = useState<string[]>([]),
     [busy, setBusy] = useState(false);
   async function run() {
-    const symbols = [
-      ...new Set(
-        input
-          .toUpperCase()
-          .trim()
-          .split(/[\s,]+/)
-          .filter(Boolean),
-      ),
-    ];
+    const symbols = comparisonSymbols(input);
     if (
       symbols.length < 2 ||
       symbols.length > 4 ||
@@ -87,11 +80,11 @@ export function ComparePanel({ watchlist }: { watchlist: string[] }) {
         }}
       >
         <label className="field-label">
-          Tickers, separated by commas
+          Company names or tickers, separated by commas
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            maxLength={60}
+            maxLength={400}
           />
         </label>
         <button className="primary-button" disabled={busy}>

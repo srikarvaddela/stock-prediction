@@ -25,6 +25,7 @@ import { TrackingPanel } from "@/components/tracking-panel";
 import { PortfolioPanel } from "@/components/portfolio-panel";
 import { ResearchFeed } from "@/components/research-feed";
 import stockPicker from "@/lib/stock-picker.json";
+import { stockSymbol } from "@/lib/company-search.mjs";
 
 type View =
   | "research"
@@ -177,7 +178,11 @@ export default function Home() {
         };
         if (!r.ok) throw new Error(body.error);
         if (active) {
-          setWatchlist(body.watchlist ?? local);
+          setWatchlist([
+            ...new Set(
+              (body.watchlist ?? local).map(stockSymbol).filter(Boolean),
+            ),
+          ]);
           setCloudLoaded(true);
         }
       } catch {
@@ -250,7 +255,13 @@ export default function Home() {
     return () => controller.abort();
   }, [symbol, retry, horizon]);
   const choose = (s: string) => {
-    setSymbol(s);
+    const resolved = stockSymbol(s);
+    if (!resolved) {
+      setNotice("Choose a featured company name or enter its stock ticker.");
+      return;
+    }
+    setNotice("");
+    setSymbol(resolved);
     setView("research");
     setQuery("");
   };
@@ -339,19 +350,25 @@ export default function Home() {
             className="search"
             onSubmit={(e) => {
               e.preventDefault();
-              const s = query.trim().toUpperCase();
-              if (/^[A-Z][A-Z0-9.-]{0,9}$/.test(s)) choose(s);
-              else setNotice("Enter a ticker such as IBM, AAPL, or MSFT.");
+              choose(query);
             }}
           >
             <Search size={17} />
             <input
-              aria-label="Search stock ticker"
-              placeholder="Search a stock ticker…"
+              aria-label="Search company name or ticker"
+              placeholder="Company name or ticker…"
+              list="featured-stock-names"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              maxLength={10}
+              maxLength={100}
             />
+            <datalist id="featured-stock-names">
+              {Object.entries(names).map(([ticker, name]) => (
+                <option key={ticker} value={name}>
+                  {ticker}
+                </option>
+              ))}
+            </datalist>
             <button type="submit" aria-label="Search">
               <ArrowRight size={16} />
             </button>

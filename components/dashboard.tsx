@@ -24,6 +24,7 @@ import { ComparePanel } from "@/components/compare-panel";
 import { TrackingPanel } from "@/components/tracking-panel";
 import { PortfolioPanel } from "@/components/portfolio-panel";
 import { ResearchFeed } from "@/components/research-feed";
+import stockPicker from "@/lib/stock-picker.json";
 
 type View =
   | "research"
@@ -33,14 +34,7 @@ type View =
   | "compare"
   | "tracking"
   | "portfolio";
-const names: Record<string, string> = {
-  IBM: "International Business Machines",
-  AAPL: "Apple",
-  MSFT: "Microsoft",
-  NVDA: "NVIDIA",
-  GOOGL: "Alphabet",
-  AMZN: "Amazon",
-};
+const names: Record<string, string> = stockPicker;
 const money = (v: number | null | undefined, c = "USD") =>
   v == null
     ? "—"
@@ -408,18 +402,35 @@ export default function Home() {
               <strong>
                 {data && !data.demo
                   ? "Market data connected."
-                  : "Start with a real company."}
+                  : "Explore stocks without a key."}
               </strong>
               <span>
                 {data && !data.demo
                   ? " Historical prices from Alpha Vantage, not live quotes."
-                  : " IBM is available through the provider’s demo API. Connect a key to explore other tickers."}
+                  : " Choose a company below or search a US ticker for historical prices and forecasts."}
               </span>
             </div>
             <button onClick={() => setHelp((h) => !h)} aria-expanded={help}>
               About the data <ArrowUpRight size={15} />
             </button>
           </div>
+          {(view === "research" || view === "watchlist") && (
+            <section className="ticker-picker" aria-label="Stocks to explore">
+              <h2>Stocks to explore</h2>
+              <div>
+                {Object.entries(names).map(([ticker, name]) => (
+                  <button
+                    key={ticker}
+                    aria-pressed={view === "research" && symbol === ticker}
+                    onClick={() => choose(ticker)}
+                  >
+                    <strong>{ticker}</strong>
+                    <span>{name}</span>
+                  </button>
+                ))}
+              </div>
+            </section>
+          )}
           {help && (
             <section className="panel help-panel">
               <div className="panel-heading">
@@ -432,9 +443,11 @@ export default function Home() {
                 </button>
               </div>
               <p>
-                Weekly prices and company fundamentals come from Alpha Vantage.
-                Prices are historical and cached for up to six hours. The latest
-                chart point may represent an in-progress week.
+                Historical prices come from Alpha Vantage or Yahoo Finance. Each
+                chart shows its source and last observation. When the public
+                feed is busy, selected companies can use a dated copy saved with
+                the app. The latest chart point may represent an in-progress
+                week.
               </p>
               <p>
                 Open Settings to save your market-data key and check the
@@ -616,7 +629,7 @@ export default function Home() {
                         </span>
                         <span>
                           Source: {data.source} ·{" "}
-                          {data.demo ? "Provider demo" : "Connected API"}
+                          {data.demo ? "No key required" : "Connected API"}
                         </span>
                       </div>
                     </>
@@ -695,12 +708,17 @@ export default function Home() {
                       </div>
                       <a
                         className="source-link"
-                        href="https://www.alphavantage.co/documentation/"
+                        href={
+                          data.source.startsWith("Yahoo Finance")
+                            ? "https://finance.yahoo.com/quote/" +
+                              encodeURIComponent(symbol) +
+                              "/history/"
+                            : "https://www.alphavantage.co/documentation/"
+                        }
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Provider methodology & data definitions{" "}
-                        <ArrowUpRight size={13} />
+                        View data source <ArrowUpRight size={13} />
                       </a>
                     </section>
                   </>

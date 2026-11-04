@@ -390,3 +390,44 @@ tbody td {
     max-width: 100%;
   }
 }
+.ticker-picker {
+  margin: 0 0 22px;
+}
+.ticker-picker h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.ticker-picker > div {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 7px;
+}
+.ticker-picker button {
+  text-align: left;
+  border: 1px solid var(--border);
+  background: white;
+  border-radius: 7px;
+  padding: 10px;
+}
+.ticker-picker button[aria-pressed="true"] {
+  background: #e7eee2;
+  border-color: #93b091;
+}
+.ticker-picker button:hover {
+  border-color: #668f76;
+}
+.ticker-picker strong,
+.ticker-picker span {
+  display: block;
+}
+.ticker-picker span {
+  font-size: 10px;
+  color: #596c5f;
+  line-height: 1.4;
+  margin-top: 3px;
+}
+@media (max-width: 900px) {
+  .ticker-picker > div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -19,6 +19,7 @@ const metrics: [string, (s: StockData) => string][] = [
   ["Name", (s) => s.overview?.name || s.symbol],
   ["Sector", (s) => s.overview?.sector || "—"],
   ["Latest observation", (s) => s.prices.at(-1)!.date],
+  ["Price source", (s) => s.source],
   [
     "Closing price",
     (s) => number(s.prices.at(-1)!.close) + " " + (s.overview?.currency || ""),
@@ -125,9 +126,7 @@ export function ComparePanel({ watchlist }: { watchlist: string[] }) {
             </tbody>
           </table>
           <p className="form-hint">
-            Sources are Alpha Vantage company overviews and weekly price
-            histories. Forecast error is measured on the later 52 historical
-            test origins.
+            Forecast error is measured on the later 52 historical test origins.
           </p>
         </div>
       )}

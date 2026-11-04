@@ -77,14 +77,17 @@ export function SettingsPanel({ onConnected }: { onConnected: () => void }) {
         <KeyRound size={23} />
       </div>
       <p className="section-copy">
-        Connect Alpha Vantage to research stocks beyond IBM. Your key is
-        encrypted on the server and is never returned to the browser.
+        Connect Alpha Vantage for additional fundamentals, news, and earnings.
+        Your key is encrypted on the server and is never returned to the
+        browser.
       </p>
       <div className="connection-status">
         <ShieldCheck size={19} />
         <div>
           <strong>
-            {status?.configured ? "API key configured" : "Using the IBM demo"}
+            {status?.configured
+              ? "API key configured"
+              : "Using no-key price history"}
           </strong>
           <p>
             {status

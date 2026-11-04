@@ -4,7 +4,9 @@ A private stock research workspace with one- and four-week forecasts. The public
 
 ## Start in the app
 
-IBM research and reported earnings work through the provider demo. To explore additional symbols, get an [Alpha Vantage API key](https://www.alphavantage.co/support/#api-key), open **Settings**, save the key, and select **Test connection**. The app encrypts personal keys on the server and caches market data. Each uncached provider request uses part of your configured daily budget. Your provider plan determines dataset access.
+Choose Apple, Microsoft, NVIDIA, Amazon, Alphabet, or IBM under **Stocks to explore**. Historical prices and forecasts for these stocks work without a personal key. Search can also load other supported US equities when the public feed is available. A chart identifies its price source, last observation date, and any saved-history fallback.
+
+IBM uses the Alpha Vantage demo. Other no-key prices use Yahoo Finance chart history, with daily observations rolled into trading weeks. At build time the app saves a dated fallback for the five featured non-IBM stocks. To connect additional company fundamentals, news, and earnings, save an [Alpha Vantage key](https://www.alphavantage.co/support/#api-key) in **Settings**. Provider coverage and quotas apply.
 
 ## Research and evaluate
 

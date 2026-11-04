@@ -22,6 +22,7 @@ import { ForecastResult, ModelReport } from "@/components/forecast-panel";
 import { SettingsPanel } from "@/components/settings-panel";
 import { ComparePanel } from "@/components/compare-panel";
 import { TrackingPanel } from "@/components/tracking-panel";
+import { PortfolioPanel } from "@/components/portfolio-panel";
 import { ResearchFeed } from "@/components/research-feed";
 
 type View =
@@ -30,7 +31,8 @@ type View =
   | "model"
   | "settings"
   | "compare"
-  | "tracking";
+  | "tracking"
+  | "portfolio";
 const names: Record<string, string> = {
   IBM: "International Business Machines",
   AAPL: "Apple",
@@ -273,6 +275,7 @@ export default function Home() {
     { id: "settings" as View, name: "Settings", icon: CircleHelp },
     { id: "compare" as View, name: "Compare", icon: LineChart },
     { id: "tracking" as View, name: "Forecast log", icon: Bookmark },
+    { id: "portfolio" as View, name: "Portfolio", icon: LayoutDashboard },
   ];
   return (
     <div className="app-shell">
@@ -439,7 +442,9 @@ export default function Home() {
               </a>
             </section>
           )}
-          {view === "tracking" ? (
+          {view === "portfolio" ? (
+            <PortfolioPanel />
+          ) : view === "tracking" ? (
             <TrackingPanel symbol={symbol} horizon={horizon} />
           ) : view === "compare" ? (
             <ComparePanel watchlist={watchlist} />

@@ -3,6 +3,7 @@ import { forecast } from "@/lib/forecast.mjs";
 import { HttpError } from "@/lib/server";
 import { credentials, providerQuery } from "@/lib/provider";
 import type { StockData } from "@/lib/stock-types";
+import { publicPrices } from "@/lib/public-prices";
 export async function loadStock(
   owner: string,
   symbol: string,
@@ -13,11 +14,26 @@ export async function loadStock(
   if (![1, 4].includes(horizon))
     throw new HttpError(400, "Choose a one- or four-week horizon.");
   const creds = await credentials(owner);
-  if (creds.demo && symbol !== "IBM")
-    throw new HttpError(
-      503,
-      "Connect your free Alpha Vantage key in Settings to research this stock. IBM is available without a key.",
+  if (creds.demo && symbol !== "IBM") {
+    const { prices, overview, snapshot, fetchedAt } = await publicPrices(
+      owner,
+      symbol,
     );
+    return {
+      symbol,
+      prices,
+      overview,
+      forecast: forecast(prices, new Date(), horizon),
+      source: snapshot ? "Yahoo Finance · saved history" : "Yahoo Finance",
+      demo: true,
+      fetchedAt,
+      warning:
+        (snapshot
+          ? "Showing saved price history through " + prices.at(-1)!.date + ". "
+          : "") +
+        "Connect Alpha Vantage in Settings for additional fundamentals, news, and earnings.",
+    };
+  }
   const prices = parseWeekly(
     await providerQuery(owner, creds, "TIME_SERIES_WEEKLY_ADJUSTED", {
       symbol,

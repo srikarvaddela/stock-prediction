@@ -14,7 +14,8 @@
     "db:generate": "drizzle-kit generate",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
-    "predev": "node scripts/setup-local.mjs"
+    "predev": "node scripts/setup-local.mjs && node scripts/refresh-price-snapshots.mjs --missing",
+    "prebuild": "node scripts/refresh-price-snapshots.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

@@ -140,6 +140,7 @@ function Chart({ points }: { points: PricePoint[] }) {
 export default function Home() {
   const [horizon, setHorizon] = useState(1);
   const [cloudLoaded, setCloudLoaded] = useState(false);
+  const [showAllStocks, setShowAllStocks] = useState(false);
   const [view, setView] = useState<View>("research"),
     [symbol, setSymbol] = useState("IBM"),
     [query, setQuery] = useState("");
@@ -433,18 +434,32 @@ export default function Home() {
           </div>
           {(view === "research" || view === "watchlist") && (
             <section className="ticker-picker" aria-label="Stocks to explore">
-              <h2>Stocks to explore</h2>
-              <div>
-                {Object.entries(names).map(([ticker, name]) => (
-                  <button
-                    key={ticker}
-                    aria-pressed={view === "research" && symbol === ticker}
-                    onClick={() => choose(ticker)}
-                  >
-                    <strong>{ticker}</strong>
-                    <span>{name}</span>
-                  </button>
-                ))}
+              <header className="ticker-heading">
+                <h2>Stocks to explore</h2>
+                <button
+                  className="picker-toggle"
+                  aria-controls="stock-options"
+                  aria-expanded={showAllStocks}
+                  onClick={() => setShowAllStocks((expanded) => !expanded)}
+                >
+                  {showAllStocks
+                    ? "Show fewer stocks"
+                    : `Show all ${Object.keys(names).length} stocks`}
+                </button>
+              </header>
+              <div id="stock-options">
+                {Object.entries(names)
+                  .slice(0, showAllStocks ? undefined : 12)
+                  .map(([ticker, name]) => (
+                    <button
+                      key={ticker}
+                      aria-pressed={view === "research" && symbol === ticker}
+                      onClick={() => choose(ticker)}
+                    >
+                      <strong>{ticker}</strong>
+                      <span>{name}</span>
+                    </button>
+                  ))}
               </div>
             </section>
           )}

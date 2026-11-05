@@ -402,6 +402,21 @@ tbody td {
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 7px;
 }
+.ticker-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+.ticker-heading h2 {
+  margin: 0;
+}
+.ticker-picker .picker-toggle {
+  padding: 5px 9px;
+  font-size: 11px;
+  color: var(--green);
+}
 .ticker-picker button {
   text-align: left;
   border: 1px solid var(--border);

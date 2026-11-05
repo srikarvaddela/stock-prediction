@@ -1,8 +1,9 @@
 # Python training and backtesting
 
-This is an offline research pipeline using NumPy and scikit-learn. The hosted app
-still uses `lib/forecast.mjs`. Running this pipeline does **not** replace website
-forecasts or claim that the Python candidates perform better.
+This research pipeline uses NumPy and scikit-learn. The hosted Model lab compares
+published Python results with the JavaScript engine in `lib/forecast.mjs`.
+Training does not automatically replace the main forecast or establish that
+the Python candidates perform better.
 
 ## Run
 
@@ -20,10 +21,11 @@ On macOS/Linux, create the environment with `python3 -m venv .venv` and replace
 `.venv/Scripts/python.exe` with `.venv/bin/python`.
 
 The refresh script needs Node.js 22.13+ and network access. It obtains the featured
-non-IBM companies' Yahoo Finance history and rolls daily prices into weekly
+companies' Yahoo Finance history and rolls daily prices into weekly
 observations. Missing snapshots cause training to fail with an explicit error.
-IBM is not included by that script because the app loads it through Alpha Vantage.
-Any ticker with a compatible input file can be trained, including IBM.
+The main IBM research chart still uses Alpha Vantage; its Python training uses
+the Yahoo snapshot. Compare the source dates before comparing errors.
+Any ticker with a compatible input file can be trained.
 
 To replay a run, retain the exact input snapshot, use the recorded dependency
 versions, and supply `--as-of YYYY-MM-DD`. The default evaluation date is today
@@ -111,6 +113,18 @@ log_return = artifact["model"].predict([report["latestFeatures"]])[0]
 estimate = report["basePrice"] * math.exp(log_return)
 ```
 
-This is research infrastructure. Connecting exported Python results to the
-website requires a separate integration with explicit provenance and freshness
-checks. The current deployment does not run Python.
+## Website publication
+
+`npm run build` refreshes histories, invokes `scripts/prepare-python-models.mjs`,
+and trains all featured companies at both horizons. The script verifies report
+symbols, horizons and input hashes before exporting JSON to `.python-forecasts/`.
+Matching cached exports can be reused. Set `PYTHON` to a Python executable if
+needed; otherwise the script prefers the local `.venv` and then `python`.
+
+The authenticated `/api/python-forecast` endpoint serves those dated reports.
+The Model lab displays them next to the current JavaScript results. Freshness is
+checked at request time, including four-week results whose origin is outdated
+even before their target expires. Unsupported companies get an explicit message.
+Worker deployments contain JSON only, not Python environments or pickle files.
+Python runs during publishing; it does not execute in the hosted Worker. The
+main forecast card and forecast log still use the JavaScript engine.

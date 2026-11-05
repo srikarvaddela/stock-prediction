@@ -24,6 +24,7 @@ import { ComparePanel } from "@/components/compare-panel";
 import { TrackingPanel } from "@/components/tracking-panel";
 import { PortfolioPanel } from "@/components/portfolio-panel";
 import { ResearchFeed } from "@/components/research-feed";
+import { PythonPanel } from "@/components/python-panel";
 import stockPicker from "@/lib/stock-picker.json";
 import { stockSymbol } from "@/lib/company-search.mjs";
 
@@ -554,7 +555,16 @@ export default function Home() {
           ) : (
             <div className="stock-layout">
               <div className="stock-main">
-                {view === "model" && <ModelReport data={data} />}
+                {view === "model" && (
+                  <>
+                    <PythonPanel
+                      symbol={symbol}
+                      horizon={horizon}
+                      data={data}
+                    />
+                    <ModelReport data={data} />
+                  </>
+                )}
                 <section className="panel stock-panel">
                   <div className="panel-heading">
                     <div className="company-heading">

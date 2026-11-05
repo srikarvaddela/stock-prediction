@@ -1,6 +1,13 @@
 .forecast-result {
   margin-top: 25px;
 }
+.python-panel {
+  margin-bottom: 24px;
+}
+.python-panel details {
+  margin: 18px 0;
+  overflow-wrap: anywhere;
+}
 .forecast-horizon {
   font-size: 8px;
   letter-spacing: 1px;

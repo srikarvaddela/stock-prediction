@@ -25,11 +25,15 @@ The [Python training pipeline](ml/README.md) trains scikit-learn ridge and gradi
 boosting models, compares them with no-change and historical-mean baselines, and
 exports fitted models plus chronological backtest reports. It supports one- and
 four-week horizons using the app's dated weekly price snapshots. Python results
-are currently offline research; the hosted app still uses its JavaScript engine.
+appear alongside the JavaScript forecast in **Model lab** for all 30 featured
+companies. Python training runs during publication, with dated results bundled
+into the app. Old origins are flagged; visiting the app does not retrain Python.
+The forecast card and forecast log continue to use the JavaScript engine.
 
 ## Local development
 
-Requires Node.js 22.13+ and npm. From the repository root:
+Requires Node.js 22.13+, npm, and Python 3.11–3.13 with `ml/requirements.txt`
+installed (see the Python setup instructions). From the repository root:
 
 ```sh
 npm ci

@@ -6,7 +6,6 @@ const catalog = JSON.parse(
 const directory = new URL("../.market-snapshots/", import.meta.url);
 await mkdir(directory, { recursive: true });
 for (const symbol of Object.keys(catalog)) {
-  if (symbol === "IBM") continue;
   if (process.argv.includes("--missing")) {
     try {
       await access(new URL(symbol + ".json", directory));

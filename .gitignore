@@ -45,3 +45,9 @@ yarn-error.log*
 
 # OS metadata
 .DS_Store
+
+# Python environments, caches, and local training outputs
+/.venv/
+__pycache__/
+*.py[cod]
+/ml/artifacts/

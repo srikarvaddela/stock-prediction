@@ -19,6 +19,14 @@ IBM uses the Alpha Vantage demo. Other no-key prices use Yahoo Finance chart his
 
 Forecast inputs, chronological splits, scoring, and limitations are documented in [the model methodology](docs/model.md). Model selection and validation run separately for each symbol and horizon. The no-change baseline is eligible to win. Publisher summaries and company data provide research context. They do not enter the numeric model.
 
+## Python model research
+
+The [Python training pipeline](ml/README.md) trains scikit-learn ridge and gradient
+boosting models, compares them with no-change and historical-mean baselines, and
+exports fitted models plus chronological backtest reports. It supports one- and
+four-week horizons using the app's dated weekly price snapshots. Python results
+are currently offline research; the hosted app still uses its JavaScript engine.
+
 ## Local development
 
 Requires Node.js 22.13+ and npm. From the repository root:
@@ -41,6 +49,9 @@ npm run build
 ```
 
 GitHub Actions runs these checks for changes to main and pull requests. Tests cover time-series leakage, matured target boundaries, stable model selection, provider validation, encrypted key isolation, holiday-week settlement, and partially priced portfolios.
+
+A separate CI job tests the Python pipeline on Python 3.11 and 3.13, including
+future-data isolation, purged splits, baseline scoring, and artifact round trips.
 
 ## Development workflow
 

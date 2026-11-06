@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import type { StockData } from "@/lib/stock-types";
+import type { evaluatePredictions } from "@/lib/evaluation.mjs";
 type Report = {
   symbol: string;
   horizon: number;
@@ -21,6 +22,9 @@ type Report = {
   evaluatedAsOf: string;
   candidates: { id: string; validationMae: number }[];
   dataset: { fetchedAt: string; sha256: string };
+  evaluation:ReturnType<typeof evaluatePredictions>;
+  forwardEvaluation:ReturnType<typeof evaluatePredictions>;
+  forwardRecords:{asOf:string;target:string;predictedReturn:number;actualReturn:number|null;createdAt:string}[];
 };
 const labels: Record<string, string> = {
   flat: "No change",
@@ -182,6 +186,19 @@ export function PythonPanel({
             histories or dates can make their errors unsuitable for direct
             ranking. Bands are empirical, not probability guarantees.
           </p>
+          <details>
+            <summary>Does the advantage persist over time?</summary>
+            <p>{report.evaluation.verdict}. Baseline error minus model error: {report.evaluation.improvement===null?"—":pp(report.evaluation.improvement)}.</p>
+            {report.evaluation.interval && <p>95% moving-block bootstrap interval for error improvement: {pp(report.evaluation.interval.low)} to {pp(report.evaluation.interval.high)}. Blocks contain {report.evaluation.interval.blockLength} consecutive observations. This describes historical sampling uncertainty, not a probability of future profit.</p>}
+            <div className="table-scroll"><table><thead><tr><th>Test period</th><th>Forecasts</th><th>Model error</th><th>No-change error</th></tr></thead><tbody>{report.evaluation.periods.map((p,i)=><tr key={i}><th>{p.from} – {p.to}</th><td>{p.count}</td><td>{pp(p.mae)}</td><td>{pp(p.baselineMae)}</td></tr>)}</tbody></table></div>
+            <p>The tests use today's available listings and revised adjusted prices. Delisted companies and historical data revisions can cause survivorship and revision bias. Consistency across these periods does not remove those limitations.</p>
+          </details>
+          <details>
+            <summary>Forward record · {report.forwardEvaluation.count} settled predictions</summary>
+            <p>These estimates were saved by the scheduled job before their target day. They are separate from historical backtests and begin when automatic tracking is enabled.</p>
+            <p>{report.forwardEvaluation.verdict}{report.forwardEvaluation.mae!==null ? ` · model error ${pp(report.forwardEvaluation.mae)}, baseline ${pp(report.forwardEvaluation.baselineMae!)}` : ". No live performance has been established yet."}</p>
+            <div className="table-scroll"><table><thead><tr><th>Saved</th><th>Target</th><th>Forecast return</th><th>Observed return</th></tr></thead><tbody>{report.forwardRecords.slice(-12).reverse().map(r=><tr key={r.asOf}><td>{r.createdAt.slice(0,10)}</td><td>{r.target}</td><td>{(r.predictedReturn*100).toFixed(2)}%</td><td>{r.actualReturn===null?"Pending":(r.actualReturn*100).toFixed(2)+"%"}</td></tr>)}</tbody></table></div>
+          </details>
           <details>
             <summary>Python selection and provenance</summary>
             <ul>

@@ -1,0 +1,1 @@
+{"symbol":"RBC","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:34:37.523238+00:00","baseAdjusted":462.2099914550781,"predictedReturn":0.02638007290049709,"actualReturn":null,"modelId":"ridge10"}]}

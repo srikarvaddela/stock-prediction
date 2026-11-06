@@ -1,0 +1,1 @@
+{"symbol":"SNDL","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:37:18.120512+00:00","baseAdjusted":1.2400000095367432,"predictedReturn":-0.00021460508181360982,"actualReturn":null,"modelId":"ridge10"}]}

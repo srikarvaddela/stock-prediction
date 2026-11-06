@@ -1,0 +1,1 @@
+{"symbol":"LQDA","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:32:41.589370+00:00","baseAdjusted":45.060001373291016,"predictedReturn":0.13468193423892633,"actualReturn":null,"modelId":"ridge100"}]}

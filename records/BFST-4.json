@@ -1,0 +1,1 @@
+{"symbol":"BFST","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:27:58.693233+00:00","baseAdjusted":31.799999237060547,"predictedReturn":-0.009348050118630399,"actualReturn":null,"modelId":"ridge10"}]}

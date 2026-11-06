@@ -1,0 +1,1 @@
+{"symbol":"HFBL","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:29:58.255344+00:00","baseAdjusted":22.700000762939453,"predictedReturn":-0.013656486492000797,"actualReturn":null,"modelId":"ridge10"}]}

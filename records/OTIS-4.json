@@ -1,0 +1,1 @@
+{"symbol":"OTIS","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:35:50.242252+00:00","baseAdjusted":75.75,"predictedReturn":-0.013323690168080958,"actualReturn":null,"modelId":"ridge100"}]}

@@ -1,0 +1,1 @@
+{"symbol":"EFT","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:30:51.091449+00:00","baseAdjusted":10.619999885559082,"predictedReturn":0.0019833719585806487,"actualReturn":null,"modelId":"ridge10"}]}

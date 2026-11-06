@@ -1,0 +1,1 @@
+{"symbol":"CPRI","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:28:42.159420+00:00","baseAdjusted":18.68000030517578,"predictedReturn":-0.043640133231419555,"actualReturn":null,"modelId":"ridge100"}]}

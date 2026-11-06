@@ -1,0 +1,1 @@
+{"symbol":"SOAR","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:33:01.096475+00:00","baseAdjusted":0.23000000417232513,"predictedReturn":-0.17339619956354274,"actualReturn":null,"modelId":"ridge10"}]}

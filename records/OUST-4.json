@@ -1,0 +1,1 @@
+{"symbol":"OUST","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:35:33.007038+00:00","baseAdjusted":29.739999771118164,"predictedReturn":-0.031175738841658307,"actualReturn":null,"modelId":"ridge10"}]}

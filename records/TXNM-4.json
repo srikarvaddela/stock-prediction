@@ -1,0 +1,1 @@
+{"symbol":"TXNM","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:33:32.696361+00:00","baseAdjusted":58.380001068115234,"predictedReturn":-0.0015636003136975394,"actualReturn":null,"modelId":"ridge10"}]}

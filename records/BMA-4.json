@@ -1,0 +1,1 @@
+{"symbol":"BMA","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:28:49.190836+00:00","baseAdjusted":60.150001525878906,"predictedReturn":0.022913088232434778,"actualReturn":null,"modelId":"mean"}]}

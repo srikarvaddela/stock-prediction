@@ -1,0 +1,1 @@
+{"symbol":"NTAP","horizon":4,"records":[{"asOf":"2026-10-30","target":"2026-11-27","createdAt":"2026-11-06T20:35:02.426378+00:00","baseAdjusted":199.17999267578125,"predictedReturn":0.03809613439658063,"actualReturn":null,"modelId":"ridge100"}]}

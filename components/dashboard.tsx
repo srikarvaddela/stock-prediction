@@ -27,6 +27,7 @@ import { ResearchFeed } from "@/components/research-feed";
 import { PythonPanel } from "@/components/python-panel";
 import { PaperPanel } from "@/components/paper-panel";
 import { ScreenerPanel } from "@/components/screener-panel";
+import { DirectoryPanel } from "@/components/directory-panel";
 import stockPicker from "@/lib/stock-picker.json";
 import { stockSymbol } from "@/lib/company-search.mjs";
 
@@ -39,6 +40,7 @@ type View =
   | "tracking"
   | "portfolio"
   | "paper"
+  | "directory"
   | "screener";
 const names: Record<string, string> = stockPicker;
 const money = (v: number | null | undefined, c = "USD") =>
@@ -144,6 +146,7 @@ function Chart({ points }: { points: PricePoint[] }) {
 
 export default function Home() {
   const [horizon, setHorizon] = useState(1);
+  const [suggestions, setSuggestions] = useState<{symbol:string;name:string}[]>([]);
   const [cloudLoaded, setCloudLoaded] = useState(false);
   const [showAllStocks, setShowAllStocks] = useState(false);
   const [view, setView] = useState<View>("research"),
@@ -158,6 +161,17 @@ export default function Home() {
   const [notice, setNotice] = useState(""),
     [retry, setRetry] = useState(0),
     [help, setHelp] = useState(false);
+  useEffect(() => {
+    const c = new AbortController();
+    setSuggestions([]);
+    if (!query.trim()) return;
+    const t = setTimeout(() => {
+      fetch(`/api/directory?q=${encodeURIComponent(query)}`, {signal:c.signal})
+        .then(async r => r.ok ? await r.json() as {rows:{symbol:string;name:string}[]} : {rows:[]})
+        .then(d => {if(!c.signal.aborted)setSuggestions(d.rows.slice(0,15));}).catch(()=>{});
+    }, 200);
+    return () => { clearTimeout(t); c.abort(); };
+  }, [query]);
   useEffect(() => {
     let active = true;
     (async () => {
@@ -261,9 +275,10 @@ export default function Home() {
     return () => controller.abort();
   }, [symbol, retry, horizon]);
   const choose = (s: string) => {
-    const resolved = stockSymbol(s);
+    const match = suggestions.find(r => r.name.toLowerCase() === s.trim().toLowerCase());
+    const resolved = match?.symbol || stockSymbol(s);
     if (!resolved) {
-      setNotice("Choose a featured company name or enter its stock ticker.");
+      setNotice("Choose a search suggestion, browse the company directory, or enter a ticker.");
       return;
     }
     setNotice("");
@@ -294,6 +309,7 @@ export default function Home() {
     { id: "portfolio" as View, name: "Portfolio", icon: LayoutDashboard },
     { id: "paper" as View, name: "Paper trading", icon: LineChart },
     { id: "screener" as View, name: "Screener", icon: Search },
+    { id: "directory" as View, name: "All companies", icon: Search },
   ];
   return (
     <div className="app-shell">
@@ -371,6 +387,7 @@ export default function Home() {
               maxLength={100}
             />
             <datalist id="featured-stock-names">
+              {suggestions.map(r=><option key={r.symbol} value={r.symbol}>{r.name}</option>)}
               {Object.entries(names).map(([ticker, name]) => (
                 <option key={ticker} value={name}>
                   {ticker}
@@ -394,6 +411,7 @@ export default function Home() {
                 {
                   {
                     research: "Stock research",
+                    directory: "All companies",
                     watchlist: "Your watchlist",
                     model: "Model evaluation",
                     settings: "Data connection",
@@ -505,7 +523,7 @@ export default function Home() {
               </a>
             </section>
           )}
-          {view === "screener" ? (
+          {view === "directory" ? <DirectoryPanel onChoose={choose} /> : view === "screener" ? (
             <ScreenerPanel onChoose={choose} />
           ) : view === "paper" ? (
             <PaperPanel />

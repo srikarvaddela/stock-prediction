@@ -16,6 +16,12 @@ IBM uses the Alpha Vantage demo. Other no-key prices use Yahoo Finance chart his
 - **Forecast log** records the selected ticker and horizon before the target day. Repeated saves preserve the original estimate. Select **Check outcomes** after a target week finishes. The result uses adjusted returns. Issuance and outcome checks run on demand.
 - **Portfolio** stores up to 30 USD stock lots with quantities and cost per share. Refresh valuations to see unrealized gains, sector exposure, and concentration. The return, volatility, and drawdown analysis uses hypothetical weekly rebalancing at today’s weights across shared observations. Unpriced lots are shown separately.
 - **Watchlist** syncs saved tickers to the signed-in workspace.
+- **Screener** filters all 30 featured stocks by curated sector group, recorded
+  price, four-week adjusted return, annualized volatility, and Python baseline
+  performance. P/E and year-over-year quarterly revenue-growth filters use cached
+  reported fundamentals. Load one company's fundamentals on demand with a key;
+  each uncached load uses one provider request. Missing values stay unknown.
+  Sort results, open company research, or export the filtered table as CSV.
 - **Paper trading** starts a separate virtual account with $100,000. Review a
   saved closing quote before a simulated buy or sell. Cash, fractional shares,
   realized gains and order history persist privately. Orders cannot overdraw

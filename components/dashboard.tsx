@@ -26,6 +26,7 @@ import { PortfolioPanel } from "@/components/portfolio-panel";
 import { ResearchFeed } from "@/components/research-feed";
 import { PythonPanel } from "@/components/python-panel";
 import { PaperPanel } from "@/components/paper-panel";
+import { ScreenerPanel } from "@/components/screener-panel";
 import stockPicker from "@/lib/stock-picker.json";
 import { stockSymbol } from "@/lib/company-search.mjs";
 
@@ -37,7 +38,8 @@ type View =
   | "compare"
   | "tracking"
   | "portfolio"
-  | "paper";
+  | "paper"
+  | "screener";
 const names: Record<string, string> = stockPicker;
 const money = (v: number | null | undefined, c = "USD") =>
   v == null
@@ -291,6 +293,7 @@ export default function Home() {
     { id: "tracking" as View, name: "Forecast log", icon: Bookmark },
     { id: "portfolio" as View, name: "Portfolio", icon: LayoutDashboard },
     { id: "paper" as View, name: "Paper trading", icon: LineChart },
+    { id: "screener" as View, name: "Screener", icon: Search },
   ];
   return (
     <div className="app-shell">
@@ -398,6 +401,7 @@ export default function Home() {
                     tracking: "Forecast history",
                     portfolio: "Portfolio analysis",
                     paper: "Practice trading",
+                    screener: "Find stocks",
                   }[view]
                 }
               </h1>
@@ -501,7 +505,9 @@ export default function Home() {
               </a>
             </section>
           )}
-          {view === "paper" ? (
+          {view === "screener" ? (
+            <ScreenerPanel onChoose={choose} />
+          ) : view === "paper" ? (
             <PaperPanel />
           ) : view === "portfolio" ? (
             <PortfolioPanel />

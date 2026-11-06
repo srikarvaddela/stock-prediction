@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import {executionTerms} from "../lib/paper.mjs";
 const base = process.argv[2] || "http://127.0.0.1:5186";
 if (!["127.0.0.1", "localhost"].includes(new URL(base).hostname))
   throw new Error("Run this integration check only against a local Worker.");
@@ -8,6 +9,7 @@ const headers = {
   "oai-authenticated-user-email": "local@example.invalid",
   Origin: base,
   "Content-Type": "application/json",
+  Connection:"close",
 };
 async function call(path, body, custom = headers) {
   const r = await fetch(base + path, {
@@ -18,16 +20,6 @@ async function call(path, body, custom = headers) {
   return { status: r.status, data: await r.json() };
 }
 assert.equal((await call("/api/paper", null, {})).status, 401);
-assert.equal(
-  (
-    await call(
-      "/api/paper",
-      {},
-      { ...headers, Origin: "https://invalid.example" },
-    )
-  ).status,
-  403,
-);
 let state = (await call("/api/paper")).data;
 assert.equal(state.cashCents, 10000000);
 assert.equal(state.tradeCount, 0);
@@ -42,13 +34,14 @@ const order = {
   version: 0,
   priceDate: q.date,
   priceCents: q.priceCents,
+  costModel:q.costModel,
 };
 const first = await call("/api/paper", order);
 assert.equal(first.status, 200, first.data.error);
 state = first.data.state;
 assert.equal(state.version, 1);
 assert.equal(state.positions[0].quantity, 1);
-assert.equal(state.cashCents, 10000000 - q.priceCents);
+assert.equal(state.cashCents, 10000000 - executionTerms(1e6,q.priceCents,"buy").cashCents);
 const replay = await call("/api/paper", order);
 assert.equal(replay.status, 200);
 assert.equal(replay.data.state.tradeCount, 1);
@@ -127,8 +120,10 @@ const close = await call("/api/paper", {
 });
 assert.equal(close.status, 200, close.data.error);
 assert.equal(close.data.state.positions.length, 0);
-assert.equal(close.data.state.cashCents, 10000000);
-assert.equal(close.data.state.realizedCents, 0);
+const expected=10000000-executionTerms(1e6,q.priceCents,"buy").cashCents-executionTerms(0.5e6,q.priceCents,"buy").cashCents+executionTerms(1e6,q.priceCents,"sell").cashCents+executionTerms(0.5e6,q.priceCents,"sell").cashCents;
+assert.equal(close.data.state.cashCents, expected);
+assert.equal(close.data.state.realizedCents, expected-10000000);
+assert.equal(close.data.state.feeCents,400);
 assert.equal(close.data.state.benchmark.symbol, "SPY");
 const other = (
   await call("/api/paper", null, {
@@ -138,6 +133,7 @@ const other = (
 ).data;
 assert.equal(other.tradeCount, 0);
 assert.equal(other.cashCents, 10000000);
+assert.equal((await call("/api/paper", {}, {...headers,Origin:"https://invalid.example"})).status,403);
 console.log(
   "Paper API passed: authentication, quote validation, fills, fractional shares, duplicate retries, cash/share limits, concurrent orders, closing positions, benchmark and owner isolation.",
 );

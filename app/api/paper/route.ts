@@ -10,10 +10,11 @@ import { stockSymbol } from "@/lib/company-search.mjs";
 import {
   paperQuote,
   paperState,
+  reconcilePaper,
   type PaperAccount,
   type PaperTrade,
 } from "@/lib/paper-server";
-import { quantityUnits, orderAmount, INITIAL_CASH } from "@/lib/paper.mjs";
+import { quantityUnits, executionTerms, COST_MODEL, INITIAL_CASH } from "@/lib/paper.mjs";
 export async function GET() {
   try {
     return privateJson(await paperState(await identity()));
@@ -28,7 +29,7 @@ export async function POST(request: Request) {
       db = database();
     const symbol = stockSymbol(
       typeof body.symbol === "string" ? body.symbol : "",
-    );
+    ).replace(/^([A-Z]+)\.([AB])$/,"$1-$2");
     if (
       typeof body.requestId !== "string" ||
       !/^[a-f0-9-]{36}$/i.test(body.requestId) ||
@@ -64,11 +65,12 @@ export async function POST(request: Request) {
         state: await paperState(owner),
       });
     }
-    const quote = paperQuote(symbol);
+    await reconcilePaper(owner);
+    const quote = await paperQuote(symbol);
     if (symbol === "SPY")
       throw new HttpError(
         400,
-        "SPY is the comparison benchmark. Choose a featured company to trade.",
+        "SPY is the comparison benchmark. Choose a company to trade.",
       );
     if (quote.stale)
       throw new HttpError(
@@ -80,13 +82,16 @@ export async function POST(request: Request) {
         409,
         "The quote changed. Review the latest quote before confirming.",
       );
-    let amount;
+    if(body.costModel!==COST_MODEL)throw new HttpError(409,"Review the updated $1 fee and 0.05% slippage before confirming.");
+    if(!quote.actionsReady)throw new HttpError(409,"Corporate-action data is unavailable. Trading resumes after the scheduled feed update.");
+    let terms;
     try {
-      amount = orderAmount(units, quote.priceCents);
+      terms = executionTerms(units, quote.priceCents, side);
     } catch (e) {
       throw new HttpError(400, (e as Error).message);
     }
-    const benchmark = paperQuote("SPY");
+    const amount=terms.grossCents;
+    const benchmark = await paperQuote("SPY");
     if (benchmark.stale)
       throw new HttpError(
         409,
@@ -113,7 +118,7 @@ export async function POST(request: Request) {
         409,
         "Your paper account changed. Refresh and review the order.",
       );
-    const delta = side === "buy" ? -amount : amount;
+    const delta = side === "buy" ? -terms.cashCents : terms.cashCents;
     if (!Number.isSafeInteger(account.cash_cents + delta))
       throw new HttpError(400, "This order exceeds the account limit.");
     // The insert and balance update share a D1 transaction. Version guards serialize
@@ -121,10 +126,10 @@ export async function POST(request: Request) {
     const result = await db.batch([
       db
         .prepare(
-          `INSERT INTO paper_trades(id,owner_id,request_id,account_version,symbol,side,quantity_units,price_cents,amount_cents,price_date,created_at)
-        SELECT ?,?,?,?,?,?,?,?,?,?,? FROM paper_accounts a WHERE a.owner_id=? AND a.version=?
+          `INSERT INTO paper_trades(id,owner_id,request_id,account_version,symbol,side,quantity_units,price_cents,amount_cents,price_date,created_at,fee_cents)
+        SELECT ?,?,?,?,?,?,?,?,?,?,?,? FROM paper_accounts a WHERE a.owner_id=? AND a.version=?
         AND (?='sell' OR a.cash_cents>=?)
-        AND (?='buy' OR COALESCE((SELECT SUM(CASE WHEN side='buy' THEN quantity_units ELSE -quantity_units END) FROM paper_trades WHERE owner_id=? AND symbol=?),0)>=?)
+        AND (?='buy' OR COALESCE((SELECT SUM(CASE WHEN side IN ('buy','split') THEN quantity_units WHEN side='sell' THEN -quantity_units ELSE 0 END) FROM paper_trades WHERE owner_id=? AND symbol=?),0)>=?)
         ON CONFLICT DO NOTHING`,
         )
         .bind(
@@ -135,14 +140,15 @@ export async function POST(request: Request) {
           symbol,
           side,
           units,
-          quote.priceCents,
+          terms.fillCents,
           amount,
           quote.date,
           new Date().toISOString(),
+          terms.feeCents,
           owner,
           account.version,
           side,
-          amount,
+          terms.cashCents,
           side,
           owner,
           symbol,
@@ -175,7 +181,7 @@ export async function POST(request: Request) {
         );
     }
     return privateJson({
-      message: "Simulated order filled at the displayed recorded close.",
+      message: "Simulated order filled with the reviewed fee and slippage.",
       state: await paperState(owner),
     });
   } catch (e) {

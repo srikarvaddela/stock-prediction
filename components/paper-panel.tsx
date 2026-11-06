@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import type { paperState, paperQuote } from "@/lib/paper-server";
-import { quantityUnits, orderAmount } from "@/lib/paper.mjs";
+import { quantityUnits, executionTerms } from "@/lib/paper.mjs";
 import stockPicker from "@/lib/stock-picker.json";
 type State = Awaited<ReturnType<typeof paperState>>;
-type Quote = ReturnType<typeof paperQuote>;
+type Quote = Awaited<ReturnType<typeof paperQuote>>;
 type Order = {
   symbol: string;
   side: string;
@@ -13,6 +13,7 @@ type Order = {
   version: number;
   priceDate: string;
   priceCents: number;
+  costModel:string;
 };
 const money = (c: number | null) =>
   c === null
@@ -29,6 +30,7 @@ export function PaperPanel() {
       quote: Quote;
       order: Order;
       amount: number;
+      terms:ReturnType<typeof executionTerms>;
     } | null>(null),
     [busy, setBusy] = useState(false),
     [message, setMessage] = useState("");
@@ -57,10 +59,12 @@ export function PaperPanel() {
         throw new Error(
           "This quote is too old to place an order. Wait for a price-data update.",
         );
-      const amount = orderAmount(units, q.priceCents);
+      if(!q.actionsReady)throw new Error("Waiting for complete price and corporate-action data from the daily update.");
+      const terms=executionTerms(units,q.priceCents,side), amount=terms.cashCents;
       setPreview({
         quote: q,
         amount,
+        terms,
         order: {
           symbol: q.symbol,
           side,
@@ -69,6 +73,7 @@ export function PaperPanel() {
           version: state.version,
           priceDate: q.date,
           priceCents: q.priceCents,
+          costModel:q.costModel,
         },
       });
     } catch (e) {
@@ -133,7 +138,7 @@ export function PaperPanel() {
       </div>
       <p>
         Start with $100,000 in virtual cash. Orders fill at the displayed saved
-        close, not a live market price. No real orders are placed.
+        close with a $1 fee per order and 0.05% adverse slippage. No real orders are placed.
       </p>
       {message && (
         <p className="notice" role="status">
@@ -189,20 +194,22 @@ export function PaperPanel() {
           >
             <label>
               Company
-              <select
+              <input
                 value={symbol}
+                list="paper-companies"
                 disabled={busy}
                 onChange={(e) => {
-                  setSymbol(e.target.value);
+                  setSymbol(e.target.value.toUpperCase());
                   setPreview(null);
                 }}
-              >
+              />
+              <datalist id="paper-companies">
                 {Object.entries(stockPicker).map(([s, n]) => (
                   <option key={s} value={s}>
                     {s} · {n}
                   </option>
                 ))}
-              </select>
+              </datalist>
             </label>
             <label>
               Order
@@ -240,12 +247,12 @@ export function PaperPanel() {
               <h3>Review simulated {preview.order.side}</h3>
               <p>
                 {preview.order.quantity} shares of {preview.order.symbol} at{" "}
-                {money(preview.quote.priceCents)} · {money(preview.amount)}{" "}
-                total
+                {money(preview.terms.fillCents)} · {money(preview.amount)}{" "}
+                {preview.order.side==="buy"?"cash debited":"net proceeds"}
               </p>
               <p>
                 Recorded close on {preview.quote.date} · {preview.quote.source}.
-                Fees, dividends, split adjustments and slippage are excluded.
+                Simulated fee: {money(preview.terms.feeCents)}. Slippage: {preview.terms.slippageBps/100}%. Reported splits adjust shares; dividends are credited on the ex-date in this simulation.
               </p>
               <button
                 className="primary-button"
@@ -295,9 +302,10 @@ export function PaperPanel() {
             </div>
           )}
           <p>Realized gain/loss: {money(state.realizedCents)}</p>
+          <p>Dividend income: {money(state.dividendCents)} · Total simulated fees: {money(state.feeCents)}</p>
           <h3>Order history</h3>
           <p className="small muted">
-            Latest {state.trades.length} of {state.tradeCount} fills. Positions
+            Latest {state.trades.length} of {state.tradeCount} ledger entries. Positions
             and balances include every order.
           </p>
           {state.trades.length === 0 ? (
@@ -313,6 +321,7 @@ export function PaperPanel() {
                     <th>Shares</th>
                     <th>Fill price</th>
                     <th>Total</th>
+                    <th>Fee</th>
                     <th>Quote date</th>
                   </tr>
                 </thead>
@@ -325,6 +334,7 @@ export function PaperPanel() {
                       <td>{t.quantity_units / 1e6}</td>
                       <td>{money(t.price_cents)}</td>
                       <td>{money(t.amount_cents)}</td>
+                      <td>{money(t.fee_cents)}</td>
                       <td>{t.price_date}</td>
                     </tr>
                   ))}
@@ -336,9 +346,7 @@ export function PaperPanel() {
       )}
       <p className="small muted">
         Educational simulation using delayed closing prices. No short selling,
-        leverage, automatic corporate-action adjustments, fees or dividends.
-        Benchmark returns use adjusted prices, so the comparison differs from a
-        fully reinvested trading account.
+        leverage, taxes, or dividend reinvestment. Reported splits and dividends are applied when the account is refreshed, before new orders. Dividends are credited on ex-date (actual broker payment dates differ); split shares round to six decimals. Provider corrections, mergers, spinoffs and delistings require manual review. SPY uses adjusted-price total returns; account dividends remain cash.
       </p>
     </section>
   );

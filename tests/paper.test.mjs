@@ -4,6 +4,8 @@ import {
   quantityUnits,
   orderAmount,
   positionsFromTrades,
+  executionTerms,
+  pendingActions,
 } from "../lib/paper.mjs";
 test("paper order quantities and cents remain exact and reject invalid inputs", () => {
   assert.equal(quantityUnits("1.000001"), 1000001);
@@ -14,6 +16,21 @@ test("paper order quantities and cents remain exact and reject invalid inputs", 
   assert.throws(() =>
     orderAmount(Number.MAX_SAFE_INTEGER, Number.MAX_SAFE_INTEGER),
   );
+});
+test("fees and slippage use side-specific fills and reject uneconomic small sales",()=>{
+ const buy=executionTerms(1e6,10000,"buy"),sell=executionTerms(1e6,10000,"sell");
+ assert.equal(buy.fillCents,10005);assert.equal(buy.cashCents,10105);
+ assert.equal(sell.fillCents,9995);assert.equal(sell.cashCents,9895);
+ assert.throws(()=>executionTerms(1,10,"sell"));
+});
+test("corporate actions preserve basis, credit only eligible shares and never repeat",()=>{
+ const buy={symbol:"ABC",side:"buy",quantity_units:2e6,amount_cents:20000,fee_cents:100,account_version:0,price_date:"2026-01-01",request_id:"buy"};
+ const snapshot={symbol:"ABC",actionsThrough:"2026-01-05",actions:[{type:"split",date:"2026-01-02",ratio:2},{type:"dividend",date:"2026-01-03",amount:0.25},{type:"dividend",date:"2025-12-01",amount:1},{type:"dividend",date:"2027-01-01",amount:1}]};
+ const actions=pendingActions([buy],[snapshot]).map((t,i)=>({...t,account_version:i+1}));
+ assert.equal(actions.length,2);assert.equal(actions[0].quantity_units,2e6);assert.equal(actions[1].amount_cents,100);
+ const ledger=positionsFromTrades([buy,...actions]);assert.equal(ledger.positions[0].units,4e6);assert.equal(ledger.positions[0].costCents,20100);assert.equal(ledger.dividendCents,100);
+ assert.deepEqual(pendingActions([buy,...actions],[snapshot]),[]);
+ const exDateBuyer={...buy,price_date:"2026-01-03"};assert.equal(pendingActions([exDateBuyer],[snapshot]).length,0);
 });
 test("partial paper sales allocate cost and realize profit without losing remaining shares", () => {
   const rows = [

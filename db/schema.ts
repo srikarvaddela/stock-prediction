@@ -32,6 +32,7 @@ export const paperTrades = sqliteTable(
     quantityUnits: integer("quantity_units").notNull(),
     priceCents: integer("price_cents").notNull(),
     amountCents: integer("amount_cents").notNull(),
+    feeCents: integer("fee_cents").notNull().default(0),
     priceDate: text("price_date").notNull(),
     createdAt: text("created_at").notNull(),
   },

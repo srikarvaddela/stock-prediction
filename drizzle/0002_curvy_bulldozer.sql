@@ -1,0 +1,1 @@
+ALTER TABLE `paper_trades` ADD `fee_cents` integer DEFAULT 0 NOT NULL;

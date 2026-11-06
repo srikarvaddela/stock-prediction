@@ -5,7 +5,7 @@ export async function GET(request: Request) {
   try {
     await identity();
     return privateJson(
-      paperQuote(
+      await paperQuote(
         stockSymbol(new URL(request.url).searchParams.get("symbol") || ""),
       ),
     );

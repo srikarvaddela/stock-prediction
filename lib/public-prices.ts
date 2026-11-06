@@ -1,7 +1,7 @@
 import { database, HttpError } from "@/lib/server";
 import { weeklyHistory } from "@/lib/public-history.mjs";
 import { parseOverview } from "@/lib/market.mjs";
-import { savedHistory } from "@/lib/price-snapshots";
+import { marketHistory } from "@/lib/data-feed";
 export async function publicPrices(owner: string, symbol: string) {
   const canonical = symbol.replace(/^([A-Z]+)\.([AB])$/, "$1-$2");
   const id = owner + ":public-weekly-v2:" + canonical;
@@ -39,6 +39,10 @@ export async function publicPrices(owner: string, symbol: string) {
     includeAdjustedClose: "true",
   }).toString();
   let result;
+  const saved = await marketHistory(canonical);
+  if (saved && Date.now()-Date.parse(saved.fetchedAt)<24*3600000) {
+    return normalize(saved, true, saved.fetchedAt);
+  }
   try {
     const response = await fetch(url, { signal: AbortSignal.timeout(12000) });
     if (response.status === 404)
@@ -62,7 +66,6 @@ export async function publicPrices(owner: string, symbol: string) {
       );
     }
   } catch (e) {
-    const saved = savedHistory(canonical);
     if (
       previous &&
       (!saved || previous.prices.at(-1)!.date >= saved.prices.at(-1)!.date)
@@ -70,7 +73,7 @@ export async function publicPrices(owner: string, symbol: string) {
       result = { ...previous, snapshot: true };
     else if (saved) result = normalize(saved, true, saved.fetchedAt);
     else if (e instanceof HttpError && (e.status === 429 || e.status === 502))
-      throw new HttpError(e.status, "The public feed is unavailable and there is no saved history for " + symbol + ". Choose a featured stock above or connect Alpha Vantage in Settings.");
+      throw new HttpError(e.status, "No price history is currently available for " + symbol + ". The daily data job retries available listings; you can also connect Alpha Vantage in Settings.");
     else if (e instanceof HttpError) throw e;
     else throw new HttpError(502, "The public price feed did not respond.");
   }

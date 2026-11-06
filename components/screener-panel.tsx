@@ -17,11 +17,14 @@ type Row = {
   pythonMae: number | null;
   pythonAsOf: string | null;
   pythonBeatsBaseline: boolean;
+  marketCap?: number|null;
 };
 type Result = {
   rows: Row[];
   canLoadFundamentals: boolean;
   connectionMessage: string;
+  generatedAt?:string|null;
+  available?:number;
 };
 const initial = {
   query: "",
@@ -47,6 +50,8 @@ export function ScreenerPanel({
     [filters, setFilters] = useState(initial),
     [sort, setSort] = useState("symbol"),
     [direction, setDirection] = useState("asc");
+  const [page,setPage]=useState(0);
+  useEffect(()=>setPage(0),[filters,sort,direction]);
   async function refresh() {
     const r = await fetch("/api/screener");
     const d = (await r.json()) as Result & { error?: string };
@@ -139,10 +144,11 @@ export function ScreenerPanel({
         </button>
       </div>
       <p>
-        Explore the 30 featured companies. Price and volatility filters work
+        Explore the available exchange directory. Price and volatility filters work
         without a key. Load reported fundamentals one company at a time for P/E
         and revenue-growth filters.
       </p>
+      <p className="small muted">{data?.generatedAt ? `Daily job updated ${data.generatedAt.slice(0,16).replace("T"," ")} UTC; ${data.available} histories available. Individual stock dates may be older.` : "Showing bundled featured companies until the first scheduled universe update is available."}</p>
       {(message || data?.connectionMessage) && (
         <p className="notice" role="status">
           {message || data?.connectionMessage}
@@ -264,7 +270,7 @@ export function ScreenerPanel({
               </tr>
             </thead>
             <tbody>
-              {rows.map((r) => (
+              {rows.slice(page*100,page*100+100).map((r) => (
                 <tr key={r.symbol}>
                   <th>
                     <button
@@ -328,6 +334,7 @@ export function ScreenerPanel({
           </table>
         </div>
       )}
+      <div className="screen-controls"><button className="secondary-button" disabled={page===0} onClick={()=>setPage(p=>p-1)}>Previous</button><span>Page {page+1} · up to 100 rows per page</span><button className="secondary-button" disabled={(page+1)*100>=rows.length} onClick={()=>setPage(p=>p+1)}>Next</button></div>
       <p className="small muted">
         Sector groups are curated broad categories. Returns use completed weeks
         and adjusted prices; volatility is the sample standard deviation of 52

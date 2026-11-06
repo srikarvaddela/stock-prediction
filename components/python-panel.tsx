@@ -192,9 +192,9 @@ export function PythonPanel({
               ))}
             </ul>
             <p>
-              Trained {report.evaluatedAsOf} · {report.modelVersion}. Published
-              training results refresh with app updates; they do not retrain on
-              each visit.
+              Trained {report.evaluatedAsOf} · {report.modelVersion}. The scheduled
+              data pipeline retrains after new completed weeks. Each report keeps
+              its own source date; failed updates retain the previous result.
             </p>
             <p>
               Source snapshot retrieved{" "}

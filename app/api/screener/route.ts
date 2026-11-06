@@ -14,6 +14,9 @@ import { credentials, providerQuery } from "@/lib/provider";
 import { parseOverview } from "@/lib/market.mjs";
 import { stockSymbol } from "@/lib/company-search.mjs";
 import { screenMetrics } from "@/lib/screener.mjs";
+import { feedFile } from "@/lib/data-feed";
+import { validSymbol } from "@/lib/market.mjs";
+type FeedIndex={generatedAt:string;total:number;available:number;rows:{symbol:string;name:string;exchange:string;price:number|null;priceDate:string|null;return4w:number|null;volatility:number|null;indicatorDate:string|null;pythonMae?:number;pythonBaselineMae?:number;pythonAsOf?:string;pythonTarget?:string}[]};
 export async function GET() {
   try {
     const owner = await identity();
@@ -27,26 +30,8 @@ export async function GET() {
     try {
       const creds = await credentials(owner);
       canLoadFundamentals = !creds.demo;
-      const cached = await database().batch(
-        tickers.map((symbol) =>
-          database()
-            .prepare(
-              "SELECT body FROM market_cache WHERE id=? AND owner_id=? AND expires_at>?",
-            )
-            .bind(
-              `${owner}:${creds.fingerprint}:OVERVIEW:${new URLSearchParams({ symbol })}`,
-              owner,
-              Date.now(),
-            ),
-        ),
-      );
-      cached.forEach((result, i) => {
-        const row = result.results[0] as { body: string } | undefined;
-        if (row) {
-          const overview = parseOverview(JSON.parse(row.body), tickers[i]);
-          if (overview) overviews.set(tickers[i], overview);
-        }
-      });
+      const cached=await database().prepare("SELECT body FROM market_cache WHERE owner_id=? AND substr(id,1,?)=? AND expires_at>?").bind(owner,`${owner}:${creds.fingerprint}:OVERVIEW:`.length,`${owner}:${creds.fingerprint}:OVERVIEW:`,Date.now()).all<{body:string}>();
+      for(const row of cached.results){const raw=JSON.parse(row.body);if(validSymbol(raw.Symbol)){const overview=parseOverview(raw,raw.Symbol);if(overview)overviews.set(raw.Symbol,overview);}}
     } catch {
       connectionMessage =
         "Cached fundamentals could not load. Price-based filters are still available.";
@@ -79,7 +64,12 @@ export async function GET() {
           python.mae < python.baselineMae,
       };
     });
-    return privateJson({ rows, canLoadFundamentals, connectionMessage });
+    const feed=await feedFile<FeedIndex>("index.json",d=>!!d && Array.isArray((d as FeedIndex).rows) && (d as FeedIndex).rows.every(r=>validSymbol(r.symbol) && typeof r.name==="string"));
+    const expanded=feed?.rows.map(r=>{
+      const overview=overviews.get(r.symbol);
+      return {...r,sector:overview?.sector || (sectors as Record<string,string>)[r.symbol] || "Unclassified",source:"Yahoo Finance · scheduled history",priceStale:!r.priceDate || Date.now()-Date.parse(r.priceDate+"T00:00:00Z")>7*86400000,pe:overview?.pe??null,marketCap:overview?.marketCap??null,revenueGrowth:overview?.revenueGrowth??null,fiscalQuarter:overview?.latestQuarter??null,pythonMae:r.pythonMae??null,pythonAsOf:r.pythonAsOf??null,pythonBeatsBaseline:r.pythonMae!==undefined && r.pythonBaselineMae!==undefined && r.pythonMae<r.pythonBaselineMae && !!r.pythonAsOf && Date.now()-Date.parse(r.pythonAsOf+"T00:00:00Z")<14*86400000 && !!r.pythonTarget && r.pythonTarget>=new Date().toISOString().slice(0,10)};
+    });
+    return privateJson({ rows:expanded?.length ? expanded : rows, canLoadFundamentals, connectionMessage, generatedAt:feed?.generatedAt??null, available:feed?.available??rows.length });
   } catch (e) {
     return failure(e);
   }
@@ -89,8 +79,8 @@ export async function POST(request: Request) {
     const owner = await identity(request),
       body = await jsonBody(request),
       symbol = stockSymbol(typeof body.symbol === "string" ? body.symbol : "");
-    if (!Object.hasOwn(catalog, symbol))
-      throw new HttpError(400, "Choose a featured company.");
+    if (!validSymbol(symbol))
+      throw new HttpError(400, "Choose a valid company ticker.");
     const creds = await credentials(owner);
     if (creds.demo && symbol !== "IBM")
       throw new HttpError(

@@ -1,0 +1,105 @@
+name: Refresh market data and Python models
+on:
+  schedule:
+    # Weekday closes plus Saturday model refresh; UTC (after US market close).
+    - cron: '37 23 * * 1-5'
+    - cron: '37 9 * * 6'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/market-data.yml', 'scripts/update-market-feed.mjs', 'scripts/finalize-market-feed.mjs', 'ml/refresh_feed.py', 'ml/pipeline.py']
+permissions:
+  contents: read
+concurrency:
+  group: market-data
+  cancel-in-progress: false
+jobs:
+  directory:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/refresh-directory.mjs feed-directory.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: directory
+          path: feed-directory.json
+          retention-days: 2
+  refresh:
+    needs: directory
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: ml/requirements.txt
+      - run: python -m pip install -r ml/requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: directory
+      - name: Read last successful data
+        run: |
+          mkdir -p .feed-base
+          if git fetch origin market-data --depth=1; then git archive FETCH_HEAD | tar -x -C .feed-base; fi
+      - name: Refresh assigned stock histories
+        run: node scripts/update-market-feed.mjs
+        env:
+          FEED_SHARD: ${{ matrix.shard }}
+          FEED_SHARDS: '8'
+      - name: Retrain changed completed weeks and settle earlier predictions
+        run: python -m ml.refresh_feed
+        env:
+          OMP_NUM_THREADS: '1'
+          OPENBLAS_NUM_THREADS: '1'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: market-${{ matrix.shard }}
+          path: feed/
+          retention-days: 2
+  publish:
+    needs: refresh
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/download-artifact@v4
+        with:
+          name: directory
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: market-*
+          merge-multiple: true
+          path: feed
+      - run: node scripts/finalize-market-feed.mjs
+      - name: Publish public data separately from application code
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git fetch origin market-data --depth=1; then
+            git worktree add --detach ../data-publication FETCH_HEAD
+          else
+            git worktree add --detach ../data-publication
+            git -C ../data-publication checkout --orphan market-data
+            git -C ../data-publication rm -rf .
+          fi
+          cp -a feed/. ../data-publication/
+          git -C ../data-publication add .
+          git -C ../data-publication diff --cached --quiet && exit 0
+          git -C ../data-publication commit -m "data: refresh prices, model evaluations and forecast outcomes"
+          git -C ../data-publication push origin HEAD:market-data

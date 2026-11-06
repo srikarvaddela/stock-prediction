@@ -16,6 +16,13 @@ IBM uses the Alpha Vantage demo. Other no-key prices use Yahoo Finance chart his
 - **Forecast log** records the selected ticker and horizon before the target day. Repeated saves preserve the original estimate. Select **Check outcomes** after a target week finishes. The result uses adjusted returns. Issuance and outcome checks run on demand.
 - **Portfolio** stores up to 30 USD stock lots with quantities and cost per share. Refresh valuations to see unrealized gains, sector exposure, and concentration. The return, volatility, and drawdown analysis uses hypothetical weekly rebalancing at today’s weights across shared observations. Unpriced lots are shown separately.
 - **Watchlist** syncs saved tickers to the signed-in workspace.
+- **Paper trading** starts a separate virtual account with $100,000. Review a
+  saved closing quote before a simulated buy or sell. Cash, fractional shares,
+  realized gains and order history persist privately. Orders cannot overdraw
+  cash or short shares, and duplicate request IDs cannot create duplicate fills.
+  SPY adjusted-price returns provide a dated benchmark from account creation.
+  Quotes older than seven days pause new trades. This simulation excludes fees,
+  dividends, slippage and automatic split adjustments; it is not live execution.
 
 Forecast inputs, chronological splits, scoring, and limitations are documented in [the model methodology](docs/model.md). Model selection and validation run separately for each symbol and horizon. The no-change baseline is eligible to win. Publisher summaries and company data provide research context. They do not enter the numeric model.
 
@@ -39,10 +46,11 @@ installed (see the Python setup instructions). From the repository root:
 npm ci
 npm run build
 node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_cool_warstar.sql
+node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0001_real_bloodstrike.sql
 npm run dev
 ```
 
-Apply the migration once to a new local database. Open the local URL printed by the dev server. Local development uses the bundled Sites sign-in simulator. The predev script creates an ignored encryption key in .dev.vars. Retain it to keep previously saved local keys readable. For a hosted installation, configure APP_ENCRYPTION_KEY as a base64-encoded, 32-byte secret and provision the D1 binding declared in .openai/hosting.json. ALPHA_VANTAGE_API_KEY is an optional server-wide fallback.
+Apply each migration once to a new local database. Open the local URL printed by the dev server. Local development uses the bundled Sites sign-in simulator. The predev script creates an ignored encryption key in .dev.vars. Retain it to keep previously saved local keys readable. For a hosted installation, configure APP_ENCRYPTION_KEY as a base64-encoded, 32-byte secret and provision the D1 binding declared in .openai/hosting.json. ALPHA_VANTAGE_API_KEY is an optional server-wide fallback.
 
 ## Verification
 

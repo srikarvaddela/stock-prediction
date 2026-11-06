@@ -1,6 +1,17 @@
 .forecast-result {
   margin-top: 25px;
 }
+.practice-metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:24px 0; }
+.practice-metrics > div { padding:16px; background:#f3f6f0; border:1px solid var(--border); border-radius:8px; }
+.practice-metrics span { display:block; color:#657263; font-size:12px; }
+.practice-metrics strong { display:block; font-size:22px; margin-top:8px; }
+.practice-order { display:grid; grid-template-columns:2fr 1fr 1fr auto; gap:12px; align-items:end; margin:28px 0; }
+.practice-order label { display:grid; gap:8px; font-size:12px; }
+.practice-order input,.practice-order select { min-width:0; width:100%; padding:10px; border:1px solid var(--border); border-radius:6px; background:white; }
+.paper-review { padding:20px; background:#f1f6ed; border:1px solid #b7c9aa; border-radius:10px; margin:20px 0; }
+.paper-panel h3 { margin-top:24px; }
+@media(max-width:850px) { .practice-metrics,.practice-order { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:480px) { .practice-order { grid-template-columns:1fr; } .practice-metrics strong { font-size:18px; } }
 .python-panel {
   margin-bottom: 24px;
 }

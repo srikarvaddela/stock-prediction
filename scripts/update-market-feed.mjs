@@ -2,11 +2,13 @@ import {mkdir,readFile,writeFile,copyFile,access} from "node:fs/promises";
 import {weeklyHistory} from "../lib/public-history.mjs";
 import {validSnapshot} from "../lib/feed-validation.mjs";
 import {screenMetrics} from "../lib/screener.mjs";
+import {rssHeadlines} from "../lib/research.mjs";
 const shard=Number(process.env.FEED_SHARD||0), shards=Number(process.env.FEED_SHARDS||1);
 const directory=JSON.parse(await readFile("feed-directory.json","utf8"));
 const rows=[...directory.rows,{symbol:"SPY",name:"SPDR S&P 500 ETF",exchange:"NYSE Arca"}].filter((_,i)=>i%shards===shard);
 const limit=Number(process.env.FEED_LIMIT||rows.length);
 await mkdir("feed/prices",{recursive:true});await mkdir("feed/models",{recursive:true});await mkdir("feed/records",{recursive:true});
+await mkdir("feed/news",{recursive:true});
 const status=[];
 let cursor=0, consecutiveLimits=0;
 async function worker(){while(cursor<Math.min(rows.length,limit)){
@@ -27,6 +29,11 @@ async function worker(){while(cursor<Math.min(rows.length,limit)){
    consecutiveLimits=0;
  }catch(e){error=e.message;}
  if(data)await writeFile(`feed/prices/${symbol}.json`,JSON.stringify(data));
+ try {
+   const r=await fetch(`https://feeds.finance.yahoo.com/rss/2.0/headline?s=${encodeURIComponent(symbol)}&region=US&lang=en-US`,{signal:AbortSignal.timeout(10000)});
+   if(!r.ok)throw Error("News unavailable");
+   await writeFile(`feed/news/${symbol}.json`,JSON.stringify({symbol,kind:"news",source:"Yahoo Finance RSS · publisher links",fetchedAt:new Date().toISOString(),items:rssHeadlines(await r.text())}));
+ }catch{try{await copyFile(`.feed-base/news/${symbol}.json`,`feed/news/${symbol}.json`);}catch{}}
  for(const h of [1,4]){for(const folder of ["models","records"]){try{await copyFile(`.feed-base/${folder}/${symbol}-${h}.json`,`feed/${folder}/${symbol}-${h}.json`);}catch{}}}
  const last=data?.prices.at(-1);
  status.push({...row,price:last?.close??null,priceDate:last?.date??null,fetchedAt:data?.fetchedAt??null,...screenMetrics(data?.prices??[]),error});

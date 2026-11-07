@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import type { financialSummary } from "@/lib/research.mjs";
 type News = {
   title: string;
   url: string;
@@ -20,10 +21,12 @@ type Event = {
   estimate: number | null;
   currency: string;
 };
-type Result =
+type Result = ({source:string;fetchedAt?:string;warning?:string} & (
   | { kind: "news"; items: News[] }
   | { kind: "earnings"; items: Quarter[] }
-  | { kind: "calendar"; items: Event[] };
+  | { kind: "calendar"; items: Event[] }
+  | {kind:"financials";financials:ReturnType<typeof financialSummary>}));
+const money=(n:number|null,currency:string)=>n===null?"Unavailable":`${n.toLocaleString("en-US",{maximumFractionDigits:0})} ${currency}`;
 export function ResearchFeed({ symbol }: { symbol: string }) {
   const [result, setResult] = useState<Result | null>(null),
     [busy, setBusy] = useState(false),
@@ -50,14 +53,16 @@ export function ResearchFeed({ symbol }: { symbol: string }) {
       <p className="eyebrow">EVENTS & REPORTING</p>
       <h2>News and earnings for {symbol}</h2>
       <p className="form-hint">
-        Load the dataset you want to use. Company news includes source links and
-        publisher summaries.
+        Public news headlines work without a key. Reported earnings, expected dates,
+        and financial statements use your Alpha Vantage connection (IBM has demo reports).
+        A financial summary uses up to three uncached provider requests.
       </p>
       <div className="button-row">
         {[
           ["news", "Latest news"],
           ["earnings", "Reported earnings"],
           ["calendar", "Upcoming dates"],
+          ["financials", "Financial summary"],
         ].map(([key, label]) => (
           <button
             className="secondary-button"
@@ -75,7 +80,7 @@ export function ResearchFeed({ symbol }: { symbol: string }) {
           {error}
         </p>
       )}
-      {result?.items.length === 0 && (
+      {result && "items" in result && result.items.length === 0 && (
         <p className="form-hint">The provider returned no matching entries.</p>
       )}
       {result?.kind === "news" &&
@@ -127,9 +132,27 @@ export function ResearchFeed({ symbol }: { symbol: string }) {
             estimate {e.estimate ?? "—"} {e.currency}.
           </p>
         ))}
+      {result?.kind==="financials" && <div>
+        <h3>Quarter ending {result.financials.quarter}</h3>
+        <p>A factual summary of reported figures. Each statement must match the same quarter and currency; missing figures stay unavailable. Loading this summary uses up to three uncached provider requests.</p>
+        {result.financials.missing.length>0 && <p className="notice">Unavailable: {result.financials.missing.join("; ")}.</p>}
+        <div className="table-scroll"><table><tbody>{([
+          ["Revenue",money(result.financials.revenue,result.financials.currency)],
+          ["Revenue growth versus same quarter last year",result.financials.revenueGrowth===null?"Unavailable":(result.financials.revenueGrowth*100).toFixed(2)+"%"],
+          ["Net income",money(result.financials.netIncome,result.financials.currency)],
+          ["Net margin",result.financials.netMargin===null?"Unavailable":(result.financials.netMargin*100).toFixed(2)+"%"],
+          ["Operating cash flow",money(result.financials.operatingCash,result.financials.currency)],
+          ["Free cash flow (operating cash minus capital expenditures)",money(result.financials.freeCashFlow,result.financials.currency)],
+          ["Cash and equivalents",money(result.financials.cash,result.financials.currency)],
+          ["Total assets",money(result.financials.assets,result.financials.currency)],
+          ["Total liabilities",money(result.financials.liabilities,result.financials.currency)],
+          ["Current assets / current liabilities",result.financials.currentRatio===null?"Unavailable":result.financials.currentRatio.toFixed(2)+"×"]
+        ]).map(([label,value])=><tr key={label}><th>{label}</th><td>{value}</td></tr>)}</tbody></table></div>
+        <h3>Recent quarterly trend</h3><div className="table-scroll"><table><thead><tr><th>Quarter</th><th>Revenue</th><th>Net income</th></tr></thead><tbody>{result.financials.history.map((r:{quarter:string;currency:string;revenue:number|null;netIncome:number|null})=><tr key={r.quarter}><th>{r.quarter}</th><td>{money(r.revenue,r.currency)}</td><td>{money(r.netIncome,r.currency)}</td></tr>)}</tbody></table></div>
+      </div>}
       {result && (
         <small className="form-hint">
-          Source: Alpha Vantage. Scheduled dates can change.
+          Source: {result.source}. Loaded {result.fetchedAt?.slice(0,16).replace("T"," ") || "date unavailable"} UTC; statement dates are shown separately. Expected earnings dates can change. {result.warning}
         </small>
       )}
     </section>

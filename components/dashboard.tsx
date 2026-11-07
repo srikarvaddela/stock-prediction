@@ -451,7 +451,7 @@ export default function Home() {
               </strong>
               <span>
                 {data && !data.demo
-                  ? " Historical prices from Alpha Vantage, not live quotes."
+                  ? ` Historical prices from ${data.source}.`
                   : " Choose a company below or search a US ticker for historical prices and forecasts."}
               </span>
             </div>
@@ -463,6 +463,7 @@ export default function Home() {
             <section className="ticker-picker" aria-label="Stocks to explore">
               <header className="ticker-heading">
                 <h2>Stocks to explore</h2>
+                <button className="text-button" onClick={()=>setView("directory")}>Browse all companies →</button>
                 <button
                   className="picker-toggle"
                   aria-controls="stock-options"

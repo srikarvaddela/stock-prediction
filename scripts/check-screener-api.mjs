@@ -31,16 +31,17 @@ assert.equal((await request("/api/screener", null, {})).status, 401);
 const response = await request("/api/screener");
 assert.equal(response.status, 200, response.body.error);
 const { rows } = response.body;
-assert.equal(rows.length, 30);
-assert.deepEqual(rows.map((r) => r.symbol).sort(), Object.keys(catalog).sort());
+assert.ok(rows.length>3000,"Expected the expanded market feed, not bundled fallback");
+assert.ok(rows.filter(r=>r.price!==null).length>3000);
+for(const symbol of Object.keys(catalog))assert.ok(rows.some(r=>r.symbol===symbol));
 for (const row of rows) {
-  assert.ok(Number.isFinite(row.price) && row.price > 0);
-  assert.ok(Number.isFinite(row.return4w));
-  assert.ok(Number.isFinite(row.volatility) && row.volatility >= 0);
-  assert.ok(row.indicatorDate <= row.priceDate);
+  assert.ok(row.price===null || (Number.isFinite(row.price) && row.price > 0));
+  assert.ok(row.return4w===null || Number.isFinite(row.return4w));
+  assert.ok(row.volatility===null || (Number.isFinite(row.volatility) && row.volatility >= 0));
+  if(row.indicatorDate)assert.ok(row.indicatorDate <= row.priceDate);
   assert.equal(row.pe, null);
   assert.equal(row.revenueGrowth, null);
-  assert.ok(Number.isFinite(row.pythonMae));
+  assert.ok(row.pythonMae===null || Number.isFinite(row.pythonMae));
 }
 assert.deepEqual(
   filterStocks(rows, { sector: "Energy" })
@@ -56,14 +57,14 @@ assert.ok(
   ),
 );
 const sorted = sortStocks(rows, "price", "desc");
-assert.ok(sorted.every((r, i) => !i || r.price <= sorted[i - 1].price));
+assert.ok(sorted.filter(r=>r.price!==null).every((r, i, all) => !i || r.price <= all[i - 1].price));
 if (!response.body.canLoadFundamentals)
   assert.equal(
     (await request("/api/screener", { symbol: "AAPL" })).status,
     409,
   );
 assert.equal(
-  (await request("/api/screener", { symbol: "NOTREAL" })).status,
+  (await request("/api/screener", { symbol: "../INVALID" })).status,
   400,
 );
 // Deliberate cross-origin rejection goes last: Wrangler may briefly restart
@@ -79,5 +80,5 @@ assert.equal(
   403,
 );
 console.log(
-  "Screener API passed for all 30 companies: metrics, sector/name filters, missing fundamentals, sorting, baseline filters, authentication and key requirements.",
+  `Screener API passed for ${rows.length} listings: missing values, metrics, sector/name filters, sorting, baseline filters, authentication and key requirements.`,
 );

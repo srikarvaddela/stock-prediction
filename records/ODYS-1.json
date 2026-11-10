@@ -1,1 +1,1 @@
-{"symbol":"ODYS","horizon":1,"records":[]}
+{"symbol":"ODYS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:55:56.887231+00:00","baseAdjusted":1.7699999809265137,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

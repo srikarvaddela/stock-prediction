@@ -1,1 +1,1 @@
-{"symbol":"EFX","horizon":1,"records":[]}
+{"symbol":"EFX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:25.995616+00:00","baseAdjusted":189.58999633789062,"predictedReturn":0.005706314165314794,"actualReturn":null,"modelId":"ridge100"}]}

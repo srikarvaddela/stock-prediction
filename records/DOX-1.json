@@ -1,1 +1,1 @@
-{"symbol":"DOX","horizon":1,"records":[]}
+{"symbol":"DOX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:40.054128+00:00","baseAdjusted":42.09000015258789,"predictedReturn":0.008980298632257664,"actualReturn":null,"modelId":"ridge100"}]}

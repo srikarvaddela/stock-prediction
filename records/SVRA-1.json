@@ -1,1 +1,1 @@
-{"symbol":"SVRA","horizon":1,"records":[]}
+{"symbol":"SVRA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:22.670575+00:00","baseAdjusted":4.829999923706055,"predictedReturn":0.006362201138862919,"actualReturn":null,"modelId":"ridge10"}]}

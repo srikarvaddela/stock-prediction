@@ -1,1 +1,1 @@
-{"symbol":"PLTK","horizon":1,"records":[]}
+{"symbol":"PLTK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:19.569109+00:00","baseAdjusted":2.440000057220459,"predictedReturn":-0.007595533207030887,"actualReturn":null,"modelId":"mean"}]}

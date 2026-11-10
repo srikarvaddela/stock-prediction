@@ -1,1 +1,1 @@
-{"symbol":"CHGG","horizon":1,"records":[]}
+{"symbol":"CHGG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:51.081804+00:00","baseAdjusted":0.6100000143051147,"predictedReturn":-0.01996418048864993,"actualReturn":null,"modelId":"boost"}]}

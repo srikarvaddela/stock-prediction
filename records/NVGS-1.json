@@ -1,1 +1,1 @@
-{"symbol":"NVGS","horizon":1,"records":[]}
+{"symbol":"NVGS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:07.786562+00:00","baseAdjusted":19.84000015258789,"predictedReturn":0.01343355527945906,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"SEB","horizon":1,"records":[]}
+{"symbol":"SEB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:56.779024+00:00","baseAdjusted":3528.159912109375,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

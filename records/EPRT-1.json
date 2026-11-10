@@ -1,1 +1,1 @@
-{"symbol":"EPRT","horizon":1,"records":[]}
+{"symbol":"EPRT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:45.880314+00:00","baseAdjusted":27.969999313354492,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

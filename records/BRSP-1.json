@@ -1,1 +1,1 @@
-{"symbol":"BRSP","horizon":1,"records":[]}
+{"symbol":"BRSP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:17.840534+00:00","baseAdjusted":3.3399999141693115,"predictedReturn":0.002036361260908869,"actualReturn":null,"modelId":"ridge10"}]}

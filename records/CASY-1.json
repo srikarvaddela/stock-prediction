@@ -1,1 +1,1 @@
-{"symbol":"CASY","horizon":1,"records":[]}
+{"symbol":"CASY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:08.011874+00:00","baseAdjusted":687.6400146484375,"predictedReturn":0.0002459706167747177,"actualReturn":null,"modelId":"ridge10"}]}

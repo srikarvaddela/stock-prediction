@@ -1,1 +1,1 @@
-{"symbol":"SBGI","horizon":1,"records":[]}
+{"symbol":"SBGI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:24.884587+00:00","baseAdjusted":13.680000305175781,"predictedReturn":-0.013757736017871067,"actualReturn":null,"modelId":"ridge100"}]}

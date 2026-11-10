@@ -1,1 +1,1 @@
-{"symbol":"CTVA","horizon":1,"records":[]}
+{"symbol":"CTVA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:33.821717+00:00","baseAdjusted":11.899999618530273,"predictedReturn":0.018458097342606308,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"SBAC","horizon":1,"records":[]}
+{"symbol":"SBAC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:39.013883+00:00","baseAdjusted":189.4199981689453,"predictedReturn":-0.0015619267866720705,"actualReturn":null,"modelId":"ridge100"}]}

@@ -1,1 +1,1 @@
-{"symbol":"BSTZ","horizon":1,"records":[]}
+{"symbol":"BSTZ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:44.326836+00:00","baseAdjusted":24.299999237060547,"predictedReturn":0.0008137914305816328,"actualReturn":null,"modelId":"mean"}]}

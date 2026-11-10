@@ -1,1 +1,1 @@
-{"symbol":"SOPH","horizon":1,"records":[]}
+{"symbol":"SOPH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:01.229477+00:00","baseAdjusted":7.139999866485596,"predictedReturn":-0.0012035698275294907,"actualReturn":null,"modelId":"ridge100"}]}

@@ -1,1 +1,1 @@
-{"symbol":"GOLD","horizon":1,"records":[]}
+{"symbol":"GOLD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:42.512420+00:00","baseAdjusted":37.630001068115234,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

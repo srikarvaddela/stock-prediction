@@ -1,1 +1,1 @@
-{"symbol":"IMTE","horizon":1,"records":[]}
+{"symbol":"IMTE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:13.664198+00:00","baseAdjusted":0.35100001096725464,"predictedReturn":0.03590899952433822,"actualReturn":null,"modelId":"ridge100"}]}

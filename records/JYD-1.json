@@ -1,1 +1,1 @@
-{"symbol":"JYD","horizon":1,"records":[]}
+{"symbol":"JYD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:05.513836+00:00","baseAdjusted":1.5199999809265137,"predictedReturn":-0.026556967336672777,"actualReturn":null,"modelId":"mean"}]}

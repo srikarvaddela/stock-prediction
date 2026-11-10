@@ -1,1 +1,1 @@
-{"symbol":"ONCY","horizon":1,"records":[]}
+{"symbol":"ONCY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:55:11.061070+00:00","baseAdjusted":0.4399999976158142,"predictedReturn":0.0057246098606129016,"actualReturn":null,"modelId":"ridge10"}]}

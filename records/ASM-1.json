@@ -1,1 +1,1 @@
-{"symbol":"ASM","horizon":1,"records":[]}
+{"symbol":"ASM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:28.876485+00:00","baseAdjusted":4.650000095367432,"predictedReturn":-0.0022137484150089753,"actualReturn":null,"modelId":"ridge10"}]}

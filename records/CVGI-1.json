@@ -1,1 +1,1 @@
-{"symbol":"CVGI","horizon":1,"records":[]}
+{"symbol":"CVGI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:53.271474+00:00","baseAdjusted":3.1500000953674316,"predictedReturn":-0.0033665429203888573,"actualReturn":null,"modelId":"mean"}]}

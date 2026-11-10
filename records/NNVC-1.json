@@ -1,1 +1,1 @@
-{"symbol":"NNVC","horizon":1,"records":[]}
+{"symbol":"NNVC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:43.065994+00:00","baseAdjusted":1.3200000524520874,"predictedReturn":-0.010681770652848026,"actualReturn":null,"modelId":"ridge10"}]}

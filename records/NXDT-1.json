@@ -1,1 +1,1 @@
-{"symbol":"NXDT","horizon":1,"records":[]}
+{"symbol":"NXDT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:44.595627+00:00","baseAdjusted":3.380000114440918,"predictedReturn":-0.0121338265025071,"actualReturn":null,"modelId":"ridge100"}]}

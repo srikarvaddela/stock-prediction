@@ -1,1 +1,1 @@
-{"symbol":"FLR","horizon":1,"records":[]}
+{"symbol":"FLR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:21.216299+00:00","baseAdjusted":46.47999954223633,"predictedReturn":0.0034050402450121675,"actualReturn":null,"modelId":"mean"}]}

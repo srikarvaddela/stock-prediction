@@ -1,1 +1,1 @@
-{"symbol":"DC","horizon":1,"records":[]}
+{"symbol":"DC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:48.786225+00:00","baseAdjusted":5.949999809265137,"predictedReturn":0.005264178430056437,"actualReturn":null,"modelId":"ridge100"}]}

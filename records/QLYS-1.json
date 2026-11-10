@@ -1,1 +1,1 @@
-{"symbol":"QLYS","horizon":1,"records":[]}
+{"symbol":"QLYS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:00.492968+00:00","baseAdjusted":190.41000366210938,"predictedReturn":0.010925895171009002,"actualReturn":null,"modelId":"ridge10"}]}

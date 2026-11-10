@@ -1,1 +1,1 @@
-{"symbol":"MFA","horizon":1,"records":[]}
+{"symbol":"MFA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:03.402513+00:00","baseAdjusted":6.210000038146973,"predictedReturn":0.0011426611439376948,"actualReturn":null,"modelId":"ridge100"}]}

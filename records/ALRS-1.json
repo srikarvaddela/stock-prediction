@@ -1,1 +1,1 @@
-{"symbol":"ALRS","horizon":1,"records":[]}
+{"symbol":"ALRS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:08.805412+00:00","baseAdjusted":33.810001373291016,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

@@ -1,1 +1,1 @@
-{"symbol":"JBGS","horizon":1,"records":[]}
+{"symbol":"JBGS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:48.494493+00:00","baseAdjusted":12.4399995803833,"predictedReturn":-0.006050707435090186,"actualReturn":null,"modelId":"ridge100"}]}

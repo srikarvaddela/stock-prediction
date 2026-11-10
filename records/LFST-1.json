@@ -1,1 +1,1 @@
-{"symbol":"LFST","horizon":1,"records":[]}
+{"symbol":"LFST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:59.751449+00:00","baseAdjusted":13.770000457763672,"predictedReturn":-0.0006131473660276921,"actualReturn":null,"modelId":"mean"}]}

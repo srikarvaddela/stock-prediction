@@ -1,1 +1,1 @@
-{"symbol":"ATCH","horizon":1,"records":[]}
+{"symbol":"ATCH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:19.844108+00:00","baseAdjusted":0.13600000739097595,"predictedReturn":-0.009615946758171682,"actualReturn":null,"modelId":"boost"}]}

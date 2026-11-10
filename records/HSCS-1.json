@@ -1,1 +1,1 @@
-{"symbol":"HSCS","horizon":1,"records":[]}
+{"symbol":"HSCS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:19.023194+00:00","baseAdjusted":2.8299999237060547,"predictedReturn":-0.017817992341064324,"actualReturn":null,"modelId":"mean"}]}

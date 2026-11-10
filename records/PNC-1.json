@@ -1,1 +1,1 @@
-{"symbol":"PNC","horizon":1,"records":[]}
+{"symbol":"PNC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:12.185065+00:00","baseAdjusted":225.3800048828125,"predictedReturn":0.0021345120557738316,"actualReturn":null,"modelId":"mean"}]}

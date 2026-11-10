@@ -1,1 +1,1 @@
-{"symbol":"KNDI","horizon":1,"records":[]}
+{"symbol":"KNDI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:10.479548+00:00","baseAdjusted":3.4100000858306885,"predictedReturn":0.0033826482490785658,"actualReturn":null,"modelId":"ridge100"}]}

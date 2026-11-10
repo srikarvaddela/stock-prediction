@@ -1,1 +1,1 @@
-{"symbol":"CIM","horizon":1,"records":[]}
+{"symbol":"CIM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:04.110806+00:00","baseAdjusted":7.309999942779541,"predictedReturn":-0.007419006085493183,"actualReturn":null,"modelId":"ridge100"}]}

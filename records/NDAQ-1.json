@@ -1,1 +1,1 @@
-{"symbol":"NDAQ","horizon":1,"records":[]}
+{"symbol":"NDAQ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:06.820416+00:00","baseAdjusted":107.12000274658203,"predictedReturn":0.004185067539180834,"actualReturn":null,"modelId":"ridge10"}]}

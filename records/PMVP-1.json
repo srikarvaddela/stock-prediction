@@ -1,1 +1,1 @@
-{"symbol":"PMVP","horizon":1,"records":[]}
+{"symbol":"PMVP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:33.065445+00:00","baseAdjusted":1.2599999904632568,"predictedReturn":-0.01691716342443117,"actualReturn":null,"modelId":"ridge10"}]}

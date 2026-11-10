@@ -1,1 +1,1 @@
-{"symbol":"DVN","horizon":1,"records":[]}
+{"symbol":"DVN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:45.449840+00:00","baseAdjusted":42.209999084472656,"predictedReturn":0.010183534075299096,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"BBWI","horizon":1,"records":[]}
+{"symbol":"BBWI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:30.076286+00:00","baseAdjusted":21.360000610351562,"predictedReturn":-0.001536992856327062,"actualReturn":null,"modelId":"boost"}]}

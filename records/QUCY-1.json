@@ -1,1 +1,1 @@
-{"symbol":"QUCY","horizon":1,"records":[]}
+{"symbol":"QUCY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:35.705539+00:00","baseAdjusted":0.7139999866485596,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

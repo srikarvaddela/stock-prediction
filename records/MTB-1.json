@@ -1,1 +1,1 @@
-{"symbol":"MTB","horizon":1,"records":[]}
+{"symbol":"MTB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:39.842804+00:00","baseAdjusted":217.75,"predictedReturn":0.0009045139557410872,"actualReturn":null,"modelId":"ridge10"}]}

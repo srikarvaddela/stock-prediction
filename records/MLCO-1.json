@@ -1,1 +1,1 @@
-{"symbol":"MLCO","horizon":1,"records":[]}
+{"symbol":"MLCO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:27.642118+00:00","baseAdjusted":4.510000228881836,"predictedReturn":-0.007441643922501539,"actualReturn":null,"modelId":"ridge100"}]}

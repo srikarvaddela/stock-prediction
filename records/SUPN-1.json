@@ -1,1 +1,1 @@
-{"symbol":"SUPN","horizon":1,"records":[]}
+{"symbol":"SUPN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:55:41.030175+00:00","baseAdjusted":26.15999984741211,"predictedReturn":0.005195164017660982,"actualReturn":null,"modelId":"mean"}]}

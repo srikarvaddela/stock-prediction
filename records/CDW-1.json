@@ -1,1 +1,1 @@
-{"symbol":"CDW","horizon":1,"records":[]}
+{"symbol":"CDW","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:48.023591+00:00","baseAdjusted":157,"predictedReturn":0.0004805660762541359,"actualReturn":null,"modelId":"ridge10"}]}

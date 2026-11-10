@@ -1,1 +1,1 @@
-{"symbol":"CI","horizon":1,"records":[]}
+{"symbol":"CI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:19.327539+00:00","baseAdjusted":293.5899963378906,"predictedReturn":-0.001286387370302609,"actualReturn":null,"modelId":"boost"}]}

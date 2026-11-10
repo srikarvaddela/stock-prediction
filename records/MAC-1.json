@@ -1,1 +1,1 @@
-{"symbol":"MAC","horizon":1,"records":[]}
+{"symbol":"MAC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:55.080144+00:00","baseAdjusted":24.84000015258789,"predictedReturn":0.001256962115040898,"actualReturn":null,"modelId":"ridge100"}]}

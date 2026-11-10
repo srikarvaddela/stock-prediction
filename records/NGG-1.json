@@ -1,1 +1,1 @@
-{"symbol":"NGG","horizon":1,"records":[]}
+{"symbol":"NGG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:12.031642+00:00","baseAdjusted":83.1500015258789,"predictedReturn":0.0033115589505831127,"actualReturn":null,"modelId":"ridge100"}]}

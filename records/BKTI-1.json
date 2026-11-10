@@ -1,1 +1,1 @@
-{"symbol":"BKTI","horizon":1,"records":[]}
+{"symbol":"BKTI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:32.641356+00:00","baseAdjusted":66.94000244140625,"predictedReturn":0.005324177865202078,"actualReturn":null,"modelId":"mean"}]}

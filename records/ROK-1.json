@@ -1,1 +1,1 @@
-{"symbol":"ROK","horizon":1,"records":[]}
+{"symbol":"ROK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:50.554053+00:00","baseAdjusted":375.8599853515625,"predictedReturn":0.014984839450245258,"actualReturn":null,"modelId":"boost"}]}

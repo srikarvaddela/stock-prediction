@@ -1,1 +1,1 @@
-{"symbol":"REGN","horizon":1,"records":[]}
+{"symbol":"REGN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:51.794880+00:00","baseAdjusted":904.3499755859375,"predictedReturn":0.008412314094666728,"actualReturn":null,"modelId":"boost"}]}

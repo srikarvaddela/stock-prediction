@@ -1,1 +1,1 @@
-{"symbol":"QTEX","horizon":1,"records":[]}
+{"symbol":"QTEX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:02.523553+00:00","baseAdjusted":1.0299999713897705,"predictedReturn":0.04080337569862199,"actualReturn":null,"modelId":"ridge10"}]}

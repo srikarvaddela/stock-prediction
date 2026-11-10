@@ -1,1 +1,1 @@
-{"symbol":"COCP","horizon":1,"records":[]}
+{"symbol":"COCP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:06.237232+00:00","baseAdjusted":1.0399999618530273,"predictedReturn":-0.00932907277501638,"actualReturn":null,"modelId":"mean"}]}

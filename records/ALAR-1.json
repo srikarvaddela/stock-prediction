@@ -1,1 +1,1 @@
-{"symbol":"ALAR","horizon":1,"records":[]}
+{"symbol":"ALAR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:47.880313+00:00","baseAdjusted":1.2000000476837158,"predictedReturn":-0.013720606036276672,"actualReturn":null,"modelId":"boost"}]}

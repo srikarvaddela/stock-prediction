@@ -1,1 +1,1 @@
-{"symbol":"MPTI","horizon":1,"records":[]}
+{"symbol":"MPTI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:34.120594+00:00","baseAdjusted":60.34000015258789,"predictedReturn":0.009652966522869063,"actualReturn":null,"modelId":"mean"}]}

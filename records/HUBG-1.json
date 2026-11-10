@@ -1,1 +1,1 @@
-{"symbol":"HUBG","horizon":1,"records":[]}
+{"symbol":"HUBG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:55.646553+00:00","baseAdjusted":24.219999313354492,"predictedReturn":-0.01566382912295124,"actualReturn":null,"modelId":"boost"}]}

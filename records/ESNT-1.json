@@ -1,1 +1,1 @@
-{"symbol":"ESNT","horizon":1,"records":[]}
+{"symbol":"ESNT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:39.140611+00:00","baseAdjusted":63.40999984741211,"predictedReturn":0.004733616447884523,"actualReturn":null,"modelId":"ridge100"}]}

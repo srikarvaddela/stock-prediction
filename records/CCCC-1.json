@@ -1,1 +1,1 @@
-{"symbol":"CCCC","horizon":1,"records":[]}
+{"symbol":"CCCC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:10.268663+00:00","baseAdjusted":3.0999999046325684,"predictedReturn":-0.012213271696797413,"actualReturn":null,"modelId":"ridge10"}]}

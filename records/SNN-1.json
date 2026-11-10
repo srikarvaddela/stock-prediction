@@ -1,1 +1,1 @@
-{"symbol":"SNN","horizon":1,"records":[]}
+{"symbol":"SNN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:05.484939+00:00","baseAdjusted":31.149999618530273,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

@@ -1,1 +1,1 @@
-{"symbol":"NFLX","horizon":1,"records":[]}
+{"symbol":"NFLX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:54.782091+00:00","baseAdjusted":63.40999984741211,"predictedReturn":-0.008205377462340511,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"GSBC","horizon":1,"records":[]}
+{"symbol":"GSBC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:56.647212+00:00","baseAdjusted":80.76000213623047,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

@@ -1,1 +1,1 @@
-{"symbol":"AXSM","horizon":1,"records":[]}
+{"symbol":"AXSM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:41.549926+00:00","baseAdjusted":132.3699951171875,"predictedReturn":0.012401098317100784,"actualReturn":null,"modelId":"ridge100"}]}

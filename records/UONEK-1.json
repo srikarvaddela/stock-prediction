@@ -1,1 +1,1 @@
-{"symbol":"UONEK","horizon":1,"records":[]}
+{"symbol":"UONEK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:14.574220+00:00","baseAdjusted":3.559999942779541,"predictedReturn":-0.014559500723780539,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"SSTK","horizon":1,"records":[]}
+{"symbol":"SSTK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:22.977923+00:00","baseAdjusted":2.9700000286102295,"predictedReturn":-0.030650053888827918,"actualReturn":null,"modelId":"ridge10"}]}

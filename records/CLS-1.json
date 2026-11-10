@@ -1,1 +1,1 @@
-{"symbol":"CLS","horizon":1,"records":[]}
+{"symbol":"CLS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:28.215521+00:00","baseAdjusted":206.67999267578125,"predictedReturn":0.020947189283023557,"actualReturn":null,"modelId":"ridge10"}]}

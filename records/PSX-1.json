@@ -1,1 +1,1 @@
-{"symbol":"PSX","horizon":1,"records":[]}
+{"symbol":"PSX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:24.460999+00:00","baseAdjusted":245.72000122070312,"predictedReturn":-0.00042237525047328237,"actualReturn":null,"modelId":"ridge10"}]}

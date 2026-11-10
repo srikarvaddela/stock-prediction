@@ -1,1 +1,1 @@
-{"symbol":"IRWD","horizon":1,"records":[]}
+{"symbol":"IRWD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:49.127171+00:00","baseAdjusted":4.389999866485596,"predictedReturn":-0.003275544736436295,"actualReturn":null,"modelId":"mean"}]}

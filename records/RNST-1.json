@@ -1,1 +1,1 @@
-{"symbol":"RNST","horizon":1,"records":[]}
+{"symbol":"RNST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:12.676703+00:00","baseAdjusted":39.38999938964844,"predictedReturn":-0.0031972847281653547,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"COGT","horizon":1,"records":[]}
+{"symbol":"COGT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:08.755596+00:00","baseAdjusted":31.645000457763672,"predictedReturn":-0.012484136370772985,"actualReturn":null,"modelId":"ridge100"}]}

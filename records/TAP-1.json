@@ -1,1 +1,1 @@
-{"symbol":"TAP","horizon":1,"records":[]}
+{"symbol":"TAP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:32.600445+00:00","baseAdjusted":40.33000183105469,"predictedReturn":0.003903644511126612,"actualReturn":null,"modelId":"boost"}]}

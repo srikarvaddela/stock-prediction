@@ -1,1 +1,1 @@
-{"symbol":"HAFC","horizon":1,"records":[]}
+{"symbol":"HAFC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:28.077027+00:00","baseAdjusted":32.400001525878906,"predictedReturn":0.0031851992794275086,"actualReturn":null,"modelId":"ridge10"}]}

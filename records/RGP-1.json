@@ -1,1 +1,1 @@
-{"symbol":"RGP","horizon":1,"records":[]}
+{"symbol":"RGP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:59.254971+00:00","baseAdjusted":2.6600000858306885,"predictedReturn":-0.001032344958644201,"actualReturn":null,"modelId":"boost"}]}

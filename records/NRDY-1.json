@@ -1,1 +1,1 @@
-{"symbol":"NRDY","horizon":1,"records":[]}
+{"symbol":"NRDY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:01.610925+00:00","baseAdjusted":6.230000019073486,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

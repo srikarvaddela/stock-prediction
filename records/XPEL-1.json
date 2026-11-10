@@ -1,1 +1,1 @@
-{"symbol":"XPEL","horizon":1,"records":[]}
+{"symbol":"XPEL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:01:10.986029+00:00","baseAdjusted":38.38999938964844,"predictedReturn":-0.0010621762648756106,"actualReturn":null,"modelId":"mean"}]}

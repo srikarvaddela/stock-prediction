@@ -1,1 +1,1 @@
-{"symbol":"GLUE","horizon":1,"records":[]}
+{"symbol":"GLUE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:27.843099+00:00","baseAdjusted":10.569999694824219,"predictedReturn":-0.0028787750830685643,"actualReturn":null,"modelId":"ridge100"}]}

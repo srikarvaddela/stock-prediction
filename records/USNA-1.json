@@ -1,1 +1,1 @@
-{"symbol":"USNA","horizon":1,"records":[]}
+{"symbol":"USNA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:22.580982+00:00","baseAdjusted":13.630000114440918,"predictedReturn":-0.005702012760177821,"actualReturn":null,"modelId":"mean"}]}

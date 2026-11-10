@@ -1,1 +1,1 @@
-{"symbol":"BC","horizon":1,"records":[]}
+{"symbol":"BC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:43.734944+00:00","baseAdjusted":77.2300033569336,"predictedReturn":0.00020595669577335254,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"BYRN","horizon":1,"records":[]}
+{"symbol":"BYRN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:31.721226+00:00","baseAdjusted":3.8299999237060547,"predictedReturn":-0.007333561883690908,"actualReturn":null,"modelId":"ridge100"}]}

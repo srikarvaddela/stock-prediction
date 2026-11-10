@@ -1,1 +1,1 @@
-{"symbol":"EBC","horizon":1,"records":[]}
+{"symbol":"EBC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:31.282934+00:00","baseAdjusted":22.84000015258789,"predictedReturn":0.0012291146377166897,"actualReturn":null,"modelId":"ridge100"}]}

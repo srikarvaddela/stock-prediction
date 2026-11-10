@@ -1,1 +1,1 @@
-{"symbol":"ABTS","horizon":1,"records":[]}
+{"symbol":"ABTS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:34.982442+00:00","baseAdjusted":0.3779999911785126,"predictedReturn":-0.004113765175944291,"actualReturn":null,"modelId":"mean"}]}

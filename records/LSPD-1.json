@@ -1,1 +1,1 @@
-{"symbol":"LSPD","horizon":1,"records":[]}
+{"symbol":"LSPD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:11.283266+00:00","baseAdjusted":10.289999961853027,"predictedReturn":-0.005621990512175599,"actualReturn":null,"modelId":"mean"}]}

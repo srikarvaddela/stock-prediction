@@ -1,1 +1,1 @@
-{"symbol":"FLGT","horizon":1,"records":[]}
+{"symbol":"FLGT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:19.633329+00:00","baseAdjusted":23.739999771118164,"predictedReturn":-0.0020343344349506554,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"IIIN","horizon":1,"records":[]}
+{"symbol":"IIIN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:42.219795+00:00","baseAdjusted":26.739999771118164,"predictedReturn":-0.004966337209946876,"actualReturn":null,"modelId":"boost"}]}

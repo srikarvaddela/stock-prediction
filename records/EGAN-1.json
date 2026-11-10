@@ -1,1 +1,1 @@
-{"symbol":"EGAN","horizon":1,"records":[]}
+{"symbol":"EGAN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:54.364404+00:00","baseAdjusted":5.949999809265137,"predictedReturn":0.016295086615558774,"actualReturn":null,"modelId":"ridge10"}]}

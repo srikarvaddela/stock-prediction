@@ -1,1 +1,1 @@
-{"symbol":"GWRE","horizon":1,"records":[]}
+{"symbol":"GWRE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:03.789948+00:00","baseAdjusted":161.41000366210938,"predictedReturn":0.0008143069798890691,"actualReturn":null,"modelId":"mean"}]}

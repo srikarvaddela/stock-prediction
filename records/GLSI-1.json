@@ -1,1 +1,1 @@
-{"symbol":"GLSI","horizon":1,"records":[]}
+{"symbol":"GLSI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:46.334726+00:00","baseAdjusted":15.170000076293945,"predictedReturn":-0.0030053743777626687,"actualReturn":null,"modelId":"mean"}]}

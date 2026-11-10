@@ -1,1 +1,1 @@
-{"symbol":"CLDI","horizon":1,"records":[]}
+{"symbol":"CLDI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:22.146627+00:00","baseAdjusted":0.699999988079071,"predictedReturn":-0.040144635672632274,"actualReturn":null,"modelId":"mean"}]}

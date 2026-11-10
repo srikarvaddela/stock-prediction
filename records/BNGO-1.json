@@ -1,1 +1,1 @@
-{"symbol":"BNGO","horizon":1,"records":[]}
+{"symbol":"BNGO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:18.320999+00:00","baseAdjusted":1.149999976158142,"predictedReturn":-0.018206750364077394,"actualReturn":null,"modelId":"mean"}]}

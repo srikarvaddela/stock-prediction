@@ -1,1 +1,1 @@
-{"symbol":"PHUN","horizon":1,"records":[]}
+{"symbol":"PHUN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:25.072302+00:00","baseAdjusted":1.75,"predictedReturn":0.001877771224760014,"actualReturn":null,"modelId":"ridge10"}]}

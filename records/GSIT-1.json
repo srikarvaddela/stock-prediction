@@ -1,1 +1,1 @@
-{"symbol":"GSIT","horizon":1,"records":[]}
+{"symbol":"GSIT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:52.959346+00:00","baseAdjusted":3.0199999809265137,"predictedReturn":0.03298894898074507,"actualReturn":null,"modelId":"boost"}]}

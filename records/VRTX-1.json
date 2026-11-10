@@ -1,1 +1,1 @@
-{"symbol":"VRTX","horizon":1,"records":[]}
+{"symbol":"VRTX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:22.818681+00:00","baseAdjusted":547.0900268554688,"predictedReturn":0.002060684315933159,"actualReturn":null,"modelId":"ridge100"}]}

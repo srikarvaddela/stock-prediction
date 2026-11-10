@@ -1,1 +1,1 @@
-{"symbol":"DAC","horizon":1,"records":[]}
+{"symbol":"DAC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:07.389644+00:00","baseAdjusted":148.11000061035156,"predictedReturn":0.007139239014785576,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"AMPG","horizon":1,"records":[]}
+{"symbol":"AMPG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:31.801246+00:00","baseAdjusted":2.305000066757202,"predictedReturn":-0.005556658175153653,"actualReturn":null,"modelId":"mean"}]}

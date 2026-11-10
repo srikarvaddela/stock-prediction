@@ -1,1 +1,1 @@
-{"symbol":"GNTX","horizon":1,"records":[]}
+{"symbol":"GNTX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:17.642289+00:00","baseAdjusted":19.8799991607666,"predictedReturn":-0.001354979641780719,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"PYT","horizon":1,"records":[]}
+{"symbol":"PYT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:27.015703+00:00","baseAdjusted":23.030000686645508,"predictedReturn":0.006305003850383256,"actualReturn":null,"modelId":"ridge100"}]}

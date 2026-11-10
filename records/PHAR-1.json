@@ -1,1 +1,1 @@
-{"symbol":"PHAR","horizon":1,"records":[]}
+{"symbol":"PHAR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:37.627247+00:00","baseAdjusted":12.289999961853027,"predictedReturn":-0.00698779018542282,"actualReturn":null,"modelId":"ridge100"}]}

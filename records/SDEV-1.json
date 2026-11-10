@@ -1,1 +1,1 @@
-{"symbol":"SDEV","horizon":1,"records":[]}
+{"symbol":"SDEV","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:43.846710+00:00","baseAdjusted":0.9800000190734863,"predictedReturn":-0.02534137062746245,"actualReturn":null,"modelId":"mean"}]}

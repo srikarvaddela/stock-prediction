@@ -1,1 +1,1 @@
-{"symbol":"FNKO","horizon":1,"records":[]}
+{"symbol":"FNKO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:13.445961+00:00","baseAdjusted":6.71999979019165,"predictedReturn":-0.0017286454751368784,"actualReturn":null,"modelId":"mean"}]}

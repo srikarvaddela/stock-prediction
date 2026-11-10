@@ -1,1 +1,1 @@
-{"symbol":"AROC","horizon":1,"records":[]}
+{"symbol":"AROC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:01.825955+00:00","baseAdjusted":27.540000915527344,"predictedReturn":0.023181713751102125,"actualReturn":null,"modelId":"boost"}]}

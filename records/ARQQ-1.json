@@ -1,1 +1,1 @@
-{"symbol":"ARQQ","horizon":1,"records":[]}
+{"symbol":"ARQQ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:07.121056+00:00","baseAdjusted":15.960000038146973,"predictedReturn":-0.01974214908107534,"actualReturn":null,"modelId":"boost"}]}

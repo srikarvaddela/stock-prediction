@@ -1,1 +1,1 @@
-{"symbol":"MEI","horizon":1,"records":[]}
+{"symbol":"MEI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:39.533710+00:00","baseAdjusted":10.760000228881836,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

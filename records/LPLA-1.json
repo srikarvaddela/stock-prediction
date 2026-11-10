@@ -1,1 +1,1 @@
-{"symbol":"LPLA","horizon":1,"records":[]}
+{"symbol":"LPLA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:29.159520+00:00","baseAdjusted":295.510009765625,"predictedReturn":0.004340965872296902,"actualReturn":null,"modelId":"boost"}]}

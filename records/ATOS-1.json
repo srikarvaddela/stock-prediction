@@ -1,1 +1,1 @@
-{"symbol":"ATOS","horizon":1,"records":[]}
+{"symbol":"ATOS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:57.069841+00:00","baseAdjusted":2.119999885559082,"predictedReturn":-0.010185485179049355,"actualReturn":null,"modelId":"boost"}]}

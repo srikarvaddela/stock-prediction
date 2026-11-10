@@ -1,1 +1,1 @@
-{"symbol":"TPST","horizon":1,"records":[]}
+{"symbol":"TPST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:51.958374+00:00","baseAdjusted":0.38100001215934753,"predictedReturn":0.04379281932794922,"actualReturn":null,"modelId":"boost"}]}

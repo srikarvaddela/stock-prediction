@@ -1,1 +1,1 @@
-{"symbol":"WSFS","horizon":1,"records":[]}
+{"symbol":"WSFS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:56.533968+00:00","baseAdjusted":78.94000244140625,"predictedReturn":0.0013522380003414289,"actualReturn":null,"modelId":"boost"}]}

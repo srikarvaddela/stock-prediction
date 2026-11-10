@@ -1,1 +1,1 @@
-{"symbol":"RKT","horizon":1,"records":[]}
+{"symbol":"RKT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:04.673382+00:00","baseAdjusted":15.0600004196167,"predictedReturn":-4.261379766926445e-05,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"BENF","horizon":1,"records":[]}
+{"symbol":"BENF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:57.277147+00:00","baseAdjusted":0.7089999914169312,"predictedReturn":-0.036451287601866854,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"WLDS","horizon":1,"records":[]}
+{"symbol":"WLDS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:54.064371+00:00","baseAdjusted":1.2999999523162842,"predictedReturn":-0.0290262968303913,"actualReturn":null,"modelId":"mean"}]}

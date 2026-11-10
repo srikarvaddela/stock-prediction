@@ -1,1 +1,1 @@
-{"symbol":"RCON","horizon":1,"records":[]}
+{"symbol":"RCON","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:38.560931+00:00","baseAdjusted":0.8299999833106995,"predictedReturn":-0.027618481937303308,"actualReturn":null,"modelId":"mean"}]}

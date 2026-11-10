@@ -1,1 +1,1 @@
-{"symbol":"SKWD","horizon":1,"records":[]}
+{"symbol":"SKWD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:56.254948+00:00","baseAdjusted":60.349998474121094,"predictedReturn":0.0037284494160997827,"actualReturn":null,"modelId":"ridge100"}]}

@@ -1,1 +1,1 @@
-{"symbol":"INMD","horizon":1,"records":[]}
+{"symbol":"INMD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:16.893947+00:00","baseAdjusted":13.329999923706055,"predictedReturn":-0.0018382217487166986,"actualReturn":null,"modelId":"mean"}]}

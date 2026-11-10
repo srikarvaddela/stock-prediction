@@ -1,1 +1,1 @@
-{"symbol":"VSEC","horizon":1,"records":[]}
+{"symbol":"VSEC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:41.569710+00:00","baseAdjusted":172.80999755859375,"predictedReturn":0.023253872770882512,"actualReturn":null,"modelId":"ridge10"}]}

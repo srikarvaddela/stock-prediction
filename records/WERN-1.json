@@ -1,1 +1,1 @@
-{"symbol":"WERN","horizon":1,"records":[]}
+{"symbol":"WERN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:48.948311+00:00","baseAdjusted":26.950000762939453,"predictedReturn":-2.6880821486636074e-05,"actualReturn":null,"modelId":"boost"}]}

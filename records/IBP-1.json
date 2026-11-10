@@ -1,1 +1,1 @@
-{"symbol":"IBP","horizon":1,"records":[]}
+{"symbol":"IBP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:17.687545+00:00","baseAdjusted":220.05999755859375,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

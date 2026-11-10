@@ -1,1 +1,1 @@
-{"symbol":"IRON","horizon":1,"records":[]}
+{"symbol":"IRON","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:01.855237+00:00","baseAdjusted":78.91000366210938,"predictedReturn":-0.004439638766268085,"actualReturn":null,"modelId":"mean"}]}

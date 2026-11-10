@@ -1,1 +1,1 @@
-{"symbol":"AEON","horizon":1,"records":[]}
+{"symbol":"AEON","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:21.465095+00:00","baseAdjusted":0.17599999904632568,"predictedReturn":-0.0433484079638868,"actualReturn":null,"modelId":"mean"}]}

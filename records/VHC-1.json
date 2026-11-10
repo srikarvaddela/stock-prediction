@@ -1,1 +1,1 @@
-{"symbol":"VHC","horizon":1,"records":[]}
+{"symbol":"VHC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:28.801013+00:00","baseAdjusted":9.710000038146973,"predictedReturn":-0.004208527091774801,"actualReturn":null,"modelId":"mean"}]}

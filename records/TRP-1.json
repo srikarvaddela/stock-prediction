@@ -1,1 +1,1 @@
-{"symbol":"TRP","horizon":1,"records":[]}
+{"symbol":"TRP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:12.981480+00:00","baseAdjusted":61.91999816894531,"predictedReturn":0.0028853461948923366,"actualReturn":null,"modelId":"ridge100"}]}

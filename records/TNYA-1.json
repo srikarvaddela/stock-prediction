@@ -1,1 +1,1 @@
-{"symbol":"TNYA","horizon":1,"records":[]}
+{"symbol":"TNYA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:44.362270+00:00","baseAdjusted":0.36000001430511475,"predictedReturn":-0.015492088559854329,"actualReturn":null,"modelId":"mean"}]}

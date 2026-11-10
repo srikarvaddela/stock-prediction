@@ -1,1 +1,1 @@
-{"symbol":"IPDN","horizon":1,"records":[]}
+{"symbol":"IPDN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:13.792209+00:00","baseAdjusted":1.350000023841858,"predictedReturn":0.07778132762908348,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"LECO","horizon":1,"records":[]}
+{"symbol":"LECO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:44.160669+00:00","baseAdjusted":275.3500061035156,"predictedReturn":0.0037319568980852206,"actualReturn":null,"modelId":"ridge10"}]}

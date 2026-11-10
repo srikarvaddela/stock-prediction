@@ -1,1 +1,1 @@
-{"symbol":"INCY","horizon":1,"records":[]}
+{"symbol":"INCY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:48.756204+00:00","baseAdjusted":119.6500015258789,"predictedReturn":0.006791563251854689,"actualReturn":null,"modelId":"ridge10"}]}

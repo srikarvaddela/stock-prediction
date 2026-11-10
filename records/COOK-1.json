@@ -1,1 +1,1 @@
-{"symbol":"COOK","horizon":1,"records":[]}
+{"symbol":"COOK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:37.438513+00:00","baseAdjusted":67.0999984741211,"predictedReturn":-0.010361717894360871,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"ACET","horizon":1,"records":[]}
+{"symbol":"ACET","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:09.189520+00:00","baseAdjusted":3.049999952316284,"predictedReturn":-0.01400592792367295,"actualReturn":null,"modelId":"mean"}]}

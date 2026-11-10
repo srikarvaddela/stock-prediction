@@ -1,1 +1,1 @@
-{"symbol":"NEM","horizon":1,"records":[]}
+{"symbol":"NEM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:09.068521+00:00","baseAdjusted":120.91000366210938,"predictedReturn":-0.008120155111708409,"actualReturn":null,"modelId":"ridge100"}]}

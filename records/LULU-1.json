@@ -1,1 +1,1 @@
-{"symbol":"LULU","horizon":1,"records":[]}
+{"symbol":"LULU","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:12.008287+00:00","baseAdjusted":110.79000091552734,"predictedReturn":-0.010763866506184506,"actualReturn":null,"modelId":"ridge10"}]}

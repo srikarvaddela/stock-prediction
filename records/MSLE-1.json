@@ -1,1 +1,1 @@
-{"symbol":"MSLE","horizon":1,"records":[]}
+{"symbol":"MSLE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:12.761661+00:00","baseAdjusted":7.190000057220459,"predictedReturn":0.0015011104977934377,"actualReturn":null,"modelId":"ridge100"}]}

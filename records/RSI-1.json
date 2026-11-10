@@ -1,1 +1,1 @@
-{"symbol":"RSI","horizon":1,"records":[]}
+{"symbol":"RSI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:54.421776+00:00","baseAdjusted":12.279999732971191,"predictedReturn":0.022262992648380303,"actualReturn":null,"modelId":"boost"}]}

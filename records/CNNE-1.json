@@ -1,1 +1,1 @@
-{"symbol":"CNNE","horizon":1,"records":[]}
+{"symbol":"CNNE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:18.902128+00:00","baseAdjusted":17.690000534057617,"predictedReturn":-0.010923213734104964,"actualReturn":null,"modelId":"ridge10"}]}

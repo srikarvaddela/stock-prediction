@@ -1,1 +1,1 @@
-{"symbol":"CABO","horizon":1,"records":[]}
+{"symbol":"CABO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:04.132896+00:00","baseAdjusted":4.300000190734863,"predictedReturn":-0.08513862549107573,"actualReturn":null,"modelId":"ridge10"}]}

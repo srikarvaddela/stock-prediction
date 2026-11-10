@@ -1,1 +1,1 @@
-{"symbol":"ADM","horizon":1,"records":[]}
+{"symbol":"ADM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:23.385028+00:00","baseAdjusted":69.97000122070312,"predictedReturn":0.005469858218393917,"actualReturn":null,"modelId":"ridge10"}]}

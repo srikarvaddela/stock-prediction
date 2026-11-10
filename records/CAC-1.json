@@ -1,1 +1,1 @@
-{"symbol":"CAC","horizon":1,"records":[]}
+{"symbol":"CAC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:49.335366+00:00","baseAdjusted":58.02000045776367,"predictedReturn":0.002839322511356404,"actualReturn":null,"modelId":"boost"}]}

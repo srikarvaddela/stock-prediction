@@ -1,1 +1,1 @@
-{"symbol":"CLDT","horizon":1,"records":[]}
+{"symbol":"CLDT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:01.593331+00:00","baseAdjusted":15.5,"predictedReturn":-0.00391128562219547,"actualReturn":null,"modelId":"ridge10"}]}

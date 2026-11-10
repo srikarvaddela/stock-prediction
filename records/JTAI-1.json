@@ -1,1 +1,1 @@
-{"symbol":"JTAI","horizon":1,"records":[]}
+{"symbol":"JTAI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:55.186794+00:00","baseAdjusted":0.9129999876022339,"predictedReturn":-0.06232600885392811,"actualReturn":null,"modelId":"boost"}]}

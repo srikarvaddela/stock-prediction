@@ -1,1 +1,1 @@
-{"symbol":"APD","horizon":1,"records":[]}
+{"symbol":"APD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:57.455126+00:00","baseAdjusted":304.8399963378906,"predictedReturn":0.0008827975984124797,"actualReturn":null,"modelId":"mean"}]}

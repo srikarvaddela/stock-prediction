@@ -1,1 +1,1 @@
-{"symbol":"TVE","horizon":1,"records":[]}
+{"symbol":"TVE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:02.032944+00:00","baseAdjusted":23.209999084472656,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

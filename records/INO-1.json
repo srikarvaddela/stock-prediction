@@ -1,1 +1,1 @@
-{"symbol":"INO","horizon":1,"records":[]}
+{"symbol":"INO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:53.344537+00:00","baseAdjusted":1.2200000286102295,"predictedReturn":0.10675139538945799,"actualReturn":null,"modelId":"ridge10"}]}

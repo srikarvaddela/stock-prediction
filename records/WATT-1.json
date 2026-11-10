@@ -1,1 +1,1 @@
-{"symbol":"WATT","horizon":1,"records":[]}
+{"symbol":"WATT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:43.692705+00:00","baseAdjusted":7.534999847412109,"predictedReturn":-0.02382670808965806,"actualReturn":null,"modelId":"ridge100"}]}

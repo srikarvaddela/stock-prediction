@@ -1,1 +1,1 @@
-{"symbol":"RKTO","horizon":1,"records":[]}
+{"symbol":"RKTO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:47.511667+00:00","baseAdjusted":0.4009999930858612,"predictedReturn":-0.010801252075690588,"actualReturn":null,"modelId":"boost"}]}

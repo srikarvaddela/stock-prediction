@@ -1,1 +1,1 @@
-{"symbol":"NCNA","horizon":1,"records":[]}
+{"symbol":"NCNA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:22.424395+00:00","baseAdjusted":0.9380000233650208,"predictedReturn":-0.001238640211665882,"actualReturn":null,"modelId":"ridge10"}]}

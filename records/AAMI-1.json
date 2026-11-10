@@ -1,1 +1,1 @@
-{"symbol":"AAMI","horizon":1,"records":[]}
+{"symbol":"AAMI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:32.881165+00:00","baseAdjusted":90.95999908447266,"predictedReturn":0.003223798135663134,"actualReturn":null,"modelId":"ridge10"}]}

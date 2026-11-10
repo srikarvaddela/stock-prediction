@@ -1,1 +1,1 @@
-{"symbol":"ATO","horizon":1,"records":[]}
+{"symbol":"ATO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:10.389316+00:00","baseAdjusted":173.22000122070312,"predictedReturn":0.002421894628041314,"actualReturn":null,"modelId":"mean"}]}

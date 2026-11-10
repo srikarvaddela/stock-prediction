@@ -1,1 +1,1 @@
-{"symbol":"HCAT","horizon":1,"records":[]}
+{"symbol":"HCAT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:44.139947+00:00","baseAdjusted":1.4600000381469727,"predictedReturn":-0.010878642415653908,"actualReturn":null,"modelId":"mean"}]}

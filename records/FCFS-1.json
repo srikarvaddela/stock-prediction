@@ -1,1 +1,1 @@
-{"symbol":"FCFS","horizon":1,"records":[]}
+{"symbol":"FCFS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:10.456730+00:00","baseAdjusted":185.6699981689453,"predictedReturn":0.0033214308829387323,"actualReturn":null,"modelId":"mean"}]}

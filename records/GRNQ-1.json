@@ -1,1 +1,1 @@
-{"symbol":"GRNQ","horizon":1,"records":[]}
+{"symbol":"GRNQ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:59.182872+00:00","baseAdjusted":7.099999904632568,"predictedReturn":-0.02869731455212907,"actualReturn":null,"modelId":"ridge10"}]}

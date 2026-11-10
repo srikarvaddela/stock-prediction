@@ -1,1 +1,1 @@
-{"symbol":"PRAA","horizon":1,"records":[]}
+{"symbol":"PRAA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:39.142078+00:00","baseAdjusted":12.920000076293945,"predictedReturn":-0.0038340391617288916,"actualReturn":null,"modelId":"ridge10"}]}

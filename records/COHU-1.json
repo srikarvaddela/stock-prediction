@@ -1,1 +1,1 @@
-{"symbol":"COHU","horizon":1,"records":[]}
+{"symbol":"COHU","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:16.770133+00:00","baseAdjusted":38.4900016784668,"predictedReturn":3.317406431935611e-05,"actualReturn":null,"modelId":"mean"}]}

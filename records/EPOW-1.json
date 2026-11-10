@@ -1,1 +1,1 @@
-{"symbol":"EPOW","horizon":1,"records":[]}
+{"symbol":"EPOW","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:38.611346+00:00","baseAdjusted":3.4200000762939453,"predictedReturn":-0.0759921549901994,"actualReturn":null,"modelId":"ridge10"}]}

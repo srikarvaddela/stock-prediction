@@ -1,1 +1,1 @@
-{"symbol":"NCMI","horizon":1,"records":[]}
+{"symbol":"NCMI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:05.693992+00:00","baseAdjusted":1.5800000429153442,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

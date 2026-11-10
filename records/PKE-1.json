@@ -1,1 +1,1 @@
-{"symbol":"PKE","horizon":1,"records":[]}
+{"symbol":"PKE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:06.524240+00:00","baseAdjusted":23.3799991607666,"predictedReturn":0.0025810328687792534,"actualReturn":null,"modelId":"boost"}]}

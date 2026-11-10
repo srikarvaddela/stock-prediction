@@ -1,1 +1,1 @@
-{"symbol":"ALVO","horizon":1,"records":[]}
+{"symbol":"ALVO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:09.673790+00:00","baseAdjusted":4.860000133514404,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

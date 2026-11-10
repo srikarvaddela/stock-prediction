@@ -1,1 +1,1 @@
-{"symbol":"AKBA","horizon":1,"records":[]}
+{"symbol":"AKBA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:50.865967+00:00","baseAdjusted":0.4009999930858612,"predictedReturn":-0.006533631320181567,"actualReturn":null,"modelId":"mean"}]}

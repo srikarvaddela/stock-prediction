@@ -1,1 +1,1 @@
-{"symbol":"SPWH","horizon":1,"records":[]}
+{"symbol":"SPWH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:48.770709+00:00","baseAdjusted":1.090000033378601,"predictedReturn":-0.007705913181617918,"actualReturn":null,"modelId":"boost"}]}

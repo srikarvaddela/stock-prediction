@@ -1,1 +1,1 @@
-{"symbol":"OVV","horizon":1,"records":[]}
+{"symbol":"OVV","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:54.253393+00:00","baseAdjusted":60.52000045776367,"predictedReturn":0.0036952523522570642,"actualReturn":null,"modelId":"ridge10"}]}

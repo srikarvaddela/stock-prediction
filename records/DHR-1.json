@@ -1,1 +1,1 @@
-{"symbol":"DHR","horizon":1,"records":[]}
+{"symbol":"DHR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:03.025680+00:00","baseAdjusted":230.25,"predictedReturn":-0.0006494054169513054,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"FHI","horizon":1,"records":[]}
+{"symbol":"FHI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:44.896487+00:00","baseAdjusted":63.9900016784668,"predictedReturn":0.0032670417211745385,"actualReturn":null,"modelId":"mean"}]}

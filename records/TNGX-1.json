@@ -1,1 +1,1 @@
-{"symbol":"TNGX","horizon":1,"records":[]}
+{"symbol":"TNGX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:40.982810+00:00","baseAdjusted":21.5,"predictedReturn":0.0021853082947117988,"actualReturn":null,"modelId":"mean"}]}

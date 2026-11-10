@@ -1,1 +1,1 @@
-{"symbol":"INCR","horizon":1,"records":[]}
+{"symbol":"INCR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:25.155679+00:00","baseAdjusted":3.4700000286102295,"predictedReturn":-0.0019664685084778907,"actualReturn":null,"modelId":"mean"}]}

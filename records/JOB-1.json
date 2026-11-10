@@ -1,1 +1,1 @@
-{"symbol":"JOB","horizon":1,"records":[]}
+{"symbol":"JOB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:39.137890+00:00","baseAdjusted":5.682000160217285,"predictedReturn":-0.0009648248708176059,"actualReturn":null,"modelId":"boost"}]}

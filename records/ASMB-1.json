@@ -1,1 +1,1 @@
-{"symbol":"ASMB","horizon":1,"records":[]}
+{"symbol":"ASMB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:15.944647+00:00","baseAdjusted":20.420000076293945,"predictedReturn":-0.012378681975238016,"actualReturn":null,"modelId":"boost"}]}

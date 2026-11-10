@@ -1,1 +1,1 @@
-{"symbol":"BKSY","horizon":1,"records":[]}
+{"symbol":"BKSY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:43.658045+00:00","baseAdjusted":21.329999923706055,"predictedReturn":0.019358214389113712,"actualReturn":null,"modelId":"ridge10"}]}

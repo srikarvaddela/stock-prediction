@@ -1,1 +1,1 @@
-{"symbol":"EIX","horizon":1,"records":[]}
+{"symbol":"EIX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:48.827936+00:00","baseAdjusted":59.369998931884766,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

@@ -1,1 +1,1 @@
-{"symbol":"KSS","horizon":1,"records":[]}
+{"symbol":"KSS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:14.861161+00:00","baseAdjusted":23.040000915527344,"predictedReturn":0.0072717642958402325,"actualReturn":null,"modelId":"ridge100"}]}

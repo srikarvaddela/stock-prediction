@@ -1,1 +1,1 @@
-{"symbol":"BRNX","horizon":1,"records":[]}
+{"symbol":"BRNX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:30.725865+00:00","baseAdjusted":0.40799999237060547,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

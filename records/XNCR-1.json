@@ -1,1 +1,1 @@
-{"symbol":"XNCR","horizon":1,"records":[]}
+{"symbol":"XNCR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:49.697654+00:00","baseAdjusted":35.75,"predictedReturn":-0.0007369508910785465,"actualReturn":null,"modelId":"mean"}]}

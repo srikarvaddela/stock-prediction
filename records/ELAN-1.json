@@ -1,1 +1,1 @@
-{"symbol":"ELAN","horizon":1,"records":[]}
+{"symbol":"ELAN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:18.039416+00:00","baseAdjusted":25.739999771118164,"predictedReturn":-0.00046897561800504585,"actualReturn":null,"modelId":"ridge10"}]}

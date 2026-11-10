@@ -1,1 +1,1 @@
-{"symbol":"OVBC","horizon":1,"records":[]}
+{"symbol":"OVBC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:52.452449+00:00","baseAdjusted":48.61000061035156,"predictedReturn":0.0030651281665251802,"actualReturn":null,"modelId":"mean"}]}

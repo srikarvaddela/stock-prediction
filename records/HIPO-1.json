@@ -1,1 +1,1 @@
-{"symbol":"HIPO","horizon":1,"records":[]}
+{"symbol":"HIPO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:50.995073+00:00","baseAdjusted":34.88999938964844,"predictedReturn":-0.006785087125602444,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"NREF","horizon":1,"records":[]}
+{"symbol":"NREF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:26.936028+00:00","baseAdjusted":13.399999618530273,"predictedReturn":0.019282094378305418,"actualReturn":null,"modelId":"ridge10"}]}

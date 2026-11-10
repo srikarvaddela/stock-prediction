@@ -1,1 +1,1 @@
-{"symbol":"FSS","horizon":1,"records":[]}
+{"symbol":"FSS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:02.080041+00:00","baseAdjusted":113.44000244140625,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

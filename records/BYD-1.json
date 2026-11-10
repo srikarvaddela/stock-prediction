@@ -1,1 +1,1 @@
-{"symbol":"BYD","horizon":1,"records":[]}
+{"symbol":"BYD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:36.711857+00:00","baseAdjusted":76.56999969482422,"predictedReturn":0.0020639292762824413,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"CBSH","horizon":1,"records":[]}
+{"symbol":"CBSH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:40.386535+00:00","baseAdjusted":55.040000915527344,"predictedReturn":-0.003019219079948759,"actualReturn":null,"modelId":"ridge10"}]}

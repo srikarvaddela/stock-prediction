@@ -1,1 +1,1 @@
-{"symbol":"COMP","horizon":1,"records":[]}
+{"symbol":"COMP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:38.468640+00:00","baseAdjusted":10.210000038146973,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

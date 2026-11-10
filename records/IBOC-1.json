@@ -1,1 +1,1 @@
-{"symbol":"IBOC","horizon":1,"records":[]}
+{"symbol":"IBOC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:21.047101+00:00","baseAdjusted":67.5999984741211,"predictedReturn":0.0014996898316810337,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"HWC","horizon":1,"records":[]}
+{"symbol":"HWC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:05.612022+00:00","baseAdjusted":71.4800033569336,"predictedReturn":-0.0037037246402488043,"actualReturn":null,"modelId":"ridge10"}]}

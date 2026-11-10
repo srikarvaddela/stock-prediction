@@ -1,1 +1,1 @@
-{"symbol":"BXMT","horizon":1,"records":[]}
+{"symbol":"BXMT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:28.527430+00:00","baseAdjusted":11.15999984741211,"predictedReturn":-0.00013869996023719615,"actualReturn":null,"modelId":"boost"}]}

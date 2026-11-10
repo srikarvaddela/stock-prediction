@@ -1,1 +1,1 @@
-{"symbol":"COLB","horizon":1,"records":[]}
+{"symbol":"COLB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:42.960024+00:00","baseAdjusted":30.479999542236328,"predictedReturn":-0.0017995430941685684,"actualReturn":null,"modelId":"boost"}]}

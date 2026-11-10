@@ -1,1 +1,1 @@
-{"symbol":"VIP","horizon":1,"records":[]}
+{"symbol":"VIP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:55:52.867472+00:00","baseAdjusted":0.9599999785423279,"predictedReturn":-0.01498843837842069,"actualReturn":null,"modelId":"mean"}]}

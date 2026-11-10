@@ -1,1 +1,1 @@
-{"symbol":"ADTN","horizon":1,"records":[]}
+{"symbol":"ADTN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:38.855419+00:00","baseAdjusted":4.039999961853027,"predictedReturn":-0.013290837738500713,"actualReturn":null,"modelId":"ridge100"}]}

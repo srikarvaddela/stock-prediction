@@ -1,1 +1,1 @@
-{"symbol":"BILI","horizon":1,"records":[]}
+{"symbol":"BILI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:41.453695+00:00","baseAdjusted":14.65999984741211,"predictedReturn":-0.0056962770877328145,"actualReturn":null,"modelId":"mean"}]}

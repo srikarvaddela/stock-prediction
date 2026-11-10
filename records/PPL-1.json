@@ -1,1 +1,1 @@
-{"symbol":"PPL","horizon":1,"records":[]}
+{"symbol":"PPL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:23.700860+00:00","baseAdjusted":35.79999923706055,"predictedReturn":0.0016307164410970458,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"ATLO","horizon":1,"records":[]}
+{"symbol":"ATLO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:48.991158+00:00","baseAdjusted":33.900001525878906,"predictedReturn":0.0012898637940963833,"actualReturn":null,"modelId":"ridge10"}]}

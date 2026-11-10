@@ -1,1 +1,1 @@
-{"symbol":"YI","horizon":1,"records":[]}
+{"symbol":"YI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:55.722144+00:00","baseAdjusted":2.9000000953674316,"predictedReturn":-0.002575138677301107,"actualReturn":null,"modelId":"mean"}]}

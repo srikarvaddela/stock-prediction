@@ -1,1 +1,1 @@
-{"symbol":"WMT","horizon":1,"records":[]}
+{"symbol":"WMT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:11.305998+00:00","baseAdjusted":125.5199966430664,"predictedReturn":-0.0025131775177564698,"actualReturn":null,"modelId":"ridge10"}]}

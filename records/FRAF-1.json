@@ -1,1 +1,1 @@
-{"symbol":"FRAF","horizon":1,"records":[]}
+{"symbol":"FRAF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:59.121062+00:00","baseAdjusted":69.08000183105469,"predictedReturn":0.003401962074134914,"actualReturn":null,"modelId":"mean"}]}

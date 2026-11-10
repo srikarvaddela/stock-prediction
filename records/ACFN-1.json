@@ -1,1 +1,1 @@
-{"symbol":"ACFN","horizon":1,"records":[]}
+{"symbol":"ACFN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:18.075077+00:00","baseAdjusted":14.630000114440918,"predictedReturn":0.036703606217306464,"actualReturn":null,"modelId":"ridge10"}]}

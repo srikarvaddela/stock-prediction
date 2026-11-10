@@ -1,1 +1,1 @@
-{"symbol":"BGSF","horizon":1,"records":[]}
+{"symbol":"BGSF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:53.411418+00:00","baseAdjusted":3.440000057220459,"predictedReturn":-0.003099669913121904,"actualReturn":null,"modelId":"mean"}]}

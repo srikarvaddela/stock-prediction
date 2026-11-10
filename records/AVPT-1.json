@@ -1,1 +1,1 @@
-{"symbol":"AVPT","horizon":1,"records":[]}
+{"symbol":"AVPT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:39.671423+00:00","baseAdjusted":16.549999237060547,"predictedReturn":0.009064528718885355,"actualReturn":null,"modelId":"boost"}]}

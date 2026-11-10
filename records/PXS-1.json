@@ -1,1 +1,1 @@
-{"symbol":"PXS","horizon":1,"records":[]}
+{"symbol":"PXS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:36.741693+00:00","baseAdjusted":5.539999961853027,"predictedReturn":-0.0002907129277109303,"actualReturn":null,"modelId":"ridge10"}]}

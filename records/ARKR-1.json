@@ -1,1 +1,1 @@
-{"symbol":"ARKR","horizon":1,"records":[]}
+{"symbol":"ARKR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:46.504451+00:00","baseAdjusted":4.480000019073486,"predictedReturn":-0.0035582174160377856,"actualReturn":null,"modelId":"mean"}]}

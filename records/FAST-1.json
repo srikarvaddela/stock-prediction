@@ -1,1 +1,1 @@
-{"symbol":"FAST","horizon":1,"records":[]}
+{"symbol":"FAST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:13.133845+00:00","baseAdjusted":52.9900016784668,"predictedReturn":0.01183159130976551,"actualReturn":null,"modelId":"ridge10"}]}

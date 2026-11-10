@@ -1,1 +1,1 @@
-{"symbol":"PROK","horizon":1,"records":[]}
+{"symbol":"PROK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:15.310743+00:00","baseAdjusted":1.1399999856948853,"predictedReturn":-0.008017541390996483,"actualReturn":null,"modelId":"mean"}]}

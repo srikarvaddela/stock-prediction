@@ -1,1 +1,1 @@
-{"symbol":"KPRX","horizon":1,"records":[]}
+{"symbol":"KPRX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:36.094905+00:00","baseAdjusted":1.440000057220459,"predictedReturn":-0.01754933996104987,"actualReturn":null,"modelId":"ridge10"}]}

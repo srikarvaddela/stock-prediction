@@ -1,1 +1,1 @@
-{"symbol":"CRMD","horizon":1,"records":[]}
+{"symbol":"CRMD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:27.368798+00:00","baseAdjusted":5.320000171661377,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

@@ -1,1 +1,1 @@
-{"symbol":"PRM","horizon":1,"records":[]}
+{"symbol":"PRM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:29.854048+00:00","baseAdjusted":29.5,"predictedReturn":0.00023231499867090187,"actualReturn":null,"modelId":"ridge10"}]}

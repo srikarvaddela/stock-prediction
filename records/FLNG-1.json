@@ -1,1 +1,1 @@
-{"symbol":"FLNG","horizon":1,"records":[]}
+{"symbol":"FLNG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:07.953430+00:00","baseAdjusted":26.059999465942383,"predictedReturn":0.0057270915552174876,"actualReturn":null,"modelId":"mean"}]}

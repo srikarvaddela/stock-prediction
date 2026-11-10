@@ -1,1 +1,1 @@
-{"symbol":"OVID","horizon":1,"records":[]}
+{"symbol":"OVID","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:50.230787+00:00","baseAdjusted":2.8499999046325684,"predictedReturn":0.00023702901473175448,"actualReturn":null,"modelId":"mean"}]}

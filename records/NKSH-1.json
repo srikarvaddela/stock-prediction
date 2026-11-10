@@ -1,1 +1,1 @@
-{"symbol":"NKSH","horizon":1,"records":[]}
+{"symbol":"NKSH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:30.154286+00:00","baseAdjusted":39.189998626708984,"predictedReturn":0.004532869548907125,"actualReturn":null,"modelId":"ridge10"}]}

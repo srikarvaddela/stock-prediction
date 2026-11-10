@@ -1,1 +1,1 @@
-{"symbol":"CNF","horizon":1,"records":[]}
+{"symbol":"CNF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:31.302929+00:00","baseAdjusted":2,"predictedReturn":-0.01334146495149919,"actualReturn":null,"modelId":"boost"}]}

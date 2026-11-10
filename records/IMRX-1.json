@@ -1,1 +1,1 @@
-{"symbol":"IMRX","horizon":1,"records":[]}
+{"symbol":"IMRX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:07.188505+00:00","baseAdjusted":3.680000066757202,"predictedReturn":-0.007384756801842358,"actualReturn":null,"modelId":"mean"}]}

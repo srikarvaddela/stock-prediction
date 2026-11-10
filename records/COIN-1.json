@@ -1,1 +1,1 @@
-{"symbol":"COIN","horizon":1,"records":[]}
+{"symbol":"COIN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:26.516060+00:00","baseAdjusted":134.75999450683594,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

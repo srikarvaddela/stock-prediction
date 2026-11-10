@@ -1,1 +1,1 @@
-{"symbol":"SQFT","horizon":1,"records":[]}
+{"symbol":"SQFT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:07.307476+00:00","baseAdjusted":0.800000011920929,"predictedReturn":-0.020891774166860454,"actualReturn":null,"modelId":"boost"}]}

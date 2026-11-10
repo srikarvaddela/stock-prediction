@@ -1,1 +1,1 @@
-{"symbol":"DIBS","horizon":1,"records":[]}
+{"symbol":"DIBS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:38.676641+00:00","baseAdjusted":6.019999980926514,"predictedReturn":-0.004109362116730783,"actualReturn":null,"modelId":"mean"}]}

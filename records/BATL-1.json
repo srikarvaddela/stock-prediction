@@ -1,1 +1,1 @@
-{"symbol":"BATL","horizon":1,"records":[]}
+{"symbol":"BATL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:27.829466+00:00","baseAdjusted":0.75,"predictedReturn":-0.00756987066015239,"actualReturn":null,"modelId":"mean"}]}

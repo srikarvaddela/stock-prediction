@@ -1,1 +1,1 @@
-{"symbol":"QNST","horizon":1,"records":[]}
+{"symbol":"QNST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:32.482539+00:00","baseAdjusted":20.65999984741211,"predictedReturn":-0.008865668691535404,"actualReturn":null,"modelId":"boost"}]}

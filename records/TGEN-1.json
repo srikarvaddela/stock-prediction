@@ -1,1 +1,1 @@
-{"symbol":"TGEN","horizon":1,"records":[]}
+{"symbol":"TGEN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:35.824644+00:00","baseAdjusted":1.7200000286102295,"predictedReturn":0.0017028598575745907,"actualReturn":null,"modelId":"boost"}]}

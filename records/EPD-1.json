@@ -1,1 +1,1 @@
-{"symbol":"EPD","horizon":1,"records":[]}
+{"symbol":"EPD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:33.095486+00:00","baseAdjusted":37.029998779296875,"predictedReturn":0.00659387532166767,"actualReturn":null,"modelId":"ridge10"}]}

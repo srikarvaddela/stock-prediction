@@ -1,1 +1,1 @@
-{"symbol":"LX","horizon":1,"records":[]}
+{"symbol":"LX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:53.583672+00:00","baseAdjusted":0.6610000133514404,"predictedReturn":-0.01932135615226138,"actualReturn":null,"modelId":"ridge10"}]}

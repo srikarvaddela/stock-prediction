@@ -1,1 +1,1 @@
-{"symbol":"AEE","horizon":1,"records":[]}
+{"symbol":"AEE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:37.818584+00:00","baseAdjusted":112.8499984741211,"predictedReturn":0.0017144481016281782,"actualReturn":null,"modelId":"mean"}]}

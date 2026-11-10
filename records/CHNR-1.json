@@ -1,1 +1,1 @@
-{"symbol":"CHNR","horizon":1,"records":[]}
+{"symbol":"CHNR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:16.300660+00:00","baseAdjusted":3.9700000286102295,"predictedReturn":-0.008647376773510754,"actualReturn":null,"modelId":"ridge100"}]}

@@ -1,1 +1,1 @@
-{"symbol":"FLWS","horizon":1,"records":[]}
+{"symbol":"FLWS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:52.121683+00:00","baseAdjusted":2.5799999237060547,"predictedReturn":0.005873353524778507,"actualReturn":null,"modelId":"boost"}]}

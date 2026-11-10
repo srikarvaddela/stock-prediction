@@ -1,1 +1,1 @@
-{"symbol":"FHTX","horizon":1,"records":[]}
+{"symbol":"FHTX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:00.242323+00:00","baseAdjusted":1.8700000047683716,"predictedReturn":0.03151360510044045,"actualReturn":null,"modelId":"ridge10"}]}

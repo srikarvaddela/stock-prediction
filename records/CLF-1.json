@@ -1,1 +1,1 @@
-{"symbol":"CLF","horizon":1,"records":[]}
+{"symbol":"CLF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:24.423962+00:00","baseAdjusted":11.460000038146973,"predictedReturn":0.022209567683740206,"actualReturn":null,"modelId":"ridge10"}]}

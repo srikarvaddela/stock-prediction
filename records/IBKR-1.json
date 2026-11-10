@@ -1,1 +1,1 @@
-{"symbol":"IBKR","horizon":1,"records":[]}
+{"symbol":"IBKR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:32.737184+00:00","baseAdjusted":75.81999969482422,"predictedReturn":0.009083300357623945,"actualReturn":null,"modelId":"boost"}]}

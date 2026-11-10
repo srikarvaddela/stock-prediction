@@ -1,1 +1,1 @@
-{"symbol":"CTOR","horizon":1,"records":[]}
+{"symbol":"CTOR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:52.001668+00:00","baseAdjusted":0.5099999904632568,"predictedReturn":0.03770725147240232,"actualReturn":null,"modelId":"ridge100"}]}

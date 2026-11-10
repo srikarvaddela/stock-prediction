@@ -1,1 +1,1 @@
-{"symbol":"BKR","horizon":1,"records":[]}
+{"symbol":"BKR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:01.718731+00:00","baseAdjusted":47.869998931884766,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

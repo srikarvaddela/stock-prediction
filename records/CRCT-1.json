@@ -1,1 +1,1 @@
-{"symbol":"CRCT","horizon":1,"records":[]}
+{"symbol":"CRCT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:44.440437+00:00","baseAdjusted":8.779999732971191,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

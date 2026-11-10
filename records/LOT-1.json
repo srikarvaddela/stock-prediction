@@ -1,1 +1,1 @@
-{"symbol":"LOT","horizon":1,"records":[]}
+{"symbol":"LOT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:36.719611+00:00","baseAdjusted":0.32499998807907104,"predictedReturn":-0.01226594180155932,"actualReturn":null,"modelId":"mean"}]}

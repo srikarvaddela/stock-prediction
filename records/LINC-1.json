@@ -1,1 +1,1 @@
-{"symbol":"LINC","horizon":1,"records":[]}
+{"symbol":"LINC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:03.748330+00:00","baseAdjusted":17.65999984741211,"predictedReturn":0.0005127645808300809,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"RMTI","horizon":1,"records":[]}
+{"symbol":"RMTI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:53.592964+00:00","baseAdjusted":7.730000019073486,"predictedReturn":-0.003754546492045866,"actualReturn":null,"modelId":"boost"}]}

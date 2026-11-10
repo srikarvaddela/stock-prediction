@@ -1,1 +1,1 @@
-{"symbol":"CRNC","horizon":1,"records":[]}
+{"symbol":"CRNC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:52.958761+00:00","baseAdjusted":8.149999618530273,"predictedReturn":-0.008166150583029951,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"ENVB","horizon":1,"records":[]}
+{"symbol":"ENVB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:42.972528+00:00","baseAdjusted":1.4240000247955322,"predictedReturn":-0.042796859826914835,"actualReturn":null,"modelId":"mean"}]}

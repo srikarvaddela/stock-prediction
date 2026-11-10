@@ -1,1 +1,1 @@
-{"symbol":"MBRX","horizon":1,"records":[]}
+{"symbol":"MBRX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:45.391051+00:00","baseAdjusted":8.699999809265137,"predictedReturn":-0.017178554842933565,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"NYAX","horizon":1,"records":[]}
+{"symbol":"NYAX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:29.928243+00:00","baseAdjusted":47.65999984741211,"predictedReturn":0.004361571742172263,"actualReturn":null,"modelId":"mean"}]}

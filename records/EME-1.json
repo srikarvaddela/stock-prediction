@@ -1,1 +1,1 @@
-{"symbol":"EME","horizon":1,"records":[]}
+{"symbol":"EME","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:42.145589+00:00","baseAdjusted":608.4500122070312,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

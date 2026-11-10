@@ -1,1 +1,1 @@
-{"symbol":"XRAY","horizon":1,"records":[]}
+{"symbol":"XRAY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:01:14.367677+00:00","baseAdjusted":9.460000038146973,"predictedReturn":-0.00437631223836756,"actualReturn":null,"modelId":"boost"}]}

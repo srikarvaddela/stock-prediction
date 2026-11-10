@@ -1,1 +1,1 @@
-{"symbol":"KRC","horizon":1,"records":[]}
+{"symbol":"KRC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:30.380798+00:00","baseAdjusted":35.81999969482422,"predictedReturn":-0.0011380746648491018,"actualReturn":null,"modelId":"boost"}]}

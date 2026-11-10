@@ -1,1 +1,1 @@
-{"symbol":"GLPI","horizon":1,"records":[]}
+{"symbol":"GLPI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:40.028611+00:00","baseAdjusted":38.88999938964844,"predictedReturn":0.0020560179657880644,"actualReturn":null,"modelId":"ridge100"}]}

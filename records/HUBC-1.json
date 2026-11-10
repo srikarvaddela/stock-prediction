@@ -1,1 +1,1 @@
-{"symbol":"HUBC","horizon":1,"records":[]}
+{"symbol":"HUBC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:22.083697+00:00","baseAdjusted":0.09200000017881393,"predictedReturn":-0.2114048570541528,"actualReturn":null,"modelId":"ridge10"}]}

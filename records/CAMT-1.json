@@ -1,1 +1,1 @@
-{"symbol":"CAMT","horizon":1,"records":[]}
+{"symbol":"CAMT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:40.627611+00:00","baseAdjusted":97.05000305175781,"predictedReturn":0.03840349437842076,"actualReturn":null,"modelId":"boost"}]}

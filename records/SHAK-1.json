@@ -1,1 +1,1 @@
-{"symbol":"SHAK","horizon":1,"records":[]}
+{"symbol":"SHAK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:50.691992+00:00","baseAdjusted":71.88999938964844,"predictedReturn":0.007144761052693086,"actualReturn":null,"modelId":"boost"}]}

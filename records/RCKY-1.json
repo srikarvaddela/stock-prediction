@@ -1,1 +1,1 @@
-{"symbol":"RCKY","horizon":1,"records":[]}
+{"symbol":"RCKY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:39.666028+00:00","baseAdjusted":51.34000015258789,"predictedReturn":-0.0037350671120662212,"actualReturn":null,"modelId":"ridge100"}]}

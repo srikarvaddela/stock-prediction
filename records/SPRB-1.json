@@ -1,1 +1,1 @@
-{"symbol":"SPRB","horizon":1,"records":[]}
+{"symbol":"SPRB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:47.150193+00:00","baseAdjusted":46.54999923706055,"predictedReturn":-0.025841670776022847,"actualReturn":null,"modelId":"mean"}]}

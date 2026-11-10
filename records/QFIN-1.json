@@ -1,1 +1,1 @@
-{"symbol":"QFIN","horizon":1,"records":[]}
+{"symbol":"QFIN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:33.782146+00:00","baseAdjusted":5.579999923706055,"predictedReturn":-0.0038432341547691407,"actualReturn":null,"modelId":"ridge100"}]}

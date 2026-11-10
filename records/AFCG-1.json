@@ -1,1 +1,1 @@
-{"symbol":"AFCG","horizon":1,"records":[]}
+{"symbol":"AFCG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:40.805720+00:00","baseAdjusted":3.1700000762939453,"predictedReturn":-0.0034938409152017375,"actualReturn":null,"modelId":"mean"}]}

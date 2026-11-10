@@ -1,1 +1,1 @@
-{"symbol":"URBN","horizon":1,"records":[]}
+{"symbol":"URBN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:31.672735+00:00","baseAdjusted":84.69999694824219,"predictedReturn":0.0037164788539597988,"actualReturn":null,"modelId":"mean"}]}

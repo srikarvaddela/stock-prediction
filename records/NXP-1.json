@@ -1,1 +1,1 @@
-{"symbol":"NXP","horizon":1,"records":[]}
+{"symbol":"NXP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:36.678823+00:00","baseAdjusted":13.479999542236328,"predictedReturn":0.00035865722539934515,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"CATY","horizon":1,"records":[]}
+{"symbol":"CATY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:07.254264+00:00","baseAdjusted":64.22000122070312,"predictedReturn":0.0003666111675566784,"actualReturn":null,"modelId":"ridge10"}]}

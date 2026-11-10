@@ -1,1 +1,1 @@
-{"symbol":"ZBH","horizon":1,"records":[]}
+{"symbol":"ZBH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:57.899676+00:00","baseAdjusted":105.58999633789062,"predictedReturn":-0.006602511104038912,"actualReturn":null,"modelId":"ridge10"}]}

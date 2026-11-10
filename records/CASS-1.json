@@ -1,1 +1,1 @@
-{"symbol":"CASS","horizon":1,"records":[]}
+{"symbol":"CASS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:37.588779+00:00","baseAdjusted":54.18000030517578,"predictedReturn":0.004339959321802917,"actualReturn":null,"modelId":"ridge10"}]}

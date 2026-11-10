@@ -1,1 +1,1 @@
-{"symbol":"RBA","horizon":1,"records":[]}
+{"symbol":"RBA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:54.979528+00:00","baseAdjusted":93.5199966430664,"predictedReturn":-0.0018428494914908035,"actualReturn":null,"modelId":"ridge100"}]}

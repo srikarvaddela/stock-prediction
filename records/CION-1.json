@@ -1,1 +1,1 @@
-{"symbol":"CION","horizon":1,"records":[]}
+{"symbol":"CION","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:59.699578+00:00","baseAdjusted":6.289999961853027,"predictedReturn":-0.0011526002801967143,"actualReturn":null,"modelId":"ridge100"}]}

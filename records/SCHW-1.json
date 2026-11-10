@@ -1,1 +1,1 @@
-{"symbol":"SCHW","horizon":1,"records":[]}
+{"symbol":"SCHW","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:34.433092+00:00","baseAdjusted":91.48999786376953,"predictedReturn":0.002088447704560796,"actualReturn":null,"modelId":"mean"}]}

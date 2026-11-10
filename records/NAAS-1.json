@@ -1,1 +1,1 @@
-{"symbol":"NAAS","horizon":1,"records":[]}
+{"symbol":"NAAS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:47.360843+00:00","baseAdjusted":1.9500000476837158,"predictedReturn":-0.023053273195791705,"actualReturn":null,"modelId":"ridge10"}]}

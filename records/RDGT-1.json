@@ -1,1 +1,1 @@
-{"symbol":"RDGT","horizon":1,"records":[]}
+{"symbol":"RDGT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:10.108356+00:00","baseAdjusted":1,"predictedReturn":-0.039838312631878536,"actualReturn":null,"modelId":"ridge10"}]}

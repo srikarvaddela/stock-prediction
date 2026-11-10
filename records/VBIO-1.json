@@ -1,1 +1,1 @@
-{"symbol":"VBIO","horizon":1,"records":[]}
+{"symbol":"VBIO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:26.548819+00:00","baseAdjusted":0.5099999904632568,"predictedReturn":-0.027011440202020266,"actualReturn":null,"modelId":"ridge10"}]}

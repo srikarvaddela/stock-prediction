@@ -1,1 +1,1 @@
-{"symbol":"PLCE","horizon":1,"records":[]}
+{"symbol":"PLCE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:31.272761+00:00","baseAdjusted":0.3199999928474426,"predictedReturn":-0.11802431897137247,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"PMCB","horizon":1,"records":[]}
+{"symbol":"PMCB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:40.456585+00:00","baseAdjusted":0.36000001430511475,"predictedReturn":-0.009882896420271792,"actualReturn":null,"modelId":"mean"}]}

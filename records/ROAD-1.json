@@ -1,1 +1,1 @@
-{"symbol":"ROAD","horizon":1,"records":[]}
+{"symbol":"ROAD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:42.032308+00:00","baseAdjusted":77.18000030517578,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

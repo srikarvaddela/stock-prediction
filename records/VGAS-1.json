@@ -1,1 +1,1 @@
-{"symbol":"VGAS","horizon":1,"records":[]}
+{"symbol":"VGAS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:26.292733+00:00","baseAdjusted":0.9950000047683716,"predictedReturn":0.005291335070182153,"actualReturn":null,"modelId":"ridge100"}]}

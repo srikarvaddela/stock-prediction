@@ -1,1 +1,1 @@
-{"symbol":"ATHM","horizon":1,"records":[]}
+{"symbol":"ATHM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:22.082392+00:00","baseAdjusted":22.8700008392334,"predictedReturn":0.0011326850283759576,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"TRST","horizon":1,"records":[]}
+{"symbol":"TRST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:07.480463+00:00","baseAdjusted":57.29999923706055,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

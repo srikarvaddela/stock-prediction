@@ -1,1 +1,1 @@
-{"symbol":"TSLA","horizon":1,"records":[]}
+{"symbol":"TSLA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:50.273919+00:00","baseAdjusted":358.2200012207031,"predictedReturn":-0.0029762077479571106,"actualReturn":null,"modelId":"boost"}]}

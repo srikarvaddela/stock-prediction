@@ -1,1 +1,1 @@
-{"symbol":"CPAC","horizon":1,"records":[]}
+{"symbol":"CPAC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:39.771429+00:00","baseAdjusted":12.729999542236328,"predictedReturn":0.0014855528265669171,"actualReturn":null,"modelId":"ridge10"}]}

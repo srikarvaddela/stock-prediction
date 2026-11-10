@@ -1,1 +1,1 @@
-{"symbol":"MTX","horizon":1,"records":[]}
+{"symbol":"MTX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:14.047410+00:00","baseAdjusted":61.630001068115234,"predictedReturn":-0.004852133644489611,"actualReturn":null,"modelId":"ridge10"}]}

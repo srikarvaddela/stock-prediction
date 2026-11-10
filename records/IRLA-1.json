@@ -1,1 +1,1 @@
-{"symbol":"IRLA","horizon":1,"records":[]}
+{"symbol":"IRLA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:29.663823+00:00","baseAdjusted":31,"predictedReturn":-0.006511073104320504,"actualReturn":null,"modelId":"ridge10"}]}

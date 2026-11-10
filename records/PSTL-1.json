@@ -1,1 +1,1 @@
-{"symbol":"PSTL","horizon":1,"records":[]}
+{"symbol":"PSTL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:28.142234+00:00","baseAdjusted":22.18000030517578,"predictedReturn":0.002650905713351498,"actualReturn":null,"modelId":"ridge100"}]}

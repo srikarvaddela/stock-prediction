@@ -1,1 +1,1 @@
-{"symbol":"ORBS","horizon":1,"records":[]}
+{"symbol":"ORBS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:49.785970+00:00","baseAdjusted":0.7459999918937683,"predictedReturn":-0.004769360238462927,"actualReturn":null,"modelId":"ridge10"}]}

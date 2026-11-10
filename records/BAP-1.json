@@ -1,1 +1,1 @@
-{"symbol":"BAP","horizon":1,"records":[]}
+{"symbol":"BAP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:17.371456+00:00","baseAdjusted":347.92999267578125,"predictedReturn":0.011045379774256299,"actualReturn":null,"modelId":"ridge10"}]}

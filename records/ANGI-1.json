@@ -1,1 +1,1 @@
-{"symbol":"ANGI","horizon":1,"records":[]}
+{"symbol":"ANGI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:39.898729+00:00","baseAdjusted":6.920000076293945,"predictedReturn":-0.02019983717631883,"actualReturn":null,"modelId":"ridge100"}]}

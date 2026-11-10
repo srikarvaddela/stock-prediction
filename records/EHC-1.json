@@ -1,1 +1,1 @@
-{"symbol":"EHC","horizon":1,"records":[]}
+{"symbol":"EHC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:54.881269+00:00","baseAdjusted":137.5399932861328,"predictedReturn":0.001186199900903408,"actualReturn":null,"modelId":"boost"}]}

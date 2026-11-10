@@ -1,1 +1,1 @@
-{"symbol":"EQBK","horizon":1,"records":[]}
+{"symbol":"EQBK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:34.072044+00:00","baseAdjusted":48.709999084472656,"predictedReturn":8.463724030510944e-06,"actualReturn":null,"modelId":"boost"}]}

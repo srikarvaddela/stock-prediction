@@ -1,1 +1,1 @@
-{"symbol":"FMX","horizon":1,"records":[]}
+{"symbol":"FMX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:11.283001+00:00","baseAdjusted":129.85000610351562,"predictedReturn":-0.002445602288662574,"actualReturn":null,"modelId":"boost"}]}

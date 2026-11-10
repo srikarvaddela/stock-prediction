@@ -1,1 +1,1 @@
-{"symbol":"UCB","horizon":1,"records":[]}
+{"symbol":"UCB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:07.161937+00:00","baseAdjusted":36.9900016784668,"predictedReturn":-0.0007318706947816296,"actualReturn":null,"modelId":"ridge10"}]}

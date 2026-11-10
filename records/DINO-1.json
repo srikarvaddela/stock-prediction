@@ -1,1 +1,1 @@
-{"symbol":"DINO","horizon":1,"records":[]}
+{"symbol":"DINO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:37.221194+00:00","baseAdjusted":97.18000030517578,"predictedReturn":0.018421774278700318,"actualReturn":null,"modelId":"ridge10"}]}

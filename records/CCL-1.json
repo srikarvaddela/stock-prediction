@@ -1,1 +1,1 @@
-{"symbol":"CCL","horizon":1,"records":[]}
+{"symbol":"CCL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:42.964179+00:00","baseAdjusted":29.579999923706055,"predictedReturn":-0.0004108480263195364,"actualReturn":null,"modelId":"boost"}]}

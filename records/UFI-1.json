@@ -1,1 +1,1 @@
-{"symbol":"UFI","horizon":1,"records":[]}
+{"symbol":"UFI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:56.646891+00:00","baseAdjusted":5.809999942779541,"predictedReturn":-0.004039828425986702,"actualReturn":null,"modelId":"boost"}]}

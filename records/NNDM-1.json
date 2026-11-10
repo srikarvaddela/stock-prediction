@@ -1,1 +1,1 @@
-{"symbol":"NNDM","horizon":1,"records":[]}
+{"symbol":"NNDM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:18.722735+00:00","baseAdjusted":1.3200000524520874,"predictedReturn":-0.005488079282907548,"actualReturn":null,"modelId":"mean"}]}

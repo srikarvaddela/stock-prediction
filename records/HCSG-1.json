@@ -1,1 +1,1 @@
-{"symbol":"HCSG","horizon":1,"records":[]}
+{"symbol":"HCSG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:46.160795+00:00","baseAdjusted":24.280000686645508,"predictedReturn":-9.608921666733108e-05,"actualReturn":null,"modelId":"mean"}]}

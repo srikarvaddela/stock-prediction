@@ -1,1 +1,1 @@
-{"symbol":"CMCM","horizon":1,"records":[]}
+{"symbol":"CMCM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:28.513636+00:00","baseAdjusted":2.309999942779541,"predictedReturn":-0.0025474131479420264,"actualReturn":null,"modelId":"boost"}]}

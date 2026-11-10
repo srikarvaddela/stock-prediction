@@ -1,1 +1,1 @@
-{"symbol":"BOTJ","horizon":1,"records":[]}
+{"symbol":"BOTJ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:20.191522+00:00","baseAdjusted":24.440000534057617,"predictedReturn":0.003030736164065332,"actualReturn":null,"modelId":"mean"}]}

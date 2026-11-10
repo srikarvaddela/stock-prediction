@@ -1,1 +1,1 @@
-{"symbol":"LOCO","horizon":1,"records":[]}
+{"symbol":"LOCO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:48.645427+00:00","baseAdjusted":14.880000114440918,"predictedReturn":-0.00016430958861609411,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"IONS","horizon":1,"records":[]}
+{"symbol":"IONS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:11.322319+00:00","baseAdjusted":39.41999816894531,"predictedReturn":-0.0010444162335742433,"actualReturn":null,"modelId":"mean"}]}

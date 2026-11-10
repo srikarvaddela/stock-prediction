@@ -1,1 +1,1 @@
-{"symbol":"MDT","horizon":1,"records":[]}
+{"symbol":"MDT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:56.680103+00:00","baseAdjusted":101.80000305175781,"predictedReturn":0.00014060826592545832,"actualReturn":null,"modelId":"mean"}]}

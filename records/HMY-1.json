@@ -1,1 +1,1 @@
-{"symbol":"HMY","horizon":1,"records":[]}
+{"symbol":"HMY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:54.685458+00:00","baseAdjusted":17.170000076293945,"predictedReturn":0.017315094017116082,"actualReturn":null,"modelId":"boost"}]}

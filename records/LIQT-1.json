@@ -1,1 +1,1 @@
-{"symbol":"LIQT","horizon":1,"records":[]}
+{"symbol":"LIQT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:30.118093+00:00","baseAdjusted":0.28999999165534973,"predictedReturn":-0.017634442282263338,"actualReturn":null,"modelId":"mean"}]}

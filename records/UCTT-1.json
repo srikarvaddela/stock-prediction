@@ -1,1 +1,1 @@
-{"symbol":"UCTT","horizon":1,"records":[]}
+{"symbol":"UCTT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:09.968180+00:00","baseAdjusted":41.130001068115234,"predictedReturn":0.004290071291290956,"actualReturn":null,"modelId":"ridge10"}]}

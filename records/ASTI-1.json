@@ -1,1 +1,1 @@
-{"symbol":"ASTI","horizon":1,"records":[]}
+{"symbol":"ASTI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:17.663388+00:00","baseAdjusted":1.4500000476837158,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

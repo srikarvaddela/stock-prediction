@@ -1,1 +1,1 @@
-{"symbol":"CMTG","horizon":1,"records":[]}
+{"symbol":"CMTG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:14.645250+00:00","baseAdjusted":1.6399999856948853,"predictedReturn":-0.009126755384610838,"actualReturn":null,"modelId":"boost"}]}

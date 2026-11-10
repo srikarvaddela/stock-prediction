@@ -1,1 +1,1 @@
-{"symbol":"CVRX","horizon":1,"records":[]}
+{"symbol":"CVRX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:53.982437+00:00","baseAdjusted":0.8690000176429749,"predictedReturn":0.02394889399816815,"actualReturn":null,"modelId":"ridge100"}]}

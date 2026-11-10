@@ -1,1 +1,1 @@
-{"symbol":"BEN","horizon":1,"records":[]}
+{"symbol":"BEN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:36.149898+00:00","baseAdjusted":33.72999954223633,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

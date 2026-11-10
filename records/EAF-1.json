@@ -1,1 +1,1 @@
-{"symbol":"EAF","horizon":1,"records":[]}
+{"symbol":"EAF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:19.502654+00:00","baseAdjusted":9.579999923706055,"predictedReturn":-0.007125912187363647,"actualReturn":null,"modelId":"mean"}]}

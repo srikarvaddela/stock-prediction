@@ -1,1 +1,1 @@
-{"symbol":"UAA","horizon":1,"records":[]}
+{"symbol":"UAA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:23.928668+00:00","baseAdjusted":5.28000020980835,"predictedReturn":-0.017105670051993732,"actualReturn":null,"modelId":"boost"}]}

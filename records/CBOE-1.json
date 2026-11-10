@@ -1,1 +1,1 @@
-{"symbol":"CBOE","horizon":1,"records":[]}
+{"symbol":"CBOE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:52.542786+00:00","baseAdjusted":353.2699890136719,"predictedReturn":0.0016464355077493876,"actualReturn":null,"modelId":"boost"}]}

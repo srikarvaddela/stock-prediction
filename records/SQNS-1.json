@@ -1,1 +1,1 @@
-{"symbol":"SQNS","horizon":1,"records":[]}
+{"symbol":"SQNS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:10.437647+00:00","baseAdjusted":2.6500000953674316,"predictedReturn":0.0004728130539830437,"actualReturn":null,"modelId":"ridge10"}]}

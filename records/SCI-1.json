@@ -1,1 +1,1 @@
-{"symbol":"SCI","horizon":1,"records":[]}
+{"symbol":"SCI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:26.962041+00:00","baseAdjusted":73.73999786376953,"predictedReturn":0.014668504971247132,"actualReturn":null,"modelId":"ridge10"}]}

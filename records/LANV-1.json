@@ -1,1 +1,1 @@
-{"symbol":"LANV","horizon":1,"records":[]}
+{"symbol":"LANV","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:13.100262+00:00","baseAdjusted":0.7080000042915344,"predictedReturn":0.05073220818733155,"actualReturn":null,"modelId":"ridge10"}]}

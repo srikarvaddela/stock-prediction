@@ -1,1 +1,1 @@
-{"symbol":"WHLR","horizon":1,"records":[]}
+{"symbol":"WHLR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:31.907442+00:00","baseAdjusted":0.38499999046325684,"predictedReturn":-0.09435578926661585,"actualReturn":null,"modelId":"mean"}]}

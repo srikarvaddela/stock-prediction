@@ -1,1 +1,1 @@
-{"symbol":"BSAC","horizon":1,"records":[]}
+{"symbol":"BSAC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:41.892164+00:00","baseAdjusted":32.33000183105469,"predictedReturn":0.002600880053592931,"actualReturn":null,"modelId":"mean"}]}

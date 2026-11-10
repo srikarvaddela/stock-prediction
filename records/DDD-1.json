@@ -1,1 +1,1 @@
-{"symbol":"DDD","horizon":1,"records":[]}
+{"symbol":"DDD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:30.198374+00:00","baseAdjusted":1.75,"predictedReturn":0.011550951657849829,"actualReturn":null,"modelId":"boost"}]}

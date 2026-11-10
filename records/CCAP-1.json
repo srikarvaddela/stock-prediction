@@ -1,1 +1,1 @@
-{"symbol":"CCAP","horizon":1,"records":[]}
+{"symbol":"CCAP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:44.241658+00:00","baseAdjusted":9.380000114440918,"predictedReturn":0.003433148706640417,"actualReturn":null,"modelId":"ridge100"}]}

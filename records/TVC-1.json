@@ -1,1 +1,1 @@
-{"symbol":"TVC","horizon":1,"records":[]}
+{"symbol":"TVC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:04.869703+00:00","baseAdjusted":23.84000015258789,"predictedReturn":0.0022695377629016016,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"BLIN","horizon":1,"records":[]}
+{"symbol":"BLIN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:21.903054+00:00","baseAdjusted":0.6200000047683716,"predictedReturn":0.014238085303230204,"actualReturn":null,"modelId":"ridge10"}]}

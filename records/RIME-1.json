@@ -1,1 +1,1 @@
-{"symbol":"RIME","horizon":1,"records":[]}
+{"symbol":"RIME","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:08.025825+00:00","baseAdjusted":0.09000000357627869,"predictedReturn":-0.03204470303338938,"actualReturn":null,"modelId":"mean"}]}

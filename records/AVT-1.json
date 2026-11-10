@@ -1,1 +1,1 @@
-{"symbol":"AVT","horizon":1,"records":[]}
+{"symbol":"AVT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:23.253391+00:00","baseAdjusted":79.27999877929688,"predictedReturn":0.014642874984255498,"actualReturn":null,"modelId":"ridge10"}]}

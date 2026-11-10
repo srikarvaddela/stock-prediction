@@ -1,1 +1,1 @@
-{"symbol":"POST","horizon":1,"records":[]}
+{"symbol":"POST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:37.026158+00:00","baseAdjusted":83.05000305175781,"predictedReturn":-0.004020063613685061,"actualReturn":null,"modelId":"boost"}]}

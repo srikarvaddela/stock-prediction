@@ -1,1 +1,1 @@
-{"symbol":"BLW","horizon":1,"records":[]}
+{"symbol":"BLW","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:24.299386+00:00","baseAdjusted":11.729999542236328,"predictedReturn":0.0016466803854196142,"actualReturn":null,"modelId":"ridge100"}]}

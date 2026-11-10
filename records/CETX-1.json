@@ -1,1 +1,1 @@
-{"symbol":"CETX","horizon":1,"records":[]}
+{"symbol":"CETX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:49.405602+00:00","baseAdjusted":0.6330000162124634,"predictedReturn":-0.18247405276939221,"actualReturn":null,"modelId":"ridge100"}]}

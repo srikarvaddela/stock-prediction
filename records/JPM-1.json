@@ -1,1 +1,1 @@
-{"symbol":"JPM","horizon":1,"records":[]}
+{"symbol":"JPM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:29.844039+00:00","baseAdjusted":334.489990234375,"predictedReturn":0.003055904264531204,"actualReturn":null,"modelId":"boost"}]}

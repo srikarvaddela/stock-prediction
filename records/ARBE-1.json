@@ -1,1 +1,1 @@
-{"symbol":"ARBE","horizon":1,"records":[]}
+{"symbol":"ARBE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:55.567310+00:00","baseAdjusted":0.4339999854564667,"predictedReturn":0.02496378283170898,"actualReturn":null,"modelId":"ridge10"}]}

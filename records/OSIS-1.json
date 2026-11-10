@@ -1,1 +1,1 @@
-{"symbol":"OSIS","horizon":1,"records":[]}
+{"symbol":"OSIS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:06.740073+00:00","baseAdjusted":196.36000061035156,"predictedReturn":0.002472277180797029,"actualReturn":null,"modelId":"mean"}]}

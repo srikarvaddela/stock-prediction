@@ -1,1 +1,1 @@
-{"symbol":"PSNY","horizon":1,"records":[]}
+{"symbol":"PSNY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:16.635357+00:00","baseAdjusted":4.260000228881836,"predictedReturn":-0.01713186164954182,"actualReturn":null,"modelId":"ridge10"}]}

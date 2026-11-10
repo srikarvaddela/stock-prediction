@@ -1,1 +1,1 @@
-{"symbol":"DCGO","horizon":1,"records":[]}
+{"symbol":"DCGO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:53.378211+00:00","baseAdjusted":0.24500000476837158,"predictedReturn":-0.01247766828843613,"actualReturn":null,"modelId":"mean"}]}

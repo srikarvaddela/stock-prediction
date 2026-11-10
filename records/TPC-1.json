@@ -1,1 +1,1 @@
-{"symbol":"TPC","horizon":1,"records":[]}
+{"symbol":"TPC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:03.092217+00:00","baseAdjusted":89.88999938964844,"predictedReturn":-0.0077543770205669394,"actualReturn":null,"modelId":"ridge10"}]}

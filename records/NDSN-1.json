@@ -1,1 +1,1 @@
-{"symbol":"NDSN","horizon":1,"records":[]}
+{"symbol":"NDSN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:17.082820+00:00","baseAdjusted":309.8599853515625,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

@@ -1,1 +1,1 @@
-{"symbol":"ACCO","horizon":1,"records":[]}
+{"symbol":"ACCO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:40.859973+00:00","baseAdjusted":5.059999942779541,"predictedReturn":-2.916385080931963e-05,"actualReturn":null,"modelId":"ridge100"}]}

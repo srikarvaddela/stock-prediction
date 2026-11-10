@@ -1,1 +1,1 @@
-{"symbol":"ENR","horizon":1,"records":[]}
+{"symbol":"ENR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:22.522433+00:00","baseAdjusted":23.84000015258789,"predictedReturn":-0.0064967125415168,"actualReturn":null,"modelId":"ridge100"}]}

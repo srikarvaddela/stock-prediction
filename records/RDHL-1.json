@@ -1,1 +1,1 @@
-{"symbol":"RDHL","horizon":1,"records":[]}
+{"symbol":"RDHL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:34.977212+00:00","baseAdjusted":0.42800000309944153,"predictedReturn":-0.03174046170585583,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"AKAM","horizon":1,"records":[]}
+{"symbol":"AKAM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:05.984027+00:00","baseAdjusted":83.08999633789062,"predictedReturn":0.0329739324900991,"actualReturn":null,"modelId":"boost"}]}

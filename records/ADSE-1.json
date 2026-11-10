@@ -1,1 +1,1 @@
-{"symbol":"ADSE","horizon":1,"records":[]}
+{"symbol":"ADSE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:30.489670+00:00","baseAdjusted":9.210000038146973,"predictedReturn":-0.00017585760381017454,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"OPFI","horizon":1,"records":[]}
+{"symbol":"OPFI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:22.913554+00:00","baseAdjusted":6.170000076293945,"predictedReturn":-0.015062579809931413,"actualReturn":null,"modelId":"boost"}]}

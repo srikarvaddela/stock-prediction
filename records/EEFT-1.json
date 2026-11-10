@@ -1,1 +1,1 @@
-{"symbol":"EEFT","horizon":1,"records":[]}
+{"symbol":"EEFT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:19.024370+00:00","baseAdjusted":70.87000274658203,"predictedReturn":-0.014404182649211818,"actualReturn":null,"modelId":"boost"}]}

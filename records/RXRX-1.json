@@ -1,1 +1,1 @@
-{"symbol":"RXRX","horizon":1,"records":[]}
+{"symbol":"RXRX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:34.708786+00:00","baseAdjusted":3.5199999809265137,"predictedReturn":0.0020635688055454563,"actualReturn":null,"modelId":"ridge100"}]}

@@ -1,1 +1,1 @@
-{"symbol":"CNSY","horizon":1,"records":[]}
+{"symbol":"CNSY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:21.158371+00:00","baseAdjusted":0.6399999856948853,"predictedReturn":0.15200565175802266,"actualReturn":null,"modelId":"boost"}]}

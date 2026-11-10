@@ -1,1 +1,1 @@
-{"symbol":"NVDA","horizon":1,"records":[]}
+{"symbol":"NVDA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:32.598460+00:00","baseAdjusted":186.63999938964844,"predictedReturn":0.0019729017554122735,"actualReturn":null,"modelId":"boost"}]}

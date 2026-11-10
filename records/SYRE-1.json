@@ -1,1 +1,1 @@
-{"symbol":"SYRE","horizon":1,"records":[]}
+{"symbol":"SYRE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:23.464939+00:00","baseAdjusted":103.86000061035156,"predictedReturn":-0.005658446717771085,"actualReturn":null,"modelId":"ridge10"}]}

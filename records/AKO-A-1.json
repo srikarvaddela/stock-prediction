@@ -1,1 +1,1 @@
-{"symbol":"AKO-A","horizon":1,"records":[]}
+{"symbol":"AKO-A","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:30.605171+00:00","baseAdjusted":25.290000915527344,"predictedReturn":0.0036829736841669084,"actualReturn":null,"modelId":"mean"}]}

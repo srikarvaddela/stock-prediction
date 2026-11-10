@@ -1,1 +1,1 @@
-{"symbol":"SANM","horizon":1,"records":[]}
+{"symbol":"SANM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:53.104029+00:00","baseAdjusted":134.67999267578125,"predictedReturn":0.014323195352305062,"actualReturn":null,"modelId":"ridge10"}]}

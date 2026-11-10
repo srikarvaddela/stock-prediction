@@ -1,1 +1,1 @@
-{"symbol":"TPB","horizon":1,"records":[]}
+{"symbol":"TPB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:46.400342+00:00","baseAdjusted":65.87999725341797,"predictedReturn":0.009835943138478891,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"NNOX","horizon":1,"records":[]}
+{"symbol":"NNOX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:34.098425+00:00","baseAdjusted":0.23999999463558197,"predictedReturn":-0.008925701768100964,"actualReturn":null,"modelId":"ridge10"}]}

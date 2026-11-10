@@ -1,1 +1,1 @@
-{"symbol":"STIM","horizon":1,"records":[]}
+{"symbol":"STIM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:54.174753+00:00","baseAdjusted":2.1500000953674316,"predictedReturn":-0.0077003374612447375,"actualReturn":null,"modelId":"ridge10"}]}

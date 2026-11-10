@@ -1,1 +1,1 @@
-{"symbol":"KN","horizon":1,"records":[]}
+{"symbol":"KN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:31.502836+00:00","baseAdjusted":31.270000457763672,"predictedReturn":0.008289351371997312,"actualReturn":null,"modelId":"ridge10"}]}

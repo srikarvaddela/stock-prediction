@@ -1,1 +1,1 @@
-{"symbol":"CRVO","horizon":1,"records":[]}
+{"symbol":"CRVO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:14.197063+00:00","baseAdjusted":1.4199999570846558,"predictedReturn":-0.011644272555729043,"actualReturn":null,"modelId":"mean"}]}

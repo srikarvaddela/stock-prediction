@@ -1,1 +1,1 @@
-{"symbol":"SBSI","horizon":1,"records":[]}
+{"symbol":"SBSI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:33.565873+00:00","baseAdjusted":34.08000183105469,"predictedReturn":0.0005913425266994431,"actualReturn":null,"modelId":"boost"}]}

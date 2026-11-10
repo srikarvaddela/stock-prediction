@@ -1,1 +1,1 @@
-{"symbol":"MRTN","horizon":1,"records":[]}
+{"symbol":"MRTN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:13.853318+00:00","baseAdjusted":11.739999771118164,"predictedReturn":-0.0009884766266172681,"actualReturn":null,"modelId":"mean"}]}

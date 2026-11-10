@@ -1,1 +1,1 @@
-{"symbol":"KZIA","horizon":1,"records":[]}
+{"symbol":"KZIA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:10.948663+00:00","baseAdjusted":7.179999828338623,"predictedReturn":-0.006060758424900843,"actualReturn":null,"modelId":"ridge100"}]}

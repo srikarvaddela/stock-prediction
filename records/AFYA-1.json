@@ -1,1 +1,1 @@
-{"symbol":"AFYA","horizon":1,"records":[]}
+{"symbol":"AFYA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:42.365476+00:00","baseAdjusted":10.5,"predictedReturn":0.001421077030494872,"actualReturn":null,"modelId":"ridge10"}]}

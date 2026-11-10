@@ -1,1 +1,1 @@
-{"symbol":"BKH","horizon":1,"records":[]}
+{"symbol":"BKH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:19.549847+00:00","baseAdjusted":84.87000274658203,"predictedReturn":-0.0058506438173034185,"actualReturn":null,"modelId":"ridge100"}]}

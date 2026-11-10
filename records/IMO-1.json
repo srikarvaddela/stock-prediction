@@ -1,1 +1,1 @@
-{"symbol":"IMO","horizon":1,"records":[]}
+{"symbol":"IMO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:22.353002+00:00","baseAdjusted":124.83000183105469,"predictedReturn":0.006222127827699565,"actualReturn":null,"modelId":"ridge10"}]}

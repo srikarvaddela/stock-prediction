@@ -1,1 +1,1 @@
-{"symbol":"OGN","horizon":1,"records":[]}
+{"symbol":"OGN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:39.932116+00:00","baseAdjusted":13.850000381469727,"predictedReturn":-0.0011852350582151005,"actualReturn":null,"modelId":"boost"}]}

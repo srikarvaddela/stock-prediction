@@ -1,1 +1,1 @@
-{"symbol":"LOPE","horizon":1,"records":[]}
+{"symbol":"LOPE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:46.373573+00:00","baseAdjusted":117.69000244140625,"predictedReturn":-0.0036335606711523183,"actualReturn":null,"modelId":"ridge10"}]}

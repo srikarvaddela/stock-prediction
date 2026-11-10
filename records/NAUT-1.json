@@ -1,1 +1,1 @@
-{"symbol":"NAUT","horizon":1,"records":[]}
+{"symbol":"NAUT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:15.991956+00:00","baseAdjusted":2.2300000190734863,"predictedReturn":-0.0051088560731874354,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"VRA","horizon":1,"records":[]}
+{"symbol":"VRA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:47.625959+00:00","baseAdjusted":7.050000190734863,"predictedReturn":-0.00031250725002473725,"actualReturn":null,"modelId":"mean"}]}

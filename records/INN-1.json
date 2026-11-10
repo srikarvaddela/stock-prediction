@@ -1,1 +1,1 @@
-{"symbol":"INN","horizon":1,"records":[]}
+{"symbol":"INN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:35.286846+00:00","baseAdjusted":7,"predictedReturn":-0.00022193946338929454,"actualReturn":null,"modelId":"mean"}]}

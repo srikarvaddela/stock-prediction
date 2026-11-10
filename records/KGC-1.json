@@ -1,1 +1,1 @@
-{"symbol":"KGC","horizon":1,"records":[]}
+{"symbol":"KGC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:01.589007+00:00","baseAdjusted":22.239999771118164,"predictedReturn":0.003813430576770267,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"PRVA","horizon":1,"records":[]}
+{"symbol":"PRVA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:31.685971+00:00","baseAdjusted":24.420000076293945,"predictedReturn":-0.00233467805480678,"actualReturn":null,"modelId":"mean"}]}

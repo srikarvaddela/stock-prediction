@@ -1,1 +1,1 @@
-{"symbol":"VISN","horizon":1,"records":[]}
+{"symbol":"VISN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:15.703960+00:00","baseAdjusted":3.994999885559082,"predictedReturn":-0.008862579161772743,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"CAG","horizon":1,"records":[]}
+{"symbol":"CAG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:04.798193+00:00","baseAdjusted":15.239999771118164,"predictedReturn":-0.0018561777679559925,"actualReturn":null,"modelId":"mean"}]}

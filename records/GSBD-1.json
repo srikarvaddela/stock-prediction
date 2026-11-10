@@ -1,1 +1,1 @@
-{"symbol":"GSBD","horizon":1,"records":[]}
+{"symbol":"GSBD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:30.015273+00:00","baseAdjusted":8.640000343322754,"predictedReturn":0.00015365629958014098,"actualReturn":null,"modelId":"boost"}]}

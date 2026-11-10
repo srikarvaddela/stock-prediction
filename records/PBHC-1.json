@@ -1,1 +1,1 @@
-{"symbol":"PBHC","horizon":1,"records":[]}
+{"symbol":"PBHC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:56.596548+00:00","baseAdjusted":16.709999084472656,"predictedReturn":0.0015099979114419813,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"SEIC","horizon":1,"records":[]}
+{"symbol":"SEIC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:58.360115+00:00","baseAdjusted":105.30000305175781,"predictedReturn":0.0002681332963780011,"actualReturn":null,"modelId":"boost"}]}

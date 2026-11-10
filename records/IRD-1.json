@@ -1,1 +1,1 @@
-{"symbol":"IRD","horizon":1,"records":[]}
+{"symbol":"IRD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:59.700038+00:00","baseAdjusted":4.179999828338623,"predictedReturn":-0.0011874899799341775,"actualReturn":null,"modelId":"mean"}]}

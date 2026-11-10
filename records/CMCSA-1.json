@@ -1,1 +1,1 @@
-{"symbol":"CMCSA","horizon":1,"records":[]}
+{"symbol":"CMCSA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:11.701797+00:00","baseAdjusted":24.389999389648438,"predictedReturn":0.004195678514439361,"actualReturn":null,"modelId":"ridge10"}]}

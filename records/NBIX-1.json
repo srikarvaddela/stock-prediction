@@ -1,1 +1,1 @@
-{"symbol":"NBIX","horizon":1,"records":[]}
+{"symbol":"NBIX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:28.082785+00:00","baseAdjusted":164.6300048828125,"predictedReturn":0.0015788726429544556,"actualReturn":null,"modelId":"mean"}]}

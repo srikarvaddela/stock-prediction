@@ -1,1 +1,1 @@
-{"symbol":"MIRM","horizon":1,"records":[]}
+{"symbol":"MIRM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:44.310859+00:00","baseAdjusted":93.72000122070312,"predictedReturn":0.0057555742757769085,"actualReturn":null,"modelId":"boost"}]}

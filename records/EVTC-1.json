@@ -1,1 +1,1 @@
-{"symbol":"EVTC","horizon":1,"records":[]}
+{"symbol":"EVTC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:57.515108+00:00","baseAdjusted":33.5,"predictedReturn":-0.010746412958882427,"actualReturn":null,"modelId":"ridge10"}]}

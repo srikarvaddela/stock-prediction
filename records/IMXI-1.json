@@ -1,1 +1,1 @@
-{"symbol":"IMXI","horizon":1,"records":[]}
+{"symbol":"IMXI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:24.296831+00:00","baseAdjusted":7.340000152587891,"predictedReturn":-0.03216753291391717,"actualReturn":null,"modelId":"boost"}]}

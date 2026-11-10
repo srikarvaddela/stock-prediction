@@ -1,1 +1,1 @@
-{"symbol":"APLD","horizon":1,"records":[]}
+{"symbol":"APLD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:56.054512+00:00","baseAdjusted":15.550000190734863,"predictedReturn":0.03607530757600642,"actualReturn":null,"modelId":"ridge100"}]}

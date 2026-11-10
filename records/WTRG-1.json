@@ -1,1 +1,1 @@
-{"symbol":"WTRG","horizon":1,"records":[]}
+{"symbol":"WTRG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:59.528972+00:00","baseAdjusted":45.45000076293945,"predictedReturn":-0.0005736731963631154,"actualReturn":null,"modelId":"boost"}]}

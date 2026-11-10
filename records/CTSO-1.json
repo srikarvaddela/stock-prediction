@@ -1,1 +1,1 @@
-{"symbol":"CTSO","horizon":1,"records":[]}
+{"symbol":"CTSO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:52.599641+00:00","baseAdjusted":4.800000190734863,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

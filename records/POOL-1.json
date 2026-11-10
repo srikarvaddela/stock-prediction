@@ -1,1 +1,1 @@
-{"symbol":"POOL","horizon":1,"records":[]}
+{"symbol":"POOL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:44.386780+00:00","baseAdjusted":211.6999969482422,"predictedReturn":0.0010414647898193605,"actualReturn":null,"modelId":"boost"}]}

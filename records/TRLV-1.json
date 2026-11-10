@@ -1,1 +1,1 @@
-{"symbol":"TRLV","horizon":1,"records":[]}
+{"symbol":"TRLV","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:44.414264+00:00","baseAdjusted":11.5600004196167,"predictedReturn":-0.003391034313053583,"actualReturn":null,"modelId":"mean"}]}

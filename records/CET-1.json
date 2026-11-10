@@ -1,1 +1,1 @@
-{"symbol":"CET","horizon":1,"records":[]}
+{"symbol":"CET","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:58.322316+00:00","baseAdjusted":55.130001068115234,"predictedReturn":0.0031500005083273308,"actualReturn":null,"modelId":"ridge10"}]}

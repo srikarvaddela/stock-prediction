@@ -1,1 +1,1 @@
-{"symbol":"SJT","horizon":1,"records":[]}
+{"symbol":"SJT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:45.669604+00:00","baseAdjusted":3.2100000381469727,"predictedReturn":0.010478719721508432,"actualReturn":null,"modelId":"boost"}]}

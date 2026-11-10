@@ -1,1 +1,1 @@
-{"symbol":"CHKP","horizon":1,"records":[]}
+{"symbol":"CHKP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:57.027843+00:00","baseAdjusted":144.1699981689453,"predictedReturn":0.0006069467645016825,"actualReturn":null,"modelId":"boost"}]}

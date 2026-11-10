@@ -1,1 +1,1 @@
-{"symbol":"VOR","horizon":1,"records":[]}
+{"symbol":"VOR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:35.279599+00:00","baseAdjusted":19.8799991607666,"predictedReturn":-0.01057824107190215,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"HLNE","horizon":1,"records":[]}
+{"symbol":"HLNE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:35.478463+00:00","baseAdjusted":89.45999908447266,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

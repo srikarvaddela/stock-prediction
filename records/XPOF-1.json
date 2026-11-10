@@ -1,1 +1,1 @@
-{"symbol":"XPOF","horizon":1,"records":[]}
+{"symbol":"XPOF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:19.260288+00:00","baseAdjusted":4.650000095367432,"predictedReturn":-0.009560932813381481,"actualReturn":null,"modelId":"boost"}]}

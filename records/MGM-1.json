@@ -1,1 +1,1 @@
-{"symbol":"MGM","horizon":1,"records":[]}
+{"symbol":"MGM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:42.683699+00:00","baseAdjusted":32.34000015258789,"predictedReturn":0.0019253049462006678,"actualReturn":null,"modelId":"boost"}]}

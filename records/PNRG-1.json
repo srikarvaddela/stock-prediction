@@ -1,1 +1,1 @@
-{"symbol":"PNRG","horizon":1,"records":[]}
+{"symbol":"PNRG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:34.002286+00:00","baseAdjusted":185.63999938964844,"predictedReturn":0.030399042097006633,"actualReturn":null,"modelId":"ridge100"}]}

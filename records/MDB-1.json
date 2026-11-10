@@ -1,1 +1,1 @@
-{"symbol":"MDB","horizon":1,"records":[]}
+{"symbol":"MDB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:55.780263+00:00","baseAdjusted":312.8299865722656,"predictedReturn":0.014434366931284966,"actualReturn":null,"modelId":"boost"}]}

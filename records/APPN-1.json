@@ -1,1 +1,1 @@
-{"symbol":"APPN","horizon":1,"records":[]}
+{"symbol":"APPN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:59.081486+00:00","baseAdjusted":51.599998474121094,"predictedReturn":-0.007631969353791764,"actualReturn":null,"modelId":"ridge10"}]}

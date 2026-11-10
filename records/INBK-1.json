@@ -1,1 +1,1 @@
-{"symbol":"INBK","horizon":1,"records":[]}
+{"symbol":"INBK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:32.276523+00:00","baseAdjusted":25.3700008392334,"predictedReturn":-2.8662614865488813e-05,"actualReturn":null,"modelId":"boost"}]}

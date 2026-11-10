@@ -1,1 +1,1 @@
-{"symbol":"NXPL","horizon":1,"records":[]}
+{"symbol":"NXPL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:27.851219+00:00","baseAdjusted":8.239999771118164,"predictedReturn":-0.009490059322053183,"actualReturn":null,"modelId":"ridge100"}]}

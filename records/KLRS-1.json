@@ -1,1 +1,1 @@
-{"symbol":"KLRS","horizon":1,"records":[]}
+{"symbol":"KLRS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:12.904935+00:00","baseAdjusted":2.4200000762939453,"predictedReturn":-0.020387556330169854,"actualReturn":null,"modelId":"boost"}]}

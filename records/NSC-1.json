@@ -1,1 +1,1 @@
-{"symbol":"NSC","horizon":1,"records":[]}
+{"symbol":"NSC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:37.178474+00:00","baseAdjusted":319.94000244140625,"predictedReturn":0.008546902663280299,"actualReturn":null,"modelId":"ridge10"}]}

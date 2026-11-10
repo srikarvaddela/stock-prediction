@@ -1,1 +1,1 @@
-{"symbol":"MSC","horizon":1,"records":[]}
+{"symbol":"MSC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:17.655626+00:00","baseAdjusted":0.9800000190734863,"predictedReturn":-0.013527569055452,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"CTXR","horizon":1,"records":[]}
+{"symbol":"CTXR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:47.580567+00:00","baseAdjusted":0.5450000166893005,"predictedReturn":-0.012777801517095832,"actualReturn":null,"modelId":"mean"}]}

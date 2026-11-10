@@ -1,1 +1,1 @@
-{"symbol":"RYAM","horizon":1,"records":[]}
+{"symbol":"RYAM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:23.524640+00:00","baseAdjusted":5.900000095367432,"predictedReturn":-0.009649244889515941,"actualReturn":null,"modelId":"ridge100"}]}

@@ -1,1 +1,1 @@
-{"symbol":"CPRT","horizon":1,"records":[]}
+{"symbol":"CPRT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:09.683876+00:00","baseAdjusted":31.950000762939453,"predictedReturn":0.0001417007276934172,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"AUID","horizon":1,"records":[]}
+{"symbol":"AUID","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:16.247457+00:00","baseAdjusted":0.18799999356269836,"predictedReturn":-0.027523579893930554,"actualReturn":null,"modelId":"ridge10"}]}

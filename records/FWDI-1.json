@@ -1,1 +1,1 @@
-{"symbol":"FWDI","horizon":1,"records":[]}
+{"symbol":"FWDI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:28.745089+00:00","baseAdjusted":5.699999809265137,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

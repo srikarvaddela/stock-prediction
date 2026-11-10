@@ -1,1 +1,1 @@
-{"symbol":"FCEL","horizon":1,"records":[]}
+{"symbol":"FCEL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:06.842001+00:00","baseAdjusted":9.960000038146973,"predictedReturn":-0.010796779464333968,"actualReturn":null,"modelId":"mean"}]}

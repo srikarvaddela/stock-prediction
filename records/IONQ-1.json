@@ -1,1 +1,1 @@
-{"symbol":"IONQ","horizon":1,"records":[]}
+{"symbol":"IONQ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:35.237741+00:00","baseAdjusted":32.619998931884766,"predictedReturn":0.006957155002637142,"actualReturn":null,"modelId":"ridge100"}]}

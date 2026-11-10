@@ -1,1 +1,1 @@
-{"symbol":"CNP","horizon":1,"records":[]}
+{"symbol":"CNP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:13.931948+00:00","baseAdjusted":40.65999984741211,"predictedReturn":0.0024991111418573428,"actualReturn":null,"modelId":"mean"}]}

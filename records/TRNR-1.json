@@ -1,1 +1,1 @@
-{"symbol":"TRNR","horizon":1,"records":[]}
+{"symbol":"TRNR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:52.613993+00:00","baseAdjusted":1.2200000286102295,"predictedReturn":-0.0865286500010661,"actualReturn":null,"modelId":"mean"}]}

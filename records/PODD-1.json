@@ -1,1 +1,1 @@
-{"symbol":"PODD","horizon":1,"records":[]}
+{"symbol":"PODD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:42.812415+00:00","baseAdjusted":146.50999450683594,"predictedReturn":0.0023849401307325675,"actualReturn":null,"modelId":"ridge10"}]}

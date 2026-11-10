@@ -1,1 +1,1 @@
-{"symbol":"LBRT","horizon":1,"records":[]}
+{"symbol":"LBRT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:39.870953+00:00","baseAdjusted":11.960000038146973,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

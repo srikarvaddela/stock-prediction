@@ -1,1 +1,1 @@
-{"symbol":"NGVT","horizon":1,"records":[]}
+{"symbol":"NGVT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:14.458222+00:00","baseAdjusted":60.119998931884766,"predictedReturn":-0.0005939758367297785,"actualReturn":null,"modelId":"mean"}]}

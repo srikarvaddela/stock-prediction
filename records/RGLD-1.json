@@ -1,1 +1,1 @@
-{"symbol":"RGLD","horizon":1,"records":[]}
+{"symbol":"RGLD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:13.157067+00:00","baseAdjusted":265.80999755859375,"predictedReturn":0.003048100049243676,"actualReturn":null,"modelId":"mean"}]}

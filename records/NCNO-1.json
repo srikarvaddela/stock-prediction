@@ -1,1 +1,1 @@
-{"symbol":"NCNO","horizon":1,"records":[]}
+{"symbol":"NCNO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:31.125108+00:00","baseAdjusted":22.670000076293945,"predictedReturn":-0.010420699095277658,"actualReturn":null,"modelId":"ridge10"}]}

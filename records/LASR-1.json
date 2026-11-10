@@ -1,1 +1,1 @@
-{"symbol":"LASR","horizon":1,"records":[]}
+{"symbol":"LASR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:38.830268+00:00","baseAdjusted":38.02000045776367,"predictedReturn":-0.006027144085118796,"actualReturn":null,"modelId":"ridge10"}]}

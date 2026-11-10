@@ -1,1 +1,1 @@
-{"symbol":"INVE","horizon":1,"records":[]}
+{"symbol":"INVE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:44.821914+00:00","baseAdjusted":2.5999999046325684,"predictedReturn":-0.006650887268815975,"actualReturn":null,"modelId":"ridge10"}]}

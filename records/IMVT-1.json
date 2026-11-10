@@ -1,1 +1,1 @@
-{"symbol":"IMVT","horizon":1,"records":[]}
+{"symbol":"IMVT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:52.560104+00:00","baseAdjusted":30.530000686645508,"predictedReturn":-0.015102227961819028,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"WPM","horizon":1,"records":[]}
+{"symbol":"WPM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:59.169586+00:00","baseAdjusted":136.30999755859375,"predictedReturn":0.004044049681278843,"actualReturn":null,"modelId":"mean"}]}

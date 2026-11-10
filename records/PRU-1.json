@@ -1,1 +1,1 @@
-{"symbol":"PRU","horizon":1,"records":[]}
+{"symbol":"PRU","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:45.162712+00:00","baseAdjusted":119.23999786376953,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

@@ -1,1 +1,1 @@
-{"symbol":"ENSC","horizon":1,"records":[]}
+{"symbol":"ENSC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:53.781414+00:00","baseAdjusted":0.32899999618530273,"predictedReturn":-0.07890853716251184,"actualReturn":null,"modelId":"boost"}]}

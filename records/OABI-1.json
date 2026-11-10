@@ -1,1 +1,1 @@
-{"symbol":"OABI","horizon":1,"records":[]}
+{"symbol":"OABI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:11.781598+00:00","baseAdjusted":5.03000020980835,"predictedReturn":-0.0026859809642369257,"actualReturn":null,"modelId":"mean"}]}

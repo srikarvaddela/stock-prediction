@@ -1,1 +1,1 @@
-{"symbol":"THRM","horizon":1,"records":[]}
+{"symbol":"THRM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:37.726087+00:00","baseAdjusted":29.469999313354492,"predictedReturn":-0.002373849086918848,"actualReturn":null,"modelId":"mean"}]}

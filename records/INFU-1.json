@@ -1,1 +1,1 @@
-{"symbol":"INFU","horizon":1,"records":[]}
+{"symbol":"INFU","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:26.014141+00:00","baseAdjusted":13.6899995803833,"predictedReturn":-0.000743188908405172,"actualReturn":null,"modelId":"mean"}]}

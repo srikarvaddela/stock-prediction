@@ -1,1 +1,1 @@
-{"symbol":"BPOP","horizon":1,"records":[]}
+{"symbol":"BPOP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:23.790496+00:00","baseAdjusted":156.52000427246094,"predictedReturn":-0.0033512918712394666,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"CALM","horizon":1,"records":[]}
+{"symbol":"CALM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:33.911496+00:00","baseAdjusted":64.5999984741211,"predictedReturn":0.003738924349463805,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"PDM","horizon":1,"records":[]}
+{"symbol":"PDM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:55:33.551389+00:00","baseAdjusted":9.970000267028809,"predictedReturn":-0.0028996167602483324,"actualReturn":null,"modelId":"boost"}]}

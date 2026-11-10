@@ -1,1 +1,1 @@
-{"symbol":"ODC","horizon":1,"records":[]}
+{"symbol":"ODC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:38.533137+00:00","baseAdjusted":70.69999694824219,"predictedReturn":0.005348632954274554,"actualReturn":null,"modelId":"boost"}]}

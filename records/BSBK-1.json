@@ -1,1 +1,1 @@
-{"symbol":"BSBK","horizon":1,"records":[]}
+{"symbol":"BSBK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:43.762164+00:00","baseAdjusted":9.380000114440918,"predictedReturn":3.4913499348697194e-05,"actualReturn":null,"modelId":"mean"}]}

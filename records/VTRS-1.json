@@ -1,1 +1,1 @@
-{"symbol":"VTRS","horizon":1,"records":[]}
+{"symbol":"VTRS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:01.626670+00:00","baseAdjusted":19.90999984741211,"predictedReturn":-0.0028523368521192324,"actualReturn":null,"modelId":"ridge10"}]}

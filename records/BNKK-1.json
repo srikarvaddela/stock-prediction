@@ -1,1 +1,1 @@
-{"symbol":"BNKK","horizon":1,"records":[]}
+{"symbol":"BNKK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:08.096717+00:00","baseAdjusted":1,"predictedReturn":-0.017439537096761576,"actualReturn":null,"modelId":"mean"}]}

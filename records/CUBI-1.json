@@ -1,1 +1,1 @@
-{"symbol":"CUBI","horizon":1,"records":[]}
+{"symbol":"CUBI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:21.001083+00:00","baseAdjusted":84.7300033569336,"predictedReturn":0.0051546482745641765,"actualReturn":null,"modelId":"mean"}]}

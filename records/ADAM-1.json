@@ -1,1 +1,1 @@
-{"symbol":"ADAM","horizon":1,"records":[]}
+{"symbol":"ADAM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:12.951663+00:00","baseAdjusted":5.690000057220459,"predictedReturn":0.028852259261580863,"actualReturn":null,"modelId":"boost"}]}

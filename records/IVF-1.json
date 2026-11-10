@@ -1,1 +1,1 @@
-{"symbol":"IVF","horizon":1,"records":[]}
+{"symbol":"IVF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:23.164306+00:00","baseAdjusted":2.140000104904175,"predictedReturn":-0.039015217981651654,"actualReturn":null,"modelId":"mean"}]}

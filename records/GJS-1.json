@@ -1,1 +1,1 @@
-{"symbol":"GJS","horizon":1,"records":[]}
+{"symbol":"GJS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:38.607019+00:00","baseAdjusted":23.110000610351562,"predictedReturn":0.0029395580839379543,"actualReturn":null,"modelId":"ridge100"}]}

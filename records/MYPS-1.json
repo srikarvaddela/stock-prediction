@@ -1,1 +1,1 @@
-{"symbol":"MYPS","horizon":1,"records":[]}
+{"symbol":"MYPS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:46.591213+00:00","baseAdjusted":4.679999828338623,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

@@ -1,1 +1,1 @@
-{"symbol":"LCUT","horizon":1,"records":[]}
+{"symbol":"LCUT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:24.065512+00:00","baseAdjusted":7.619999885559082,"predictedReturn":-0.0053050825897382236,"actualReturn":null,"modelId":"boost"}]}

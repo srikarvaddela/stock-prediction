@@ -1,1 +1,1 @@
-{"symbol":"KROS","horizon":1,"records":[]}
+{"symbol":"KROS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:33.625596+00:00","baseAdjusted":9.359999656677246,"predictedReturn":-0.007003083000717442,"actualReturn":null,"modelId":"mean"}]}

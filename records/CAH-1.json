@@ -1,1 +1,1 @@
-{"symbol":"CAH","horizon":1,"records":[]}
+{"symbol":"CAH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:56.310172+00:00","baseAdjusted":271.7200012207031,"predictedReturn":0.005667340669179266,"actualReturn":null,"modelId":"mean"}]}

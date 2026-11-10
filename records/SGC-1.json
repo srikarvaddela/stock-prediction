@@ -1,1 +1,1 @@
-{"symbol":"SGC","horizon":1,"records":[]}
+{"symbol":"SGC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:55:14.518559+00:00","baseAdjusted":13.4399995803833,"predictedReturn":-0.001007499469018883,"actualReturn":null,"modelId":"mean"}]}

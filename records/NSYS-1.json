@@ -1,1 +1,1 @@
-{"symbol":"NSYS","horizon":1,"records":[]}
+{"symbol":"NSYS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:20.763019+00:00","baseAdjusted":11.199999809265137,"predictedReturn":0.00985085294707932,"actualReturn":null,"modelId":"ridge10"}]}

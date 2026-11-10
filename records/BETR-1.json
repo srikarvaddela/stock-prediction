@@ -1,1 +1,1 @@
-{"symbol":"BETR","horizon":1,"records":[]}
+{"symbol":"BETR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:25.502899+00:00","baseAdjusted":19.239999771118164,"predictedReturn":-0.011715628801265752,"actualReturn":null,"modelId":"mean"}]}

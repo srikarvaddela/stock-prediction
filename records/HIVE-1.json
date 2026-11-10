@@ -1,1 +1,1 @@
-{"symbol":"HIVE","horizon":1,"records":[]}
+{"symbol":"HIVE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:12.750515+00:00","baseAdjusted":1.7799999713897705,"predictedReturn":-0.0030930543995671966,"actualReturn":null,"modelId":"ridge10"}]}

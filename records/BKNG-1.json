@@ -1,1 +1,1 @@
-{"symbol":"BKNG","horizon":1,"records":[]}
+{"symbol":"BKNG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:12.540019+00:00","baseAdjusted":160.6699981689453,"predictedReturn":0.014353533948621242,"actualReturn":null,"modelId":"boost"}]}

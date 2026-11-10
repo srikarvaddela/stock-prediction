@@ -1,1 +1,1 @@
-{"symbol":"HON","horizon":1,"records":[]}
+{"symbol":"HON","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:15.481075+00:00","baseAdjusted":220.0500030517578,"predictedReturn":0.0005655269191346301,"actualReturn":null,"modelId":"mean"}]}

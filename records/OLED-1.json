@@ -1,1 +1,1 @@
-{"symbol":"OLED","horizon":1,"records":[]}
+{"symbol":"OLED","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:18.478016+00:00","baseAdjusted":88.30999755859375,"predictedReturn":-0.00930852347991403,"actualReturn":null,"modelId":"ridge100"}]}

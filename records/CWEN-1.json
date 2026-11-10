@@ -1,1 +1,1 @@
-{"symbol":"CWEN","horizon":1,"records":[]}
+{"symbol":"CWEN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:47.226885+00:00","baseAdjusted":34.099998474121094,"predictedReturn":0.000424027005788966,"actualReturn":null,"modelId":"ridge100"}]}

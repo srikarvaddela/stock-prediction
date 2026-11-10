@@ -1,1 +1,1 @@
-{"symbol":"NRXP","horizon":1,"records":[]}
+{"symbol":"NRXP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:28.571415+00:00","baseAdjusted":2.380000114440918,"predictedReturn":0.0350398673893806,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"NEWP","horizon":1,"records":[]}
+{"symbol":"NEWP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:18.222869+00:00","baseAdjusted":5.650000095367432,"predictedReturn":0.013589580950036841,"actualReturn":null,"modelId":"ridge100"}]}

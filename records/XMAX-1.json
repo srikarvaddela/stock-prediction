@@ -1,1 +1,1 @@
-{"symbol":"XMAX","horizon":1,"records":[]}
+{"symbol":"XMAX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:01:09.950173+00:00","baseAdjusted":5.329999923706055,"predictedReturn":-0.0022674336225461146,"actualReturn":null,"modelId":"mean"}]}

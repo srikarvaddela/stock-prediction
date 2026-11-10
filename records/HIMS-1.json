@@ -1,1 +1,1 @@
-{"symbol":"HIMS","horizon":1,"records":[]}
+{"symbol":"HIMS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:01.318440+00:00","baseAdjusted":26,"predictedReturn":0.0025081298876657716,"actualReturn":null,"modelId":"mean"}]}

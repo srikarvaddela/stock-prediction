@@ -1,1 +1,1 @@
-{"symbol":"CSIQ","horizon":1,"records":[]}
+{"symbol":"CSIQ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:30.013445+00:00","baseAdjusted":11.119999885559082,"predictedReturn":-0.01013657637858045,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"ACNT","horizon":1,"records":[]}
+{"symbol":"ACNT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:19.398335+00:00","baseAdjusted":13.739999771118164,"predictedReturn":0.0021759261994333044,"actualReturn":null,"modelId":"mean"}]}

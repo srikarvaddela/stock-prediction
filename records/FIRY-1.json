@@ -1,1 +1,1 @@
-{"symbol":"FIRY","horizon":1,"records":[]}
+{"symbol":"FIRY","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:18.241677+00:00","baseAdjusted":11.479999542236328,"predictedReturn":-0.011933012142059399,"actualReturn":null,"modelId":"boost"}]}

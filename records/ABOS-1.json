@@ -1,1 +1,1 @@
-{"symbol":"ABOS","horizon":1,"records":[]}
+{"symbol":"ABOS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:34.374033+00:00","baseAdjusted":0.2240000069141388,"predictedReturn":-0.015892619641302952,"actualReturn":null,"modelId":"mean"}]}

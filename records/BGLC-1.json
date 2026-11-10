@@ -1,1 +1,1 @@
-{"symbol":"BGLC","horizon":1,"records":[]}
+{"symbol":"BGLC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:27.216109+00:00","baseAdjusted":0.8299999833106995,"predictedReturn":0.03613952188744872,"actualReturn":null,"modelId":"boost"}]}

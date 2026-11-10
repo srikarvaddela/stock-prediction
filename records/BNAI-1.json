@@ -1,1 +1,1 @@
-{"symbol":"BNAI","horizon":1,"records":[]}
+{"symbol":"BNAI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:26.583231+00:00","baseAdjusted":4.380000114440918,"predictedReturn":0.006913114926993891,"actualReturn":null,"modelId":"ridge100"}]}

@@ -1,1 +1,1 @@
-{"symbol":"ARES","horizon":1,"records":[]}
+{"symbol":"ARES","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:10.483451+00:00","baseAdjusted":133.97999572753906,"predictedReturn":0.003854374721560944,"actualReturn":null,"modelId":"mean"}]}

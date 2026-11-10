@@ -1,1 +1,1 @@
-{"symbol":"RSVR","horizon":1,"records":[]}
+{"symbol":"RSVR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:44.854843+00:00","baseAdjusted":10.210000038146973,"predictedReturn":0.00010213981512219356,"actualReturn":null,"modelId":"mean"}]}

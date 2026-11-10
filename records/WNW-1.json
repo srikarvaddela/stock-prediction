@@ -1,1 +1,1 @@
-{"symbol":"WNW","horizon":1,"records":[]}
+{"symbol":"WNW","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T05:00:57.051320+00:00","baseAdjusted":2.009999990463257,"predictedReturn":-0.04266726517114435,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"MNST","horizon":1,"records":[]}
+{"symbol":"MNST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:09.048508+00:00","baseAdjusted":45.720001220703125,"predictedReturn":0.0023074697965835608,"actualReturn":null,"modelId":"mean"}]}

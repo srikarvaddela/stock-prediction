@@ -1,1 +1,1 @@
-{"symbol":"CNTB","horizon":1,"records":[]}
+{"symbol":"CNTB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:34.509882+00:00","baseAdjusted":0.7289999723434448,"predictedReturn":-0.011306003215715973,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"SPGI","horizon":1,"records":[]}
+{"symbol":"SPGI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:16.687831+00:00","baseAdjusted":467.79998779296875,"predictedReturn":0.0015511093074563266,"actualReturn":null,"modelId":"mean"}]}

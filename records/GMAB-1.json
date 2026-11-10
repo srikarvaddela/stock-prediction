@@ -1,1 +1,1 @@
-{"symbol":"GMAB","horizon":1,"records":[]}
+{"symbol":"GMAB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:42.956902+00:00","baseAdjusted":53.630001068115234,"predictedReturn":-0.01230730578666179,"actualReturn":null,"modelId":"ridge10"}]}

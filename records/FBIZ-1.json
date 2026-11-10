@@ -1,1 +1,1 @@
-{"symbol":"FBIZ","horizon":1,"records":[]}
+{"symbol":"FBIZ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:08.125729+00:00","baseAdjusted":74.18000030517578,"predictedReturn":0.002567542679031658,"actualReturn":null,"modelId":"ridge10"}]}

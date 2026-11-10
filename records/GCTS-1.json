@@ -1,1 +1,1 @@
-{"symbol":"GCTS","horizon":1,"records":[]}
+{"symbol":"GCTS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:04.427640+00:00","baseAdjusted":1.159999966621399,"predictedReturn":0.05800228913608693,"actualReturn":null,"modelId":"ridge100"}]}

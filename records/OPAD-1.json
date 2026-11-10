@@ -1,1 +1,1 @@
-{"symbol":"OPAD","horizon":1,"records":[]}
+{"symbol":"OPAD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:04.022199+00:00","baseAdjusted":2.109999895095825,"predictedReturn":-0.0077722054134123355,"actualReturn":null,"modelId":"ridge10"}]}

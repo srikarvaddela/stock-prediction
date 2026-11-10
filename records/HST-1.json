@@ -1,1 +1,1 @@
-{"symbol":"HST","horizon":1,"records":[]}
+{"symbol":"HST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:04.807949+00:00","baseAdjusted":24.6200008392334,"predictedReturn":-0.005525804416354064,"actualReturn":null,"modelId":"boost"}]}

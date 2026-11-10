@@ -1,1 +1,1 @@
-{"symbol":"TKO","horizon":1,"records":[]}
+{"symbol":"TKO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:35.520895+00:00","baseAdjusted":191,"predictedReturn":0.010564794973296142,"actualReturn":null,"modelId":"ridge10"}]}

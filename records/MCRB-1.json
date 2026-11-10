@@ -1,1 +1,1 @@
-{"symbol":"MCRB","horizon":1,"records":[]}
+{"symbol":"MCRB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:53.784568+00:00","baseAdjusted":1.9800000190734863,"predictedReturn":-0.020772705222841952,"actualReturn":null,"modelId":"boost"}]}

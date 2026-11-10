@@ -1,1 +1,1 @@
-{"symbol":"RZLV","horizon":1,"records":[]}
+{"symbol":"RZLV","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:36.533164+00:00","baseAdjusted":1.3200000524520874,"predictedReturn":-0.008060463008401873,"actualReturn":null,"modelId":"mean"}]}

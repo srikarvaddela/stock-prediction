@@ -1,1 +1,1 @@
-{"symbol":"BELFB","horizon":1,"records":[]}
+{"symbol":"BELFB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:09.204920+00:00","baseAdjusted":206.7899932861328,"predictedReturn":0.0188560701275874,"actualReturn":null,"modelId":"ridge10"}]}

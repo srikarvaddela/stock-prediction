@@ -1,1 +1,1 @@
-{"symbol":"ARGX","horizon":1,"records":[]}
+{"symbol":"ARGX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:11.315769+00:00","baseAdjusted":927.2100219726562,"predictedReturn":-0.005100844737982367,"actualReturn":null,"modelId":"ridge100"}]}

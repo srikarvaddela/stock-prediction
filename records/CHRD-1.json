@@ -1,1 +1,1 @@
-{"symbol":"CHRD","horizon":1,"records":[]}
+{"symbol":"CHRD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:58.106744+00:00","baseAdjusted":136.49000549316406,"predictedReturn":0.001635946101775133,"actualReturn":null,"modelId":"ridge10"}]}

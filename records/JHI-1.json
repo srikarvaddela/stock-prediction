@@ -1,1 +1,1 @@
-{"symbol":"JHI","horizon":1,"records":[]}
+{"symbol":"JHI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:52.326731+00:00","baseAdjusted":12.149999618530273,"predictedReturn":0.006006167586753834,"actualReturn":null,"modelId":"ridge100"}]}

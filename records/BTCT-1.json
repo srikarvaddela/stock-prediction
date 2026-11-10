@@ -1,1 +1,1 @@
-{"symbol":"BTCT","horizon":1,"records":[]}
+{"symbol":"BTCT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:45.968650+00:00","baseAdjusted":0.6200000047683716,"predictedReturn":0.001809253036046384,"actualReturn":null,"modelId":"ridge10"}]}

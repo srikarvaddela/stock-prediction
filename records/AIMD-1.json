@@ -1,1 +1,1 @@
-{"symbol":"AIMD","horizon":1,"records":[]}
+{"symbol":"AIMD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:27.956300+00:00","baseAdjusted":0.6980000138282776,"predictedReturn":0.012185788845325377,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"ALTI","horizon":1,"records":[]}
+{"symbol":"ALTI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:48.290136+00:00","baseAdjusted":2.3399999141693115,"predictedReturn":0.03061290634603359,"actualReturn":null,"modelId":"ridge100"}]}

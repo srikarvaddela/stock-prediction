@@ -1,1 +1,1 @@
-{"symbol":"PLRX","horizon":1,"records":[]}
+{"symbol":"PLRX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:09.573402+00:00","baseAdjusted":0.8100000023841858,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

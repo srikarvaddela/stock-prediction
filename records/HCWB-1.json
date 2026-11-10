@@ -1,1 +1,1 @@
-{"symbol":"HCWB","horizon":1,"records":[]}
+{"symbol":"HCWB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:37.130187+00:00","baseAdjusted":1.0199999809265137,"predictedReturn":-0.0033882127911707425,"actualReturn":null,"modelId":"ridge10"}]}

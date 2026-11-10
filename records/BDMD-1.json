@@ -1,1 +1,1 @@
-{"symbol":"BDMD","horizon":1,"records":[]}
+{"symbol":"BDMD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:08.522284+00:00","baseAdjusted":0.08799999952316284,"predictedReturn":-0.019256505148036382,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"IVZ","horizon":1,"records":[]}
+{"symbol":"IVZ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:47.481973+00:00","baseAdjusted":27.079999923706055,"predictedReturn":0.03269069847880372,"actualReturn":null,"modelId":"boost"}]}

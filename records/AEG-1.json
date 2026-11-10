@@ -1,1 +1,1 @@
-{"symbol":"AEG","horizon":1,"records":[]}
+{"symbol":"AEG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:44.350293+00:00","baseAdjusted":8.300000190734863,"predictedReturn":0.006936692881780241,"actualReturn":null,"modelId":"boost"}]}

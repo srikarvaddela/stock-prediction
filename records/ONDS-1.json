@@ -1,1 +1,1 @@
-{"symbol":"ONDS","horizon":1,"records":[]}
+{"symbol":"ONDS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:43.850433+00:00","baseAdjusted":5.335000038146973,"predictedReturn":0.003939876605617897,"actualReturn":null,"modelId":"ridge10"}]}

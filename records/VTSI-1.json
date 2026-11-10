@@ -1,1 +1,1 @@
-{"symbol":"VTSI","horizon":1,"records":[]}
+{"symbol":"VTSI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:43.517297+00:00","baseAdjusted":2.6700000762939453,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

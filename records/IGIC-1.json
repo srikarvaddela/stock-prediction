@@ -1,1 +1,1 @@
-{"symbol":"IGIC","horizon":1,"records":[]}
+{"symbol":"IGIC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:02.695322+00:00","baseAdjusted":23.540000915527344,"predictedReturn":0.004427687456729558,"actualReturn":null,"modelId":"mean"}]}

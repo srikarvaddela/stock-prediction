@@ -1,1 +1,1 @@
-{"symbol":"AMRN","horizon":1,"records":[]}
+{"symbol":"AMRN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:32.528385+00:00","baseAdjusted":11.609999656677246,"predictedReturn":-0.00039317848530808446,"actualReturn":null,"modelId":"ridge10"}]}

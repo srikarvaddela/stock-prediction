@@ -1,1 +1,1 @@
-{"symbol":"FTK","horizon":1,"records":[]}
+{"symbol":"FTK","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:03.465271+00:00","baseAdjusted":24.450000762939453,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

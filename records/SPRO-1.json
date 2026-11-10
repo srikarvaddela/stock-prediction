@@ -1,1 +1,1 @@
-{"symbol":"SPRO","horizon":1,"records":[]}
+{"symbol":"SPRO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:10.342761+00:00","baseAdjusted":1.0299999713897705,"predictedReturn":-0.009221085511880615,"actualReturn":null,"modelId":"mean"}]}

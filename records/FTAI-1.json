@@ -1,1 +1,1 @@
-{"symbol":"FTAI","horizon":1,"records":[]}
+{"symbol":"FTAI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:56.684433+00:00","baseAdjusted":180.27000427246094,"predictedReturn":0.007864943748985354,"actualReturn":null,"modelId":"mean"}]}

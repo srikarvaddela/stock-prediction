@@ -1,1 +1,1 @@
-{"symbol":"NBN","horizon":1,"records":[]}
+{"symbol":"NBN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:16.535605+00:00","baseAdjusted":126.2800064086914,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

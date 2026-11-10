@@ -1,1 +1,1 @@
-{"symbol":"USB","horizon":1,"records":[]}
+{"symbol":"USB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:32.401776+00:00","baseAdjusted":59.45000076293945,"predictedReturn":0.0038598825809980026,"actualReturn":null,"modelId":"ridge10"}]}

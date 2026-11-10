@@ -1,1 +1,1 @@
-{"symbol":"PTN","horizon":1,"records":[]}
+{"symbol":"PTN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:54.955734+00:00","baseAdjusted":6.269999980926514,"predictedReturn":-0.014468069100031079,"actualReturn":null,"modelId":"mean"}]}

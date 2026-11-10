@@ -1,1 +1,1 @@
-{"symbol":"ASST","horizon":1,"records":[]}
+{"symbol":"ASST","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:51.646762+00:00","baseAdjusted":21.450000762939453,"predictedReturn":-0.005457258698146351,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"KTOS","horizon":1,"records":[]}
+{"symbol":"KTOS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:35.523704+00:00","baseAdjusted":35.099998474121094,"predictedReturn":-0.008831511590256922,"actualReturn":null,"modelId":"ridge100"}]}

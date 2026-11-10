@@ -1,1 +1,1 @@
-{"symbol":"ZIP","horizon":1,"records":[]}
+{"symbol":"ZIP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:59.996703+00:00","baseAdjusted":3.759999990463257,"predictedReturn":0.0018759412138837014,"actualReturn":null,"modelId":"ridge100"}]}

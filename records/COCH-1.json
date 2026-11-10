@@ -1,1 +1,1 @@
-{"symbol":"COCH","horizon":1,"records":[]}
+{"symbol":"COCH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:14.938650+00:00","baseAdjusted":7.150000095367432,"predictedReturn":-0.009381060734499548,"actualReturn":null,"modelId":"mean"}]}

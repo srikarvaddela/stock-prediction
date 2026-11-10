@@ -1,1 +1,1 @@
-{"symbol":"DNUT","horizon":1,"records":[]}
+{"symbol":"DNUT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:08.379942+00:00","baseAdjusted":4.170000076293945,"predictedReturn":-0.004487419387558097,"actualReturn":null,"modelId":"mean"}]}

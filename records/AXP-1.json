@@ -1,1 +1,1 @@
-{"symbol":"AXP","horizon":1,"records":[]}
+{"symbol":"AXP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:58.977829+00:00","baseAdjusted":320.989990234375,"predictedReturn":-0.00041876216808738503,"actualReturn":null,"modelId":"ridge10"}]}

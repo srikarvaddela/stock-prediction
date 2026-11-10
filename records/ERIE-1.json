@@ -1,1 +1,1 @@
-{"symbol":"ERIE","horizon":1,"records":[]}
+{"symbol":"ERIE","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:26.905922+00:00","baseAdjusted":273.07000732421875,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

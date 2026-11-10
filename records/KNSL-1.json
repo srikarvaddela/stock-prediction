@@ -1,1 +1,1 @@
-{"symbol":"KNSL","horizon":1,"records":[]}
+{"symbol":"KNSL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:16.123574+00:00","baseAdjusted":383.7300109863281,"predictedReturn":0.00410112096846648,"actualReturn":null,"modelId":"ridge10"}]}

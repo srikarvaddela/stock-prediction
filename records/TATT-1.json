@@ -1,1 +1,1 @@
-{"symbol":"TATT","horizon":1,"records":[]}
+{"symbol":"TATT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:28.543840+00:00","baseAdjusted":37,"predictedReturn":0.006842834603936689,"actualReturn":null,"modelId":"mean"}]}

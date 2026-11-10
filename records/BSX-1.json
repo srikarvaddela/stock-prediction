@@ -1,1 +1,1 @@
-{"symbol":"BSX","horizon":1,"records":[]}
+{"symbol":"BSX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:28.353204+00:00","baseAdjusted":42.75,"predictedReturn":0.0006101076063742797,"actualReturn":null,"modelId":"mean"}]}

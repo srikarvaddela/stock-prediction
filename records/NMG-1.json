@@ -1,1 +1,1 @@
-{"symbol":"NMG","horizon":1,"records":[]}
+{"symbol":"NMG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:41.098763+00:00","baseAdjusted":0.8360000252723694,"predictedReturn":-0.009861401607943503,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"FCCO","horizon":1,"records":[]}
+{"symbol":"FCCO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:52.714621+00:00","baseAdjusted":32.91999816894531,"predictedReturn":0.0044032315821481245,"actualReturn":null,"modelId":"ridge10"}]}

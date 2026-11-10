@@ -1,1 +1,1 @@
-{"symbol":"IMA","horizon":1,"records":[]}
+{"symbol":"IMA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:05.895317+00:00","baseAdjusted":4.105000019073486,"predictedReturn":-0.015485201997145044,"actualReturn":null,"modelId":"ridge100"}]}

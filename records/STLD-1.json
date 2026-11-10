@@ -1,1 +1,1 @@
-{"symbol":"STLD","horizon":1,"records":[]}
+{"symbol":"STLD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:15.689487+00:00","baseAdjusted":222.89999389648438,"predictedReturn":0.01905888503981248,"actualReturn":null,"modelId":"ridge10"}]}

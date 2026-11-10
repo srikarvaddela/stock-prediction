@@ -1,1 +1,1 @@
-{"symbol":"IPW","horizon":1,"records":[]}
+{"symbol":"IPW","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:45.238055+00:00","baseAdjusted":1.3799999952316284,"predictedReturn":-0.18601460084100657,"actualReturn":null,"modelId":"boost"}]}

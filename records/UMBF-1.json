@@ -1,1 +1,1 @@
-{"symbol":"UMBF","horizon":1,"records":[]}
+{"symbol":"UMBF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:15.682216+00:00","baseAdjusted":133.77000427246094,"predictedReturn":0.0033100765474032355,"actualReturn":null,"modelId":"ridge10"}]}

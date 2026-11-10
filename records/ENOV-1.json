@@ -1,1 +1,1 @@
-{"symbol":"ENOV","horizon":1,"records":[]}
+{"symbol":"ENOV","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:26.918467+00:00","baseAdjusted":27.15999984741211,"predictedReturn":-0.0027339998419180097,"actualReturn":null,"modelId":"mean"}]}

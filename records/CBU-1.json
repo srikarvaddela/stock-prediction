@@ -1,1 +1,1 @@
-{"symbol":"CBU","horizon":1,"records":[]}
+{"symbol":"CBU","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:09.476294+00:00","baseAdjusted":64.73999786376953,"predictedReturn":0.0006000949656636016,"actualReturn":null,"modelId":"ridge10"}]}

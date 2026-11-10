@@ -1,1 +1,1 @@
-{"symbol":"FNUC","horizon":1,"records":[]}
+{"symbol":"FNUC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:21.641324+00:00","baseAdjusted":0.7020000219345093,"predictedReturn":-0.019214264446144064,"actualReturn":null,"modelId":"mean"}]}

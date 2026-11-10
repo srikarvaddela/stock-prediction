@@ -1,1 +1,1 @@
-{"symbol":"NEXA","horizon":1,"records":[]}
+{"symbol":"NEXA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:53.211332+00:00","baseAdjusted":11.399999618530273,"predictedReturn":0.001820873221257096,"actualReturn":null,"modelId":"mean"}]}

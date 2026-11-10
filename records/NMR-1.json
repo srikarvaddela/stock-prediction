@@ -1,1 +1,1 @@
-{"symbol":"NMR","horizon":1,"records":[]}
+{"symbol":"NMR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:23.308199+00:00","baseAdjusted":9.420000076293945,"predictedReturn":0.002220946262412311,"actualReturn":null,"modelId":"mean"}]}

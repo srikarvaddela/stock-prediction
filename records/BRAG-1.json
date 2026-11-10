@@ -1,1 +1,1 @@
-{"symbol":"BRAG","horizon":1,"records":[]}
+{"symbol":"BRAG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:54.096960+00:00","baseAdjusted":0.7680000066757202,"predictedReturn":0.006491724982751564,"actualReturn":null,"modelId":"ridge10"}]}

@@ -1,1 +1,1 @@
-{"symbol":"MKSI","horizon":1,"records":[]}
+{"symbol":"MKSI","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:57.297701+00:00","baseAdjusted":192.27000427246094,"predictedReturn":0.0034611156066537666,"actualReturn":null,"modelId":"ridge10"}]}

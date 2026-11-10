@@ -1,1 +1,1 @@
-{"symbol":"CGEM","horizon":1,"records":[]}
+{"symbol":"CGEM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:13.409212+00:00","baseAdjusted":11.3100004196167,"predictedReturn":-0.004421578737587467,"actualReturn":null,"modelId":"mean"}]}

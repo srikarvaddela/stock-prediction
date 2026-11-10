@@ -1,1 +1,1 @@
-{"symbol":"FTLF","horizon":1,"records":[]}
+{"symbol":"FTLF","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:34.031918+00:00","baseAdjusted":7.980000019073486,"predictedReturn":-0.0007075558722002101,"actualReturn":null,"modelId":"ridge10"}]}

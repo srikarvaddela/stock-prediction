@@ -1,1 +1,1 @@
-{"symbol":"VOD","horizon":1,"records":[]}
+{"symbol":"VOD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:46.901364+00:00","baseAdjusted":15.579999923706055,"predictedReturn":0.00030835261163271964,"actualReturn":null,"modelId":"ridge10"}]}

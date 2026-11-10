@@ -1,1 +1,1 @@
-{"symbol":"EQT","horizon":1,"records":[]}
+{"symbol":"EQT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:06.255464+00:00","baseAdjusted":49.400001525878906,"predictedReturn":0.009822471289326735,"actualReturn":null,"modelId":"ridge100"}]}

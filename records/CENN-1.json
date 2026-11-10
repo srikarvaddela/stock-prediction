@@ -1,1 +1,1 @@
-{"symbol":"CENN","horizon":1,"records":[]}
+{"symbol":"CENN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:47.996609+00:00","baseAdjusted":0.15559999644756317,"predictedReturn":-0.12376309151859063,"actualReturn":null,"modelId":"ridge10"}]}

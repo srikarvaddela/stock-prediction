@@ -1,1 +1,1 @@
-{"symbol":"STKS","horizon":1,"records":[]}
+{"symbol":"STKS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:59:11.452914+00:00","baseAdjusted":1.1799999475479126,"predictedReturn":0.018576993500648856,"actualReturn":null,"modelId":"boost"}]}

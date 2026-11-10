@@ -1,1 +1,1 @@
-{"symbol":"INVH","horizon":1,"records":[]}
+{"symbol":"INVH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:18.131452+00:00","baseAdjusted":27.100000381469727,"predictedReturn":-0.0010538070581595311,"actualReturn":null,"modelId":"ridge100"}]}

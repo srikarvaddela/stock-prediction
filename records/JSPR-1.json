@@ -1,1 +1,1 @@
-{"symbol":"JSPR","horizon":1,"records":[]}
+{"symbol":"JSPR","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:04.038413+00:00","baseAdjusted":16.860000610351562,"predictedReturn":-0.016748758046814003,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"PBH","horizon":1,"records":[]}
+{"symbol":"PBH","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:57.472969+00:00","baseAdjusted":42.97999954223633,"predictedReturn":-0.00013580663159323716,"actualReturn":null,"modelId":"boost"}]}

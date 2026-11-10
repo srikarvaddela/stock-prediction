@@ -1,1 +1,1 @@
-{"symbol":"HOWL","horizon":1,"records":[]}
+{"symbol":"HOWL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:51:00.865308+00:00","baseAdjusted":1.0099999904632568,"predictedReturn":-0.010443264031516401,"actualReturn":null,"modelId":"mean"}]}

@@ -1,1 +1,1 @@
-{"symbol":"HXL","horizon":1,"records":[]}
+{"symbol":"HXL","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:10.813659+00:00","baseAdjusted":80.4000015258789,"predictedReturn":0.0017787177296374574,"actualReturn":null,"modelId":"mean"}]}

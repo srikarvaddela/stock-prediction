@@ -1,1 +1,1 @@
-{"symbol":"LNZA","horizon":1,"records":[]}
+{"symbol":"LNZA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:52:07.586792+00:00","baseAdjusted":5.019999980926514,"predictedReturn":-0.020423083375162056,"actualReturn":null,"modelId":"mean"}]}

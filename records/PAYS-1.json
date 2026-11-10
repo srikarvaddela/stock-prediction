@@ -1,1 +1,1 @@
-{"symbol":"PAYS","horizon":1,"records":[]}
+{"symbol":"PAYS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:54.961682+00:00","baseAdjusted":14.6899995803833,"predictedReturn":0.0036468508075435586,"actualReturn":null,"modelId":"boost"}]}

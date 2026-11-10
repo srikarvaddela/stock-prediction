@@ -1,1 +1,1 @@
-{"symbol":"EMA","horizon":1,"records":[]}
+{"symbol":"EMA","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:50:28.582023+00:00","baseAdjusted":50.689998626708984,"predictedReturn":0.0014946555932539172,"actualReturn":null,"modelId":"mean"}]}

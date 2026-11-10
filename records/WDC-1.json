@@ -1,1 +1,1 @@
-{"symbol":"WDC","horizon":1,"records":[]}
+{"symbol":"WDC","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:55.011063+00:00","baseAdjusted":263.7799987792969,"predictedReturn":0.01659506068904841,"actualReturn":null,"modelId":"ridge10"}]}

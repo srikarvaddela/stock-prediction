@@ -1,1 +1,1 @@
-{"symbol":"SKYX","horizon":1,"records":[]}
+{"symbol":"SKYX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:57.103961+00:00","baseAdjusted":0.7279999852180481,"predictedReturn":-0.019726445011288736,"actualReturn":null,"modelId":"ridge10"}]}

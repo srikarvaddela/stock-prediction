@@ -1,1 +1,1 @@
-{"symbol":"JYNT","horizon":1,"records":[]}
+{"symbol":"JYNT","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:53:57.014747+00:00","baseAdjusted":6.849999904632568,"predictedReturn":-0.004410565509097923,"actualReturn":null,"modelId":"mean"}]}

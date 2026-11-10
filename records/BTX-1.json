@@ -1,1 +1,1 @@
-{"symbol":"BTX","horizon":1,"records":[]}
+{"symbol":"BTX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:59.173807+00:00","baseAdjusted":7.559999942779541,"predictedReturn":-0.0015815824263838154,"actualReturn":null,"modelId":"mean"}]}

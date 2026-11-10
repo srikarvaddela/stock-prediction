@@ -1,1 +1,1 @@
-{"symbol":"AMTD","horizon":1,"records":[]}
+{"symbol":"AMTD","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:18.468365+00:00","baseAdjusted":11.630000114440918,"predictedReturn":0.002469449777805724,"actualReturn":null,"modelId":"ridge100"}]}

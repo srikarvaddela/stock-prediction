@@ -1,1 +1,1 @@
-{"symbol":"CAN","horizon":1,"records":[]}
+{"symbol":"CAN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:36.407847+00:00","baseAdjusted":0.1860000044107437,"predictedReturn":-0.010192856806837387,"actualReturn":null,"modelId":"mean"}]}

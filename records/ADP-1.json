@@ -1,1 +1,1 @@
-{"symbol":"ADP","horizon":1,"records":[]}
+{"symbol":"ADP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:47:35.917123+00:00","baseAdjusted":303.3500061035156,"predictedReturn":0.00639212150914694,"actualReturn":null,"modelId":"ridge10"}]}

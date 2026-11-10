@@ -1,1 +1,1 @@
-{"symbol":"BMO","horizon":1,"records":[]}
+{"symbol":"BMO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:18.353528+00:00","baseAdjusted":171.1300048828125,"predictedReturn":0.002070506163052856,"actualReturn":null,"modelId":"ridge10"}]}

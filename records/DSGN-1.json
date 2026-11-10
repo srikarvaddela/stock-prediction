@@ -1,1 +1,1 @@
-{"symbol":"DSGN","horizon":1,"records":[]}
+{"symbol":"DSGN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:46.124411+00:00","baseAdjusted":10.210000038146973,"predictedReturn":0.01670119137730875,"actualReturn":null,"modelId":"ridge10"}]}

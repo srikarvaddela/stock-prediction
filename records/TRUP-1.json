@@ -1,1 +1,1 @@
-{"symbol":"TRUP","horizon":1,"records":[]}
+{"symbol":"TRUP","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:56:14.620805+00:00","baseAdjusted":36.75,"predictedReturn":-0.007189894363731617,"actualReturn":null,"modelId":"boost"}]}

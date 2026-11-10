@@ -1,1 +1,1 @@
-{"symbol":"ZUMZ","horizon":1,"records":[]}
+{"symbol":"ZUMZ","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:08.859223+00:00","baseAdjusted":14.039999961853027,"predictedReturn":-0.000779964912987038,"actualReturn":null,"modelId":"ridge10"}]}

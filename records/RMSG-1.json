@@ -1,1 +1,1 @@
-{"symbol":"RMSG","horizon":1,"records":[]}
+{"symbol":"RMSG","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:54:40.754158+00:00","baseAdjusted":0.1720000058412552,"predictedReturn":0.01842520620792078,"actualReturn":null,"modelId":"ridge100"}]}

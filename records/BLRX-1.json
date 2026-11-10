@@ -1,1 +1,1 @@
-{"symbol":"BLRX","horizon":1,"records":[]}
+{"symbol":"BLRX","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:41.888542+00:00","baseAdjusted":1.7100000381469727,"predictedReturn":0.004711785763750904,"actualReturn":null,"modelId":"ridge100"}]}

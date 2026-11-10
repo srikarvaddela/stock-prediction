@@ -1,1 +1,1 @@
-{"symbol":"SLAB","horizon":1,"records":[]}
+{"symbol":"SLAB","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:58:48.973131+00:00","baseAdjusted":221.5,"predictedReturn":-0.0021682159572450543,"actualReturn":null,"modelId":"ridge10"}]}

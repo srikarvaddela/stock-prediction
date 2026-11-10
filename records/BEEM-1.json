@@ -1,1 +1,1 @@
-{"symbol":"BEEM","horizon":1,"records":[]}
+{"symbol":"BEEM","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:48:36.152322+00:00","baseAdjusted":0.7200000286102295,"predictedReturn":0.032967308109531,"actualReturn":null,"modelId":"boost"}]}

@@ -1,1 +1,1 @@
-{"symbol":"CRDO","horizon":1,"records":[]}
+{"symbol":"CRDO","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:20.276708+00:00","baseAdjusted":120.51000213623047,"predictedReturn":0.010082584076611171,"actualReturn":null,"modelId":"mean"}]}

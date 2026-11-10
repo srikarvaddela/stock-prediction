@@ -1,1 +1,1 @@
-{"symbol":"DRTS","horizon":1,"records":[]}
+{"symbol":"DRTS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:49:40.758645+00:00","baseAdjusted":13.720000267028809,"predictedReturn":0.0,"actualReturn":null,"modelId":"flat"}]}

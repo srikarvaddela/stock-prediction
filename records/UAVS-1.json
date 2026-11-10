@@ -1,1 +1,1 @@
-{"symbol":"UAVS","horizon":1,"records":[]}
+{"symbol":"UAVS","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-10T04:57:57.416120+00:00","baseAdjusted":0.3199999928474426,"predictedReturn":-0.03029989459154576,"actualReturn":null,"modelId":"mean"}]}

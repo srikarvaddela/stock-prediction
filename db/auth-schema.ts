@@ -9,6 +9,7 @@ import {
 export const authUsers = sqliteTable("auth_users", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
+  isAnonymous: integer("is_anonymous", {mode:"boolean"}).default(false),
   email: text("email").notNull().unique(),
   emailVerified: integer("email_verified", { mode: "boolean" })
     .notNull()

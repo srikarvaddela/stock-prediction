@@ -1156,3 +1156,7 @@ main {
 .stock-login-notes span+span::before{content:'·';margin-right:10px}
 .stock-login-card>.stock-login-disclaimer{font-size:10px!important;color:#8b988f!important}
 @media(max-width:600px){.stock-login-card{padding:30px 25px}.stock-login-brand{margin-bottom:36px}}
+
+.stock-account-controls{display:flex;align-items:center;gap:14px;flex-shrink:0}.stock-account-controls>span{font-size:11px;color:#7b847e;max-width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.stock-account-controls .stock-signout{padding:7px 9px;border:1px solid #dce5dc;border-radius:5px;white-space:nowrap}@media(max-width:700px){.stock-account-controls>span{display:none}.stock-account-controls{gap:0}}
+
+.stock-guest-signin{display:block;border:0;background:#187456;color:#fff;padding:14px 19px;border-radius:7px;margin:25px 0 12px;font-weight:600;cursor:pointer;text-align:left}.stock-guest-signin:hover{background:#125b43}.stock-guest-signin:disabled{opacity:.6}.stock-login-card>.stock-guest-note{font-size:11px!important;line-height:1.8;color:#748179}.stock-google-preview{margin-top:20px;color:#7f8b81;font-size:11px}.stock-google-preview summary{cursor:pointer}.stock-google-preview .stock-google-signin{margin:16px 0}

@@ -1,5 +1,6 @@
 import { env } from "cloudflare:workers";
 import { betterAuth } from "better-auth/minimal";
+import { anonymous } from "better-auth/plugins";
 import { drizzleAdapter } from "@better-auth/drizzle-adapter";
 import { drizzle } from "drizzle-orm/d1";
 import { authSchema } from "../db/auth-schema";
@@ -13,6 +14,7 @@ function createAuth() {
   const db = drizzle(env.DB, { schema: authSchema });
   return betterAuth({
     appName: "Stock Prediction",
+    plugins: [anonymous({generateName: () => "Guest workspace", disableDeleteAnonymousUser: true})],
     baseURL: standaloneOrigin()!,
     secret: env.BETTER_AUTH_SECRET!,
     trustedOrigins: [standaloneOrigin()!],
@@ -38,6 +40,7 @@ function createAuth() {
       enabled: true,
       window: 60,
       max: 60,
+      customRules: { "/sign-in/anonymous": {window: 3600, max: 20} },
       customStorage: {
         async consume(key, rule) {
           const digest = await crypto.subtle.digest(

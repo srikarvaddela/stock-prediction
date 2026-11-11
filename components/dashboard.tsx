@@ -360,7 +360,7 @@ export default function Home({standalone = false, displayName = ""}: {standalone
         <div className="sidebar-footer">
           <span className="avatar">SP</span>
           <div>
-            Personal workspace<small>Research edition · v2</small>
+            {displayName || "Personal workspace"}<small>Research edition · v2</small>
           </div>
         </div>
       </aside>
@@ -399,10 +399,7 @@ export default function Home({standalone = false, displayName = ""}: {standalone
               <ArrowRight size={16} />
             </button>
           </form>
-          <span className="edition">
-            <span className="dot" />
-            Research workspace
-          </span>
+          {standalone ? <div className="stock-account-controls"><span title={displayName}>{displayName}</span><AuthControls action="signout"/></div> : <span className="edition"><span className="dot"/>Research workspace</span>}
         </header>
         <main>
           <div className="page-heading">

@@ -52,6 +52,13 @@ try{
   eq((await call('/api/auth/get-session',{token:'token-a'})).data.user.id,'test-a','session endpoint agrees');
   eq((await call('/api/auth/sign-out',{token:'token-a',body:{}})).r.status,200,'sign-out accepted');
   eq((await call('/api/workspace',{token:'token-a'})).r.status,401,'revoked session rejected');
+  const guest=await call('/api/auth/sign-in/anonymous',{body:{}});eq(guest.r.status,200,'guest starts without Google');
+  eq(guest.data.user.isAnonymous,true,'guest identity is explicit');
+  const guestCookie=guest.r.headers.getSetCookie().map(x=>x.split(';')[0]).join('; ');
+  assert.ok(guestCookie.includes('session_token'),'guest receives a session cookie');checks++;
+  assert.ok(guest.r.headers.getSetCookie().some(x=>/HttpOnly/i.test(x)),'session cookie is HttpOnly');checks++;
+  const guestWorkspace=await call('/api/workspace',{extra:{Cookie:guestCookie}});eq(guestWorkspace.r.status,200,'guest private APIs work');eq(guestWorkspace.data.watchlist,null,'guest never inherits other accounts');
+  const guestAgain=await call('/api/auth/sign-in/anonymous',{body:{},extra:{Cookie:guestCookie}});eq(guestAgain.r.status,400,'existing guest cannot mint another guest');
   // Last: Miniflare's proxy can corrupt its next request after an unread rejected body.
   eq((await call('/api/portfolio',{token:'token-b',body:{action:'remove',id:'unknown'},extra:{Origin:'https://attacker.invalid'}})).r.status,403,'cross-origin mutations rejected');
   console.log(`PASS: ${checks} standalone authentication and account-isolation checks.`);

@@ -29,6 +29,13 @@
       "when": 1794373984459,
       "tag": "0003_standalone_auth",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1794374404163,
+      "tag": "0004_guest_sessions",
+      "breakpoints": true
     }
   ]
 }

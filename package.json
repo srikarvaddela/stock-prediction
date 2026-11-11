@@ -19,7 +19,8 @@
     "build:standalone": "node scripts/standalone.mjs build",
     "start:standalone": "node scripts/standalone.mjs start",
     "db:standalone": "node scripts/standalone.mjs migrate",
-    "deploy:standalone": "node scripts/standalone.mjs deploy"
+    "deploy:standalone": "node scripts/standalone.mjs deploy",
+    "test:auth": "node scripts/check-standalone-auth.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

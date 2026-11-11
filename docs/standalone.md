@@ -26,3 +26,7 @@ The original hosted app and its database are retained. Sites user IDs and standa
 At migration inspection, the original app had no holdings, forecast records, paper accounts, or paper trades. It had two preferences rows, both with the default `["IBM"]` watchlist and no saved API key. Preserve those preference rows under their original IDs in the new database as retained legacy records; they are not automatically granted to a new Google account. New accounts start with the same default watchlist. If non-default private records are added to the original app later, their transfer requires proof of control of both accounts before any ownership mapping.
 
 Public market cache entries and provider-usage counters are not personal records and are not copied. The standalone app reads the existing public GitHub market-data feed and rebuilds cache entries as needed.
+
+## Public guest access
+
+The shared Google consent app remains in Testing mode. Public visitors can start a private guest workspace without Google. Better Auth creates a unique server-side user/session and an HttpOnly signed cookie. Guest creation is limited to 20 per IP per hour. Guest records are isolated by the same account-scoped APIs as Google records and never inherit migrated Sites records. Access lasts while the cookie/session remains valid (up to seven days); signing out or clearing cookies ends access. Guest-to-Google data transfer is not implemented. The optional Google preview is restricted to accounts allowed by the provider configuration.

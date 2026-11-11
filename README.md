@@ -1,6 +1,8 @@
 # Stock Prediction
 
-A private stock research workspace with one- and four-week forecasts. The public GitHub repository contains the application source. [Open the hosted app](https://stock-prediction-srikar.shoyo722.chatgpt.site).
+A stock research workspace with one- and four-week forecasts and private guest sessions. The public GitHub repository contains the application source. [Open the hosted app](https://stock-prediction.srikar-loop.workers.dev).
+
+Guest access is tied to a browser cookie; signing out or clearing cookies ends access. Google sign-in is an optional preview restricted to allowed test accounts. Each identity has separate watchlists, settings, holdings, forecasts, and paper trades. The previous Sites app is retained for continuity.
 
 ## Start in the app
 

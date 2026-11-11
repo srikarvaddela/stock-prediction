@@ -1,1 +1,1 @@
-{"symbol":"SAEN","horizon":1,"records":[]}
+{"symbol":"SAEN","horizon":1,"records":[{"asOf":"2026-11-06","target":"2026-11-13","createdAt":"2026-11-11T02:59:26.503317+00:00","baseAdjusted":0.6650000214576721,"predictedReturn":-0.025747432194758797,"actualReturn":null,"modelId":"boost"}]}

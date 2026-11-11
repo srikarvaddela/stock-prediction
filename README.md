@@ -82,3 +82,7 @@ With a built local Worker on port 5186, `scripts/check-universe-api.mjs`, `scrip
 ## Development workflow
 
 Verify, commit, and push each finished milestone independently before starting the next. Source code does not contain user holdings, saved forecasts, or provider keys.
+
+## Standalone Cloudflare target
+
+The standalone target uses Google sign-in and a separate D1 database. See [standalone setup, validation, and data migration](docs/standalone.md). Run `npm run build:standalone` and `node scripts/check-standalone-auth.mjs` for its built-Worker checks. The existing default build remains the Sites target.

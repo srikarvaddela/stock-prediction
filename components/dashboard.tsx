@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { AuthControls } from "@/components/auth-controls";
 import {
   Activity,
   ArrowRight,
@@ -144,7 +145,7 @@ function Chart({ points }: { points: PricePoint[] }) {
   );
 }
 
-export default function Home() {
+export default function Home({standalone = false, displayName = ""}: {standalone?: boolean; displayName?: string}) {
   const [horizon, setHorizon] = useState(1);
   const [suggestions, setSuggestions] = useState<{symbol:string;name:string}[]>([]);
   const [cloudLoaded, setCloudLoaded] = useState(false);

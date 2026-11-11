@@ -1,5 +1,5 @@
 import { env } from "cloudflare:workers";
-import { getChatGPTUser } from "@/app/chatgpt-auth";
+import { getAppUser } from "@/lib/auth-user";
 export class HttpError extends Error {
   constructor(
     public status: number,
@@ -13,7 +13,7 @@ export function database() {
   return env.DB;
 }
 export async function identity(request?: Request) {
-  const user = await getChatGPTUser();
+  const user = await getAppUser();
   if (!user)
     throw new HttpError(401, "Sign in to use your research workspace.");
   if (request && request.method !== "GET") {

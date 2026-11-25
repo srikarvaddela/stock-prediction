@@ -21,10 +21,12 @@ const args=['--import','./scripts/sites-env.mjs',wrangler];
 function run(extra){const p=spawnSync(process.execPath,[...args,...extra],{encoding:'utf8',windowsHide:true});if(p.status!==0)throw new Error(p.stderr||p.stdout||'Local database command failed');}
 run(['d1','migrations','apply','DB','--local','--config',`${directory}/wrangler.json`,'--persist-to',`${directory}/state`]);
 const now=Date.now(),future=now+3600000,past=now-60000;
+const forwardFixture=JSON.stringify({symbol:'IBM',horizon:1,records:[{asOf:'2000-01-07',target:'2000-01-14',createdAt:'2000-01-08T12:00:00Z',predictedReturn:0.02,actualReturn:0.03,observedDate:'2000-01-14',settledAt:'2000-01-17',modelId:'test-fixture'}]});
 const sql=`DELETE FROM auth_sessions; DELETE FROM auth_accounts; DELETE FROM auth_users; DELETE FROM auth_verifications; DELETE FROM auth_rate_limits; DELETE FROM preferences;
 INSERT INTO auth_users(id,name,email,email_verified,created_at,updated_at) VALUES ('test-a','User A','a@example.invalid',1,${now},${now}),('test-b','User B','b@example.invalid',1,${now},${now});
 INSERT INTO auth_sessions(id,token,expires_at,created_at,updated_at,user_id) VALUES ('session-a','token-a',${future},${now},${now},'test-a'),('session-b','token-b',${future},${now},${now},'test-b'),('session-expired','token-expired',${past},${now},${now},'test-a');
-INSERT INTO preferences(user_id,watchlist,daily_limit,updated_at) VALUES ('test-a','["IBM"]',25,'2026-11-10'),('test-b','["MSFT"]',25,'2026-11-10');`;
+INSERT INTO preferences(user_id,watchlist,daily_limit,updated_at) VALUES ('test-a','["IBM"]',25,'2026-11-10'),('test-b','["MSFT"]',25,'2026-11-10');
+INSERT OR REPLACE INTO market_cache(id,owner_id,body,expires_at) VALUES ('shared-feed-v1:records/IBM-1.json','public-market-data','${forwardFixture}',${future});`;
 writeFileSync(`${directory}/seed.sql`,sql);
 run(['d1','execute','DB','--local','--config',`${directory}/wrangler.json`,'--persist-to',`${directory}/state`,'--file',`${directory}/seed.sql`]);
 const child=spawn(process.execPath,[...args,'dev','--config',`${directory}/wrangler.json`,'--local','--persist-to',`${directory}/state`,'--ip','127.0.0.1','--port','8791','--inspector-port','0'],{windowsHide:true,stdio:['ignore','pipe','pipe']});
@@ -37,12 +39,17 @@ try{
   let ready=false;for(let i=0;i<80;i++){try{if((await fetch(base+'/api/auth/get-session')).ok){ready=true;break;}}catch{}await new Promise(r=>setTimeout(r,250));}
   if(!ready)throw new Error('Local Worker did not start: '+logs.slice(-3000));
   const auth=await call('/api/auth/config');eq(auth.data,{mode:'standalone',providers:['google']},'only public auth configuration');
-  for(const route of ['/api/workspace','/api/portfolio','/api/settings','/api/forecasts','/api/paper'])eq((await call(route)).r.status,401,'anonymous rejected: '+route);
+  for(const route of ['/api/workspace','/api/portfolio','/api/settings','/api/forecasts','/api/paper','/api/scorecard?symbol=IBM'])eq((await call(route)).r.status,401,'anonymous rejected: '+route);
   const spoof={'oai-authenticated-user-id':'test-a','oai-authenticated-user-email':'a@example.invalid'};
   eq((await call('/api/workspace',{extra:spoof})).r.status,401,'Sites header spoof rejected');
   eq((await call('/api/workspace',{token:'forged'})).r.status,401,'forged session rejected');
   eq((await call('/api/workspace',{token:'token-expired'})).r.status,401,'expired session rejected');
   eq((await call('/api/workspace',{token:'token-a'})).data.watchlist,['IBM'],'signed session accepted');
+  const scorecard=await call('/api/scorecard?symbol=IBM&horizon=1',{token:'token-a'});
+  eq(scorecard.r.status,200,'forward scorecard loads');eq(scorecard.data.evaluation.count,1,'only actual settled record counted');
+  eq(scorecard.data.evaluation.baselineMae,0.03,'baseline comes from the recorded outcome');
+  eq(scorecard.r.headers.get('cache-control'),'no-store','scorecard response is not cached by browser');
+  eq((await call('/api/scorecard?symbol=IBM&horizon=2',{token:'token-a'})).r.status,400,'unsupported horizon rejected');
   eq((await call('/api/workspace',{token:'token-b',extra:spoof})).data.watchlist,['MSFT'],'session B cannot be replaced by header A');
   eq((await call('/api/workspace',{token:'token-a'})).r.headers.get('cache-control'),'no-store','private data is not cacheable');
   const rejected=await call('/api/auth/sign-in/social',{body:{provider:'google',callbackURL:'/'},extra:{Origin:'https://attacker.invalid'}});eq(rejected.r.status,403,'cross-origin sign-in rejected: '+JSON.stringify(rejected.data));

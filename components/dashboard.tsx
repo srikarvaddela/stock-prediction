@@ -29,11 +29,13 @@ import { PythonPanel } from "@/components/python-panel";
 import { PaperPanel } from "@/components/paper-panel";
 import { ScreenerPanel } from "@/components/screener-panel";
 import { DirectoryPanel } from "@/components/directory-panel";
+import { ScorecardPanel } from "@/components/scorecard-panel";
 import stockPicker from "@/lib/stock-picker.json";
 import { stockSymbol } from "@/lib/company-search.mjs";
 
 type View =
   | "research"
+  | "scorecard"
   | "watchlist"
   | "model"
   | "settings"
@@ -304,6 +306,7 @@ export default function Home({standalone = false, displayName = ""}: {standalone
     { id: "research" as View, name: "Research", icon: LayoutDashboard },
     { id: "watchlist" as View, name: "Watchlist", icon: Bookmark },
     { id: "model" as View, name: "Model lab", icon: FlaskConical },
+    { id: "scorecard" as View, name: "Live scorecard", icon: Activity },
     { id: "settings" as View, name: "Settings", icon: CircleHelp },
     { id: "compare" as View, name: "Compare", icon: LineChart },
     { id: "tracking" as View, name: "Forecast log", icon: Bookmark },
@@ -412,6 +415,7 @@ export default function Home({standalone = false, displayName = ""}: {standalone
                     directory: "All companies",
                     watchlist: "Your watchlist",
                     model: "Model evaluation",
+                    scorecard: "Live model scorecard",
                     settings: "Data connection",
                     compare: "Company comparison",
                     tracking: "Forecast history",
@@ -522,7 +526,7 @@ export default function Home({standalone = false, displayName = ""}: {standalone
               </a>
             </section>
           )}
-          {view === "directory" ? <DirectoryPanel onChoose={choose} /> : view === "screener" ? (
+          {view === "scorecard" ? <ScorecardPanel symbol={symbol} /> : view === "directory" ? <DirectoryPanel onChoose={choose} /> : view === "screener" ? (
             <ScreenerPanel onChoose={choose} />
           ) : view === "paper" ? (
             <PaperPanel />

@@ -515,6 +515,20 @@ tbody td {
     max-width: 100%;
   }
 }
+.evidence-panel { padding: 28px; min-width: 0; }
+.evidence-panel p { line-height: 1.65; }
+.evidence-panel h3 { margin: 24px 0 12px; }
+.evidence-controls { display: flex; gap: 16px; align-items: end; flex-wrap: wrap; margin: 24px 0; }
+.evidence-controls label { display: grid; gap: 8px; font-size: 1rem; }
+.evidence-controls input, .evidence-controls select { padding: 11px; border: 1px solid var(--border); border-radius: 8px; background: white; max-width: 100%; font-size: 1rem; }
+.evidence-metrics { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; margin: 24px 0; }
+.evidence-metrics > div { border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.evidence-metrics span { display: block; font-size: .875rem; }
+.evidence-metrics strong { display: block; font-size: 1.75rem; margin-top: 8px; }
+.evidence-panel details { margin: 18px 0; }
+.evidence-panel summary { cursor: pointer; }
+@media (max-width: 800px) { .evidence-metrics { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 640px) { .evidence-panel { padding: 18px; } .evidence-controls { align-items: stretch; flex-direction: column; } }
 .ticker-picker {
   margin: 0 0 22px;
 }

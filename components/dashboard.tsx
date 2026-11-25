@@ -30,12 +30,14 @@ import { PaperPanel } from "@/components/paper-panel";
 import { ScreenerPanel } from "@/components/screener-panel";
 import { DirectoryPanel } from "@/components/directory-panel";
 import { ScorecardPanel } from "@/components/scorecard-panel";
+import { DataHealthPanel } from "@/components/data-health-panel";
 import stockPicker from "@/lib/stock-picker.json";
 import { stockSymbol } from "@/lib/company-search.mjs";
 
 type View =
   | "research"
   | "scorecard"
+  | "health"
   | "watchlist"
   | "model"
   | "settings"
@@ -307,6 +309,7 @@ export default function Home({standalone = false, displayName = ""}: {standalone
     { id: "watchlist" as View, name: "Watchlist", icon: Bookmark },
     { id: "model" as View, name: "Model lab", icon: FlaskConical },
     { id: "scorecard" as View, name: "Live scorecard", icon: Activity },
+    { id: "health" as View, name: "Data health", icon: ShieldCheck },
     { id: "settings" as View, name: "Settings", icon: CircleHelp },
     { id: "compare" as View, name: "Compare", icon: LineChart },
     { id: "tracking" as View, name: "Forecast log", icon: Bookmark },
@@ -416,6 +419,7 @@ export default function Home({standalone = false, displayName = ""}: {standalone
                     watchlist: "Your watchlist",
                     model: "Model evaluation",
                     scorecard: "Live model scorecard",
+                    health: "Data health",
                     settings: "Data connection",
                     compare: "Company comparison",
                     tracking: "Forecast history",
@@ -526,7 +530,7 @@ export default function Home({standalone = false, displayName = ""}: {standalone
               </a>
             </section>
           )}
-          {view === "scorecard" ? <ScorecardPanel symbol={symbol} /> : view === "directory" ? <DirectoryPanel onChoose={choose} /> : view === "screener" ? (
+          {view === "health" ? <DataHealthPanel onChoose={choose} /> : view === "scorecard" ? <ScorecardPanel symbol={symbol} /> : view === "directory" ? <DirectoryPanel onChoose={choose} /> : view === "screener" ? (
             <ScreenerPanel onChoose={choose} />
           ) : view === "paper" ? (
             <PaperPanel />

@@ -1,3 +1,3 @@
 # Public market research data
 
-Updated 2026-11-27T05:19:38.656Z. 5693 price histories available. Each file retains its own observation and retrieval dates; an update does not guarantee fresh data for every listing. Prices: Yahoo Finance. Directory: Nasdaq Trader. No user data or API keys. Experimental Python models; forecasts are not guaranteed.
+Updated 2026-11-28T04:57:20.732Z. 5689 price histories available. Each file retains its own observation and retrieval dates; an update does not guarantee fresh data for every listing. Prices: Yahoo Finance. Directory: Nasdaq Trader. No user data or API keys. Experimental Python models; forecasts are not guaranteed.
